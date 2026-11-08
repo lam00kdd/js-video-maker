@@ -1,0 +1,465 @@
+{
+  "title": "Vật thể đi theo đường cong",
+  "motion_mode": "scenegraph",
+  "visual_dsl_version": 1,
+  "aspect_ratio": "16:9",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Chuyển động theo cung cong",
+      "narration": "Một vật nhỏ đi dọc theo đường cong. Mũi tên cho biết hướng chuyển động tại vị trí đang quan sát.",
+      "visual_description": "Đường cong Bézier, vật tròn chuyển động dọc đường và vector hướng.",
+      "estimated_seconds": 6,
+      "background": "#101a24",
+      "scene_graph": {
+        "version": 2,
+        "coordinate_space": "normalized",
+        "objects": [
+          {
+            "id": "curve-guide",
+            "type": "path",
+            "transform": {
+              "x": 0,
+              "y": 0,
+              "scale": 1,
+              "rotation": 0,
+              "opacity": 0.75
+            },
+            "style": {
+              "stroke": "#536779",
+              "fill": "none",
+              "stroke_width": 0.004,
+              "dash": [
+                0.008,
+                0.008
+              ]
+            },
+            "geometry": {
+              "commands": [
+                {
+                  "op": "M",
+                  "points": [
+                    {
+                      "x": 0.12,
+                      "y": 0.72
+                    }
+                  ]
+                },
+                {
+                  "op": "C",
+                  "points": [
+                    {
+                      "x": 0.3,
+                      "y": 0.12
+                    },
+                    {
+                      "x": 0.7,
+                      "y": 0.88
+                    },
+                    {
+                      "x": 0.88,
+                      "y": 0.28
+                    }
+                  ]
+                }
+              ]
+            },
+            "actions": []
+          },
+          {
+            "id": "traveler",
+            "type": "circle",
+            "transform": {
+              "x": 0.12,
+              "y": 0.72,
+              "scale": 1,
+              "rotation": 0,
+              "opacity": 1
+            },
+            "style": {
+              "stroke": "#fff1bb",
+              "fill": "#ffb44a",
+              "stroke_width": 0.004
+            },
+            "geometry": {
+              "radius": 0.025
+            },
+            "actions": []
+          },
+          {
+            "id": "direction",
+            "type": "arrow",
+            "transform": {
+              "x": 0.56,
+              "y": 0.47,
+              "scale": 1,
+              "rotation": 0,
+              "opacity": 1
+            },
+            "style": {
+              "stroke": "#67dfbf",
+              "stroke_width": 0.006
+            },
+            "geometry": {
+              "start": {
+                "x": 0,
+                "y": 0
+              },
+              "end": {
+                "x": 0.12,
+                "y": -0.08
+              }
+            },
+            "actions": [
+              {
+                "type": "fade",
+                "start_seconds": 1,
+                "duration_seconds": 0.6,
+                "params": {
+                  "from": 0,
+                  "to": 1
+                }
+              }
+            ]
+          },
+          {
+            "id": "caption",
+            "type": "text",
+            "transform": {
+              "x": 0.5,
+              "y": 0.12,
+              "scale": 1,
+              "rotation": 0,
+              "opacity": 1
+            },
+            "style": {
+              "stroke": "#f4f7fb",
+              "fill": "#f4f7fb",
+              "font_size": 0.045,
+              "font_weight": "700"
+            },
+            "properties": {
+              "content": "Đường đi và hướng chuyển động",
+              "max_width": 0.85
+            },
+            "actions": []
+          }
+        ]
+      },
+      "animations": [
+        {
+          "start_seconds": 0.0,
+          "to": {
+            "y": 0.553437,
+            "x": 0.196953
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.72,
+            "x": 0.12
+          },
+          "action": "move",
+          "target": "traveler"
+        },
+        {
+          "start_seconds": 0.0,
+          "to": {
+            "y": 0.553437,
+            "x": 0.196953
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.72,
+            "x": 0.12
+          },
+          "action": "move",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 0.0,
+          "to": -0.336653,
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": -0.691337,
+          "action": "rotate",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 0.75,
+          "to": {
+            "y": 0.4825,
+            "x": 0.289375
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.553437,
+            "x": 0.196953
+          },
+          "action": "move",
+          "target": "traveler"
+        },
+        {
+          "start_seconds": 0.75,
+          "to": {
+            "y": 0.4825,
+            "x": 0.289375
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.553437,
+            "x": 0.196953
+          },
+          "action": "move",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 0.75,
+          "to": 0.257705,
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": -0.336653,
+          "action": "rotate",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 1.5,
+          "to": {
+            "y": 0.475312,
+            "x": 0.392109
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.4825,
+            "x": 0.289375
+          },
+          "action": "move",
+          "target": "traveler"
+        },
+        {
+          "start_seconds": 1.5,
+          "to": {
+            "y": 0.475312,
+            "x": 0.392109
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.4825,
+            "x": 0.289375
+          },
+          "action": "move",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 1.5,
+          "to": 0.719686,
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": 0.257705,
+          "action": "rotate",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 2.25,
+          "to": {
+            "y": 0.5,
+            "x": 0.5
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.475312,
+            "x": 0.392109
+          },
+          "action": "move",
+          "target": "traveler"
+        },
+        {
+          "start_seconds": 2.25,
+          "to": {
+            "y": 0.5,
+            "x": 0.5
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.475312,
+            "x": 0.392109
+          },
+          "action": "move",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 2.25,
+          "to": 0.85717,
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": 0.719686,
+          "action": "rotate",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 3.0,
+          "to": {
+            "y": 0.524688,
+            "x": 0.607891
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.5,
+            "x": 0.5
+          },
+          "action": "move",
+          "target": "traveler"
+        },
+        {
+          "start_seconds": 3.0,
+          "to": {
+            "y": 0.524688,
+            "x": 0.607891
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.5,
+            "x": 0.5
+          },
+          "action": "move",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 3.0,
+          "to": 0.719686,
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": 0.85717,
+          "action": "rotate",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 3.75,
+          "to": {
+            "y": 0.5175,
+            "x": 0.710625
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.524688,
+            "x": 0.607891
+          },
+          "action": "move",
+          "target": "traveler"
+        },
+        {
+          "start_seconds": 3.75,
+          "to": {
+            "y": 0.5175,
+            "x": 0.710625
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.524688,
+            "x": 0.607891
+          },
+          "action": "move",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 3.75,
+          "to": 0.257705,
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": 0.719686,
+          "action": "rotate",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 4.5,
+          "to": {
+            "y": 0.446563,
+            "x": 0.803047
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.5175,
+            "x": 0.710625
+          },
+          "action": "move",
+          "target": "traveler"
+        },
+        {
+          "start_seconds": 4.5,
+          "to": {
+            "y": 0.446563,
+            "x": 0.803047
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.5175,
+            "x": 0.710625
+          },
+          "action": "move",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 4.5,
+          "to": -0.336653,
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": 0.257705,
+          "action": "rotate",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 5.25,
+          "to": {
+            "y": 0.28,
+            "x": 0.88
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.446563,
+            "x": 0.803047
+          },
+          "action": "move",
+          "target": "traveler"
+        },
+        {
+          "start_seconds": 5.25,
+          "to": {
+            "y": 0.28,
+            "x": 0.88
+          },
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": {
+            "y": 0.446563,
+            "x": 0.803047
+          },
+          "action": "move",
+          "target": "direction"
+        },
+        {
+          "start_seconds": 5.25,
+          "to": -0.691337,
+          "easing": "linear",
+          "duration_seconds": 0.75,
+          "from": -0.336653,
+          "action": "rotate",
+          "target": "direction"
+        }
+      ]
+    }
+  ]
+}

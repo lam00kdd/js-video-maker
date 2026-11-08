@@ -1,0 +1,4 @@
+.runtime/
+logs/
+node_modules/
+social-function.tmp
