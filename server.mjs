@@ -11,7 +11,7 @@ const logDir = join(root, 'logs');
 mkdirSync(logDir, { recursive: true });
 const logFile = join(logDir, 'run.log');
 function log(message) { const line = `[${new Date().toISOString()}] ${message}`; console.log(line); try { appendFileSync(logFile, `${line}\n`, 'utf8'); } catch {} }
-const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml' };
+const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml' };
 const ttsRoot = join(root, '.runtime', 'korvatts');
 const ttsPython = join(ttsRoot, 'venv', 'Scripts', 'python.exe');
 const ttsWorker = join(ttsRoot, 'korvatts_worker.py');

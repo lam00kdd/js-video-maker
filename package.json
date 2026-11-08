@@ -10,5 +10,8 @@
     "start": "node server.mjs",
     "test": "node tests/visual-dsl-v2-stage1.test.js",
     "test:focused": "node tests/visual-dsl-focused.test.js"
+  },
+  "dependencies": {
+    "mediabunny": "^1.65.2"
   }
 }
