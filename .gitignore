@@ -2,3 +2,12 @@
 logs/
 node_modules/
 social-function.tmp
+.env
+.env.*
+!.env.example
+.npmrc
+credentials.json
+secrets.*
+*.pem
+*.key
+*.log

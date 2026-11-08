@@ -6,6 +6,8 @@
 
 `examples/Visual_DSL_v25_Slider_Crank.json` contains one 8-second scene per ratio. The `engine-drive` slider-crank uses isotropic local geometry, a 0.105 crank radius, a 0.29 connecting rod, and a normalized upward cylinder axis. Its timeline runs for 3 seconds, holds for 1 second, then runs for 4 seconds. The crank group, connecting rod, and piston bindings are all explicit. Portrait and landscape keep the same mechanism dimensions and use separate cylinder artwork/layout dimensions.
 
+`examples/Scientific_Mechanism_Cam_Follower.json` contains six matched scenes per ratio (22 seconds total). It illustrates the idealized rise, high dwell, return, and low dwell phases with an isotropic cam profile and a separate layout for each aspect ratio. It is a kinematic illustration and does not model exact contact, force, or friction.
+
 ## Inspector fixture
 
 `examples/Visual_Quality_Inspector_Intentionally_Bad.json` contains a single 8-second scene for each ratio and keeps distinct IDs for each deliberate defect:

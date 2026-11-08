@@ -67,7 +67,7 @@
                 "type": "text",
                 "transform": {
                   "x": 0.5,
-                  "y": 0.88,
+                  "y": 0.77,
                   "scale": 1,
                   "rotation": 0,
                   "opacity": 1
@@ -349,7 +349,7 @@
                 "type": "text",
                 "transform": {
                   "x": 0.5,
-                  "y": 0.88,
+                  "y": 0.77,
                   "scale": 1,
                   "rotation": 0,
                   "opacity": 1

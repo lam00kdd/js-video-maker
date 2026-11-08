@@ -64,3 +64,21 @@ test('gear pair fixture retains parametric centers, ratio and Inspector geometry
     assert.equal(scenes[0].scene_graph.mechanisms[0].type, 'gear_pair');
   }
 });
+
+test('cam-follower fixture imports and passes Inspector in landscape and portrait', async () => {
+  const document = await fixture('Scientific_Mechanism_Cam_Follower.json');
+  const landscape = document.variants.landscape.scenes;
+  const portrait = document.variants.portrait.scenes;
+  assert.equal(landscape.length, 6);
+  assert.deepEqual(portrait.map(scene => [scene.id, scene.narration, scene.estimated_seconds]), landscape.map(scene => [scene.id, scene.narration, scene.estimated_seconds]));
+  assert(landscape.reduce((sum, scene) => sum + scene.estimated_seconds, 0) <= 180);
+  for (const [ratio, scenes] of [['16:9', landscape], ['9:16', portrait]]) {
+    const imported = scenes.map(scene => validateVisualDslDocument({ ...document, scenes: [scene] })[0]);
+    const quality = inspectVisualDslQuality({ variants: { [ratio]: imported }, captionsEnabled: true });
+    assert.equal(quality.counts.error, 0, JSON.stringify(quality.issues));
+    assert.equal(quality.counts.warning, 0, JSON.stringify(quality.issues));
+    const project = normalizeProject({ title: document.title, motionMode: 'scenegraph', scenes: imported, variants: { landscape: { scenes: landscape }, portrait: { scenes: portrait } } });
+    assert.equal(project.variants.landscape[0].objectScene.mechanisms[0].type, 'cam_follower');
+    assert.notDeepEqual(project.variants.landscape[0].objectScene.objects[0].transform, project.variants.portrait[0].objectScene.objects[0].transform);
+  }
+});

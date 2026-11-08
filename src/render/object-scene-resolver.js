@@ -1,5 +1,6 @@
 import { normalizeObjectScene } from './object-scene-schema.js';
 import { pathSegments,samplePathMetrics } from './vector-path.js';
+import { camFollowerLiftAtAngle } from './cam-follower-profile.js';
 
 const clamp=(value,min,max)=>Math.max(min,Math.min(max,value));
 const mix=(a,b,t)=>a+(b-a)*t;
@@ -43,6 +44,11 @@ export function resolveObjectScene(sceneGraph,time,duration=8,{width=1280,height
    const unitScale=Math.min(width,height),driverCenter={x:params.driver_center.x*width,y:params.driver_center.y*height},distance=params.module*(params.driver_teeth+params.driven_teeth)*unitScale/2,drivenCenter={x:driverCenter.x+distance*Math.cos(params.center_angle),y:driverCenter.y+distance*Math.sin(params.center_angle)},driver=entries.get(bindings.driver)?.state,driven=entries.get(bindings.driven)?.state,drivenAngle=params.center_angle+Math.PI-Math.PI/params.driven_teeth-(params.driver_teeth/params.driven_teeth)*(angle-params.initial_angle);
    if(driver){driver.transform.x=driverCenter.x/width;driver.transform.y=driverCenter.y/height;driver.transform.rotation=angle;driver.parametric_space=localGeometrySpace;}
    if(driven){driven.transform.x=drivenCenter.x/width;driven.transform.y=drivenCenter.y/height;driven.transform.rotation=drivenAngle;driven.parametric_space=localGeometrySpace;}
+   continue;
+  }
+  if(mechanism.type==='cam_follower'){
+   const cam=entries.get(bindings.cam)?.state,follower=entries.get(bindings.follower)?.state,unit=Math.min(width,height),center={x:params.cam_center.x*width,y:params.cam_center.y*height},{lift}=camFollowerLiftAtAngle(params,angle);
+   const ux=params.follower_axis.x*width,uy=params.follower_axis.y*height,length=Math.hypot(ux,uy),axis={x:ux/length,y:uy/length};if(cam){cam.transform.x=center.x/width;cam.transform.y=center.y/height;cam.transform.rotation=angle;cam.parametric_space='isotropic';}if(follower){const origin=follower.transform,base={x:origin.x*width,y:origin.y*height};follower.transform.x=(base.x+axis.x*lift*unit)/width;follower.transform.y=(base.y+axis.y*lift*unit)/height;follower.parametric_space='isotropic';follower.mechanism_lift=lift;follower.mechanism_axis=axis;}
    continue;
   }
   const ux=params.cylinder_axis.x*width,uy=params.cylinder_axis.y*height,axisLength=Math.hypot(ux,uy),u={x:ux/axisLength,y:uy/axisLength},unitScale=Math.min(width,height),radius=params.crank_radius*unitScale,rodLength=params.connecting_rod_length*unitScale,center={x:params.crank_center.x*width,y:params.crank_center.y*height},pin={x:center.x+radius*Math.cos(angle),y:center.y+radius*Math.sin(angle)},delta={x:pin.x-center.x,y:pin.y-center.y},projection=delta.x*u.x+delta.y*u.y,cross=delta.x*u.y-delta.y*u.x,root=Math.sqrt(Math.max(0,rodLength*rodLength-cross*cross)),sliderDistance=projection+root,piston={x:center.x+u.x*sliderDistance,y:center.y+u.y*sliderDistance},rodAngle=Math.atan2(piston.y-pin.y,piston.x-pin.x),crank=entries.get(bindings.crank)?.state,connectingRod=entries.get(bindings.connecting_rod)?.state,slider=entries.get(bindings.piston)?.state,localGeometryUnit=localGeometrySpace==='isotropic'?unitScale:width;if(crank){crank.transform.x=center.x/width;crank.transform.y=center.y/height;crank.transform.rotation=angle;crank.parametric_space=localGeometrySpace;}if(connectingRod){connectingRod.transform.x=pin.x/width;connectingRod.transform.y=pin.y/height;connectingRod.transform.rotation=rodAngle;connectingRod.geometry.start={x:0,y:0};connectingRod.geometry.end={x:rodLength/localGeometryUnit,y:0};connectingRod.parametric_space=localGeometrySpace;}if(slider){slider.transform.x=piston.x/width;slider.transform.y=piston.y/height;slider.transform.rotation=Math.atan2(u.y,u.x)+Math.PI/2;slider.parametric_space=localGeometrySpace;}}

@@ -22,7 +22,8 @@ Canonical fixtures include `Visual_DSL_v25_Slider_Crank.json`, `Scientific_Mecha
 - `npm test`: 14/14 passed on 2026-11-08.
 - `npm run test:focused`: 3/3 passed on 2026-11-08.
 - Fixture existence was checked in `examples/`.
-- Baseline commit: recorded by Git tag `visual-dsl-v2.5-stable` (the tag resolves to the baseline commit).
+- Baseline commit: `72c60e87f6f12bdac7348592871bb95dfde9264f`.
+- Stable tag: `visual-dsl-v2.5-stable` (verified to resolve to that commit).
 
 ## Recovery
 
