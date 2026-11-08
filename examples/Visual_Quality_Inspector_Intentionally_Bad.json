@@ -1,0 +1,572 @@
+{
+  "visual_dsl_version": 2,
+  "title": "Fixture lỗi bố cục có chủ đích (recreated)",
+  "aspect_ratio": "both",
+  "motion_mode": "scenegraph",
+  "variants": {
+    "landscape": {
+      "scenes": [
+        {
+          "title": "Fixture lỗi bố cục có chủ đích",
+          "narration": "This caption track remains active while intentional layout defects are inspected. It includes enough words to keep the subtitle cue visible during the middle of the scene.",
+          "estimated_seconds": 8,
+          "scene_graph": {
+            "version": 2,
+            "coordinate_space": "normalized",
+            "objects": [
+              {
+                "id": "label-a",
+                "type": "label",
+                "transform": {
+                  "x": 0.3,
+                  "y": 0.27,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "style": {
+                  "stroke": "#ffffff",
+                  "fill": "#ffffff",
+                  "stroke_width": 0,
+                  "font_size": 0.035,
+                  "font_weight": "700",
+                  "text_align": "center"
+                },
+                "properties": {
+                  "content": "Collision label A",
+                  "max_width": 0.8
+                },
+                "actions": []
+              },
+              {
+                "id": "label-b",
+                "type": "label",
+                "transform": {
+                  "x": 0.3,
+                  "y": 0.27,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "style": {
+                  "stroke": "#ffffff",
+                  "fill": "#ffffff",
+                  "stroke_width": 0,
+                  "font_size": 0.035,
+                  "font_weight": "700",
+                  "text_align": "center"
+                },
+                "properties": {
+                  "content": "Collision label B",
+                  "max_width": 0.8
+                },
+                "actions": []
+              },
+              {
+                "id": "caption-overlap",
+                "type": "text",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.88,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "style": {
+                  "stroke": "#ffffff",
+                  "fill": "#ffffff",
+                  "stroke_width": 0,
+                  "font_size": 0.035,
+                  "font_weight": "700",
+                  "text_align": "center"
+                },
+                "properties": {
+                  "content": "Subtitle overlap",
+                  "max_width": 0.8
+                },
+                "actions": []
+              },
+              {
+                "id": "tiny-text",
+                "type": "text",
+                "transform": {
+                  "x": 0.52,
+                  "y": 0.45,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "style": {
+                  "stroke": "#ffffff",
+                  "fill": "#ffffff",
+                  "stroke_width": 0,
+                  "font_size": 0.009,
+                  "font_weight": "700",
+                  "text_align": "center"
+                },
+                "properties": {
+                  "content": "Too small",
+                  "max_width": 0.8
+                },
+                "actions": []
+              },
+              {
+                "id": "offscreen-object",
+                "type": "rectangle",
+                "transform": {
+                  "x": 1.4,
+                  "y": 0.35,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 0.08,
+                  "height": 0.06
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "#e85b5b",
+                  "stroke_width": 0.004
+                },
+                "actions": []
+              },
+              {
+                "id": "traveler",
+                "type": "label",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.52,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "radius": 0.025
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "#65c9f2",
+                  "stroke_width": 0.004,
+                  "font_size": 0.025,
+                  "font_weight": "700",
+                  "text_align": "center"
+                },
+                "actions": [
+                  {
+                    "type": "move",
+                    "start_seconds": 0,
+                    "duration_seconds": 2,
+                    "easing": "linear",
+                    "params": {
+                      "from": {
+                        "x": 0.5,
+                        "y": 0.52
+                      },
+                      "to": {
+                        "x": -0.08,
+                        "y": 0.52
+                      }
+                    }
+                  }
+                ],
+                "properties": {
+                  "content": "Moving traveler",
+                  "max_width": 0.4
+                }
+              },
+              {
+                "id": "logo-target",
+                "type": "rectangle",
+                "transform": {
+                  "x": 0.93,
+                  "y": 0.075,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 0.12,
+                  "height": 0.08
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "#e5b94e",
+                  "stroke_width": 0.004
+                },
+                "actions": []
+              },
+              {
+                "id": "safe-traveler",
+                "type": "label",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "radius": 0.02
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "#65c9f2",
+                  "stroke_width": 0.004,
+                  "font_size": 0.02,
+                  "font_weight": "700",
+                  "text_align": "center"
+                },
+                "actions": [
+                  {
+                    "type": "move",
+                    "start_seconds": 0,
+                    "duration_seconds": 2,
+                    "easing": "linear",
+                    "params": {
+                      "from": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "to": {
+                        "x": 0.04,
+                        "y": 0.5
+                      }
+                    }
+                  }
+                ],
+                "properties": {
+                  "content": "move",
+                  "max_width": 0.2
+                }
+              },
+              {
+                "id": "caption-target",
+                "type": "rectangle",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.88,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 0.5,
+                  "height": 0.12
+                },
+                "style": {
+                  "stroke": "#e85b5b",
+                  "fill": "#203448",
+                  "stroke_width": 0.004
+                },
+                "actions": []
+              },
+              {
+                "id": "tiny-object",
+                "type": "circle",
+                "transform": {
+                  "x": 0.15,
+                  "y": 0.45,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "radius": 0.004
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "#f0b65e",
+                  "stroke_width": 0.001
+                },
+                "actions": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "portrait": {
+      "scenes": [
+        {
+          "title": "Fixture lỗi bố cục có chủ đích",
+          "narration": "This caption track remains active while intentional layout defects are inspected. It includes enough words to keep the subtitle cue visible during the middle of the scene.",
+          "estimated_seconds": 8,
+          "scene_graph": {
+            "version": 2,
+            "coordinate_space": "normalized",
+            "objects": [
+              {
+                "id": "label-a",
+                "type": "label",
+                "transform": {
+                  "x": 0.3,
+                  "y": 0.27,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "style": {
+                  "stroke": "#ffffff",
+                  "fill": "#ffffff",
+                  "stroke_width": 0,
+                  "font_size": 0.035,
+                  "font_weight": "700",
+                  "text_align": "center"
+                },
+                "properties": {
+                  "content": "Collision label A",
+                  "max_width": 0.8
+                },
+                "actions": []
+              },
+              {
+                "id": "label-b",
+                "type": "label",
+                "transform": {
+                  "x": 0.3,
+                  "y": 0.27,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "style": {
+                  "stroke": "#ffffff",
+                  "fill": "#ffffff",
+                  "stroke_width": 0,
+                  "font_size": 0.035,
+                  "font_weight": "700",
+                  "text_align": "center"
+                },
+                "properties": {
+                  "content": "Collision label B",
+                  "max_width": 0.8
+                },
+                "actions": []
+              },
+              {
+                "id": "caption-overlap",
+                "type": "text",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.88,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "style": {
+                  "stroke": "#ffffff",
+                  "fill": "#ffffff",
+                  "stroke_width": 0,
+                  "font_size": 0.035,
+                  "font_weight": "700",
+                  "text_align": "center"
+                },
+                "properties": {
+                  "content": "Subtitle overlap",
+                  "max_width": 0.8
+                },
+                "actions": []
+              },
+              {
+                "id": "tiny-text",
+                "type": "text",
+                "transform": {
+                  "x": 0.52,
+                  "y": 0.45,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "style": {
+                  "stroke": "#ffffff",
+                  "fill": "#ffffff",
+                  "stroke_width": 0,
+                  "font_size": 0.009,
+                  "font_weight": "700",
+                  "text_align": "center"
+                },
+                "properties": {
+                  "content": "Too small",
+                  "max_width": 0.8
+                },
+                "actions": []
+              },
+              {
+                "id": "offscreen-object",
+                "type": "rectangle",
+                "transform": {
+                  "x": 1.4,
+                  "y": 0.35,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 0.08,
+                  "height": 0.06
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "#e85b5b",
+                  "stroke_width": 0.004
+                },
+                "actions": []
+              },
+              {
+                "id": "traveler",
+                "type": "label",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.52,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "radius": 0.025
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "#65c9f2",
+                  "stroke_width": 0.004,
+                  "font_size": 0.025,
+                  "font_weight": "700",
+                  "text_align": "center"
+                },
+                "actions": [
+                  {
+                    "type": "move",
+                    "start_seconds": 0,
+                    "duration_seconds": 2,
+                    "easing": "linear",
+                    "params": {
+                      "from": {
+                        "x": 0.5,
+                        "y": 0.52
+                      },
+                      "to": {
+                        "x": -0.08,
+                        "y": 0.52
+                      }
+                    }
+                  }
+                ],
+                "properties": {
+                  "content": "Moving traveler",
+                  "max_width": 0.4
+                }
+              },
+              {
+                "id": "logo-target",
+                "type": "rectangle",
+                "transform": {
+                  "x": 0.93,
+                  "y": 0.075,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 0.12,
+                  "height": 0.08
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "#e5b94e",
+                  "stroke_width": 0.004
+                },
+                "actions": []
+              },
+              {
+                "id": "safe-traveler",
+                "type": "label",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "radius": 0.02
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "#65c9f2",
+                  "stroke_width": 0.004,
+                  "font_size": 0.02,
+                  "font_weight": "700",
+                  "text_align": "center"
+                },
+                "actions": [
+                  {
+                    "type": "move",
+                    "start_seconds": 0,
+                    "duration_seconds": 2,
+                    "easing": "linear",
+                    "params": {
+                      "from": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "to": {
+                        "x": 0.04,
+                        "y": 0.5
+                      }
+                    }
+                  }
+                ],
+                "properties": {
+                  "content": "move",
+                  "max_width": 0.2
+                }
+              },
+              {
+                "id": "caption-target",
+                "type": "rectangle",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.88,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 0.5,
+                  "height": 0.12
+                },
+                "style": {
+                  "stroke": "#e85b5b",
+                  "fill": "#203448",
+                  "stroke_width": 0.004
+                },
+                "actions": []
+              },
+              {
+                "id": "tiny-object",
+                "type": "circle",
+                "transform": {
+                  "x": 0.18,
+                  "y": 0.45,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "radius": 0.004
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "#f0b65e",
+                  "stroke_width": 0.001
+                },
+                "actions": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

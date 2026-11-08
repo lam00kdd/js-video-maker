@@ -1,0 +1,278 @@
+{
+  "title": "Cấu tạo cơ bản của tế bào động vật",
+  "motion_mode": "scenegraph",
+  "visual_dsl_version": 1,
+  "aspect_ratio": "16:9",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Một tế bào gồm những gì?",
+      "narration": "Màng tế bào bao quanh và góp phần điều hòa trao đổi với môi trường. Bên trong là tế bào chất, nơi có nhiều cấu trúc tế bào. Nhân tế bào chứa phần lớn vật chất di truyền của tế bào động vật. Ty thể là một trong các bào quan của tế bào.",
+      "visual_description": "Sơ đồ giáo dục đơn giản, không theo tỉ lệ: màng, tế bào chất, nhân, ty thể và nhãn.",
+      "estimated_seconds": 8,
+      "background": "#101a24",
+      "scene_graph": {
+        "version": 2,
+        "coordinate_space": "normalized",
+        "objects": [
+          {
+            "id": "cell-membrane",
+            "type": "ellipse",
+            "transform": {
+              "x": 0.5,
+              "y": 0.5,
+              "scale": 1,
+              "rotation": 0,
+              "opacity": 1
+            },
+            "style": {
+              "stroke": "#76d7c4",
+              "fill": "#173b46",
+              "stroke_width": 0.008
+            },
+            "geometry": {
+              "rx": 0.34,
+              "ry": 0.27
+            },
+            "actions": [
+              {
+                "type": "fade",
+                "start_seconds": 0,
+                "duration_seconds": 0.7,
+                "params": {
+                  "from": 0,
+                  "to": 1
+                }
+              }
+            ]
+          },
+          {
+            "id": "cytoplasm",
+            "type": "ellipse",
+            "transform": {
+              "x": 0.5,
+              "y": 0.5,
+              "scale": 1,
+              "rotation": 0,
+              "opacity": 1
+            },
+            "style": {
+              "stroke": "none",
+              "fill": "#438f70",
+              "stroke_width": 0
+            },
+            "geometry": {
+              "rx": 0.3,
+              "ry": 0.23
+            },
+            "actions": [
+              {
+                "type": "fade",
+                "start_seconds": 0.5,
+                "duration_seconds": 0.7,
+                "params": {
+                  "from": 0,
+                  "to": 0.48
+                }
+              }
+            ]
+          },
+          {
+            "id": "nucleus",
+            "type": "ellipse",
+            "transform": {
+              "x": 0.48,
+              "y": 0.5,
+              "scale": 1,
+              "rotation": 0,
+              "opacity": 1
+            },
+            "style": {
+              "stroke": "#f0cc73",
+              "fill": "#9c6746",
+              "stroke_width": 0.006
+            },
+            "geometry": {
+              "rx": 0.09,
+              "ry": 0.075
+            },
+            "actions": [
+              {
+                "type": "fade",
+                "start_seconds": 1,
+                "duration_seconds": 0.6,
+                "params": {
+                  "from": 0,
+                  "to": 1
+                }
+              },
+              {
+                "type": "highlight",
+                "start_seconds": 5,
+                "duration_seconds": 1.4,
+                "params": {
+                  "color": "#ffe36e"
+                }
+              }
+            ]
+          },
+          {
+            "id": "mitochondrion",
+            "type": "path",
+            "transform": {
+              "x": 0.62,
+              "y": 0.52,
+              "scale": 1,
+              "rotation": -0.2,
+              "opacity": 1
+            },
+            "style": {
+              "stroke": "#f1a56b",
+              "fill": "#773d48",
+              "stroke_width": 0.004
+            },
+            "geometry": {
+              "commands": [
+                {
+                  "op": "M",
+                  "points": [
+                    {
+                      "x": -0.055,
+                      "y": 0
+                    }
+                  ]
+                },
+                {
+                  "op": "C",
+                  "points": [
+                    {
+                      "x": -0.04,
+                      "y": -0.04
+                    },
+                    {
+                      "x": 0.04,
+                      "y": -0.04
+                    },
+                    {
+                      "x": 0.055,
+                      "y": 0
+                    }
+                  ]
+                },
+                {
+                  "op": "C",
+                  "points": [
+                    {
+                      "x": 0.04,
+                      "y": 0.04
+                    },
+                    {
+                      "x": -0.04,
+                      "y": 0.04
+                    },
+                    {
+                      "x": -0.055,
+                      "y": 0
+                    }
+                  ]
+                },
+                {
+                  "op": "Z",
+                  "points": []
+                }
+              ]
+            },
+            "actions": [
+              {
+                "type": "fade",
+                "start_seconds": 1.7,
+                "duration_seconds": 0.6,
+                "params": {
+                  "from": 0,
+                  "to": 1
+                }
+              }
+            ]
+          },
+          {
+            "id": "nucleus-label",
+            "type": "label",
+            "transform": {
+              "x": 0.78,
+              "y": 0.39,
+              "scale": 1,
+              "rotation": 0,
+              "opacity": 1
+            },
+            "style": {
+              "stroke": "#f4f4e8",
+              "fill": "#f4f4e8",
+              "font_size": 0.032,
+              "font_weight": "700"
+            },
+            "properties": {
+              "content": "Nhân tế bào",
+              "background": "#182733"
+            },
+            "actions": []
+          },
+          {
+            "id": "nucleus-arrow",
+            "type": "arrow",
+            "transform": {
+              "x": 0.68,
+              "y": 0.44,
+              "scale": 1,
+              "rotation": 0,
+              "opacity": 1
+            },
+            "style": {
+              "stroke": "#ffe36e",
+              "stroke_width": 0.004
+            },
+            "geometry": {
+              "start": {
+                "x": 0,
+                "y": 0
+              },
+              "end": {
+                "x": -0.14,
+                "y": 0.045
+              }
+            },
+            "actions": [
+              {
+                "type": "draw_on",
+                "start_seconds": 2,
+                "duration_seconds": 0.6,
+                "params": {}
+              }
+            ]
+          },
+          {
+            "id": "cytoplasm-label",
+            "type": "text",
+            "transform": {
+              "x": 0.5,
+              "y": 0.81,
+              "scale": 1,
+              "rotation": 0,
+              "opacity": 1
+            },
+            "style": {
+              "stroke": "#eef7f2",
+              "fill": "#eef7f2",
+              "font_size": 0.035,
+              "font_weight": "600"
+            },
+            "properties": {
+              "content": "Tế bào động vật · sơ đồ đơn giản hóa",
+              "max_width": 0.9
+            },
+            "actions": []
+          }
+        ]
+      }
+    }
+  ]
+}

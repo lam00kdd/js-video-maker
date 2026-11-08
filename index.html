@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0d11" />
+  <title>LAM AI Motion Studio</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#"><span class="brand-mark">L</span><span><b>LAM AI LAB</b><small>MOTION STUDIO</small></span></a>
+      <div class="project-name"><span class="status-dot"></span><span id="project-title">Untitled film</span><span class="saved-label">Saved locally</span></div>
+      <div class="top-actions"><button class="icon-button" id="new-session" title="Mở phiên làm việc riêng trong tab mới">＋</button><button class="icon-button" id="import-project" title="Mở project">↥</button><input id="project-file" type="file" accept="application/json" hidden /><input id="script-file" type="file" accept="application/json" hidden /><input id="audio-file" type="file" accept="audio/*,.wav,.mp3,.m4a,.ogg,.webm" hidden /><button class="icon-button" id="save-project" title="Lưu project JSON">⇩</button><button class="export-button" id="export-video"><span>Tạo Video</span><b>↗</b></button></div>
+    </header>
+    <div id="export-downloads" class="export-downloads" hidden><strong>Video đã tạo xong</strong><button type="button" data-download="landscape">Tải video 16:9</button><button type="button" data-download="portrait">Tải video 9:16</button></div>
+    <main class="workspace">
+      <aside class="left-panel">
+        <div class="panel-heading"><div><span class="overline">YOUR PROJECT</span><h1>Video scenes</h1></div><button class="small-add" id="add-scene" title="Thêm cảnh">＋</button></div>
+        <div class="scene-list" id="scene-list"></div>
+        <button class="add-scene-button" id="add-scene-secondary">＋ <span>Add a scene</span></button>
+        <div class="panel-footnote"><span class="sparkle">✳</span><span>Ý tưởng lớn bắt đầu từ<br /><b>một khung hình.</b></span></div>
+      </aside>
+      <section class="center-panel">
+        <div class="canvas-toolbar"><div class="breadcrumb"><span>SCENES</span><span class="slash">/</span><b id="active-scene-label">01 · The little planet</b></div><div class="canvas-tools"><button class="tool-chip" id="ratio-button">▣ <span>16:9</span></button><button class="tool-chip" id="fullscreen-button">⛶</button><button class="tool-chip" id="quality-inspector-button" hidden>Kiểm tra chất lượng hình ảnh</button><span class="toolbar-divider"></span><button class="tool-chip" id="undo-button" title="Undo">↶</button><button class="tool-chip" id="redo-button" title="Redo">↷</button></div></div>
+        <div class="stage-area" id="stage-area"><div class="stage-frame" id="stage-frame"><canvas id="stage-3d-canvas" width="1280" height="720"></canvas><canvas id="stage-canvas" width="1280" height="720"></canvas><div class="stage-vignette"></div><div class="stage-caption"><span class="live-pill"><i></i> LIVE PREVIEW</span><span id="stage-time">00:00 / 00:08</span></div><div class="stage-center-play" id="center-play">▶</div></div></div>
+        <div class="transport"><button class="transport-button" id="previous-frame">|◀</button><button class="play-button" id="play-button">▶</button><button class="transport-button" id="next-frame">▶|</button><span class="timecode" id="current-time">00:00:00</span><input id="playback-seek" class="playback-seek" type="range" min="0" max="1000" step="1" value="0" aria-label="Seek video position" title="Kéo để tua đến vị trí muốn xem"/><span class="zoom-label">−</span><input id="zoom-range" type="range" min="70" max="130" value="100" aria-label="Preview zoom"/><span class="zoom-label">＋</span></div>
+        <section class="timeline-panel"><div class="timeline-heading"><div><span class="overline">SEQUENCE</span><b>Timeline</b><span class="timeline-total" id="timeline-total">00:24</span></div><div class="timeline-actions"><button id="add-layer">＋ Add layer</button><button id="timeline-menu">···</button></div></div><div class="timeline-ruler"><span>00:00</span><span>00:04</span><span>00:08</span><span>00:12</span><span>00:16</span><span>00:20</span></div><div class="timeline-body"><div class="track-labels"><div>SCENES</div><div>OVERLAYS</div><div>AUDIO</div></div><div class="tracks" id="tracks"><div class="playhead" id="playhead"></div></div></div></section>
+      </section>
+      <aside class="right-panel"><div class="inspector-tabs"><button class="tab active" data-tab="scene">Scene</button><button class="tab" data-tab="layers">Layers <span id="layer-count">3</span></button><button class="tab" data-tab="style">Style</button><button class="tab" data-tab="post">Post</button><button class="tab" data-tab="youtube">YouTube</button><button class="tab" data-tab="brand">Brand</button></div><div id="inspector-content"></div></aside>
+    </main>
+    <div class="bottom-bar"><div class="bottom-brand"><span class="mini-mark">✳</span><span>Made with <b>LAM AI Motion Studio</b></span></div><div class="bottom-status"><span>●</span> All changes saved <i></i> <span id="resolution-label">1920 × 1080</span> <i></i> 24 FPS</div><button class="help-button">? <span>Help center</span></button></div>
+  </div>
+    <section id="export-progress" class="export-progress" role="status" aria-live="polite" hidden><div class="export-progress-heading"><strong id="export-progress-message">Đang chuẩn bị video…</strong></div><div class="export-progress-task"><div><span>Tạo voice</span><span id="export-voice-count">0/0</span></div><div class="export-progress-track"><i id="export-voice-fill"></i></div></div><div class="export-progress-task"><div><span>Render video 16:9</span><span id="export-landscape-count">0/0</span></div><div class="export-progress-track"><i id="export-landscape-fill"></i></div></div><div class="export-progress-task"><div><span>Render video 9:16</span><span id="export-portrait-count">0/0</span></div><div class="export-progress-track"><i id="export-portrait-fill"></i></div></div><div id="batch-results" class="batch-results" hidden></div><button id="cancel-export" hidden>Hủy tạo</button></section><div class="toast" id="toast" role="status"><span id="toast-message"></span></div>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

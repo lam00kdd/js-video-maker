@@ -1,0 +1,2 @@
+export const ASSET2D_NARRATION_DELAY_SECONDS = 1.5;
+export const ASSET2D_MIN_SCENE_SECONDS = 8;

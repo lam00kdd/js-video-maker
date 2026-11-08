@@ -1,0 +1,596 @@
+{
+  "visual_dsl_version": 2,
+  "title": "Slider-Crank v2.5 Regression Fixture (recreated)",
+  "aspect_ratio": "both",
+  "motion_mode": "scenegraph",
+  "variants": {
+    "landscape": {
+      "scenes": [
+        {
+          "title": "Slider–Crank · Landscape",
+          "narration": "A rigid slider crank converts rotation into reciprocating piston motion along the cylinder axis.",
+          "estimated_seconds": 8,
+          "scene_graph": {
+            "version": 2,
+            "coordinate_space": "normalized",
+            "objects": [
+              {
+                "id": "cylinder-wall",
+                "type": "rounded_rectangle",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.32,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 0.234375,
+                  "height": 0.5,
+                  "radius": 0.02
+                },
+                "style": {
+                  "stroke": "#819bb4",
+                  "fill": "#203448",
+                  "stroke_width": 0.004
+                },
+                "actions": []
+              },
+              {
+                "id": "cylinder-bore",
+                "type": "rectangle",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.32,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 0.1875,
+                  "height": 0.4722222222222222
+                },
+                "style": {
+                  "stroke": "none",
+                  "fill": "#101a2a",
+                  "stroke_width": 0.004
+                },
+                "actions": []
+              },
+              {
+                "id": "piston",
+                "type": "group",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.38,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 1,
+                  "height": 1
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "none",
+                  "stroke_width": 0.004
+                },
+                "actions": [],
+                "binding": {
+                  "mechanism_id": "engine-drive",
+                  "role": "piston"
+                },
+                "children": [
+                  {
+                    "id": "piston-body",
+                    "type": "rectangle",
+                    "transform": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 1,
+                      "rotation": 0,
+                      "opacity": 1
+                    },
+                    "geometry": {
+                      "width": 0.3,
+                      "height": 0.055
+                    },
+                    "style": {
+                      "stroke": "#e4eef4",
+                      "fill": "#91a9ba",
+                      "stroke_width": 0.004
+                    },
+                    "actions": []
+                  },
+                  {
+                    "id": "piston-pin",
+                    "type": "circle",
+                    "transform": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 1,
+                      "rotation": 0,
+                      "opacity": 1
+                    },
+                    "geometry": {
+                      "radius": 0.012
+                    },
+                    "style": {
+                      "stroke": "#dbe7f1",
+                      "fill": "#f0b65e",
+                      "stroke_width": 0.004
+                    },
+                    "actions": []
+                  }
+                ]
+              },
+              {
+                "id": "connecting-rod",
+                "type": "line",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.56,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "start": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "end": {
+                    "x": 0.29,
+                    "y": 0
+                  }
+                },
+                "style": {
+                  "stroke": "#f0b65e",
+                  "fill": "none",
+                  "stroke_width": 0.014
+                },
+                "actions": [],
+                "binding": {
+                  "mechanism_id": "engine-drive",
+                  "role": "connecting_rod"
+                }
+              },
+              {
+                "id": "crank",
+                "type": "group",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.52,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 1,
+                  "height": 1
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "none",
+                  "stroke_width": 0.004
+                },
+                "actions": [],
+                "binding": {
+                  "mechanism_id": "engine-drive",
+                  "role": "crank"
+                },
+                "children": [
+                  {
+                    "id": "crank-track",
+                    "type": "circle",
+                    "transform": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 1,
+                      "rotation": 0,
+                      "opacity": 1
+                    },
+                    "geometry": {
+                      "radius": 0.105
+                    },
+                    "style": {
+                      "stroke": "#7da2bd",
+                      "fill": "none",
+                      "stroke_width": 0.004
+                    },
+                    "actions": []
+                  },
+                  {
+                    "id": "crank-arm",
+                    "type": "line",
+                    "transform": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 1,
+                      "rotation": 0,
+                      "opacity": 1
+                    },
+                    "geometry": {
+                      "start": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "end": {
+                        "x": 0.105,
+                        "y": 0
+                      }
+                    },
+                    "style": {
+                      "stroke": "#f0b65e",
+                      "fill": "none",
+                      "stroke_width": 0.014
+                    },
+                    "actions": []
+                  },
+                  {
+                    "id": "crank-pin",
+                    "type": "circle",
+                    "transform": {
+                      "x": 0.105,
+                      "y": 0,
+                      "scale": 1,
+                      "rotation": 0,
+                      "opacity": 1
+                    },
+                    "geometry": {
+                      "radius": 0.015
+                    },
+                    "style": {
+                      "stroke": "#dbe7f1",
+                      "fill": "#f0b65e",
+                      "stroke_width": 0.004
+                    },
+                    "actions": []
+                  }
+                ]
+              }
+            ],
+            "mechanisms": [
+              {
+                "id": "engine-drive",
+                "type": "slider_crank",
+                "local_geometry_space": "isotropic",
+                "params": {
+                  "crank_center": {
+                    "x": 0.5,
+                    "y": 0.52
+                  },
+                  "crank_radius": 0.105,
+                  "connecting_rod_length": 0.29,
+                  "cylinder_axis": {
+                    "x": 0,
+                    "y": -1
+                  },
+                  "initial_angle": 1.5707963267948966,
+                  "rotational_speed": 1.5707963267948966
+                },
+                "timeline": [
+                  {
+                    "start_seconds": 0,
+                    "duration_seconds": 3,
+                    "mode": "run"
+                  },
+                  {
+                    "start_seconds": 3,
+                    "duration_seconds": 1,
+                    "mode": "hold"
+                  },
+                  {
+                    "start_seconds": 4,
+                    "duration_seconds": 4,
+                    "mode": "run"
+                  }
+                ],
+                "bindings": {
+                  "crank": "crank",
+                  "connecting_rod": "connecting-rod",
+                  "piston": "piston"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "portrait": {
+      "scenes": [
+        {
+          "title": "Slider–Crank · Portrait",
+          "narration": "A rigid slider crank converts rotation into reciprocating piston motion along the cylinder axis.",
+          "estimated_seconds": 8,
+          "scene_graph": {
+            "version": 2,
+            "coordinate_space": "normalized",
+            "objects": [
+              {
+                "id": "cylinder-wall",
+                "type": "rounded_rectangle",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.32,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 0.4166666666666667,
+                  "height": 0.28125,
+                  "radius": 0.02
+                },
+                "style": {
+                  "stroke": "#819bb4",
+                  "fill": "#203448",
+                  "stroke_width": 0.004
+                },
+                "actions": []
+              },
+              {
+                "id": "cylinder-bore",
+                "type": "rectangle",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.32,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 0.3333333333333333,
+                  "height": 0.234375
+                },
+                "style": {
+                  "stroke": "none",
+                  "fill": "#101a2a",
+                  "stroke_width": 0.004
+                },
+                "actions": []
+              },
+              {
+                "id": "piston",
+                "type": "group",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.38,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 1,
+                  "height": 1
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "none",
+                  "stroke_width": 0.004
+                },
+                "actions": [],
+                "binding": {
+                  "mechanism_id": "engine-drive",
+                  "role": "piston"
+                },
+                "children": [
+                  {
+                    "id": "piston-body",
+                    "type": "rectangle",
+                    "transform": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 1,
+                      "rotation": 0,
+                      "opacity": 1
+                    },
+                    "geometry": {
+                      "width": 0.3,
+                      "height": 0.055
+                    },
+                    "style": {
+                      "stroke": "#e4eef4",
+                      "fill": "#91a9ba",
+                      "stroke_width": 0.004
+                    },
+                    "actions": []
+                  },
+                  {
+                    "id": "piston-pin",
+                    "type": "circle",
+                    "transform": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 1,
+                      "rotation": 0,
+                      "opacity": 1
+                    },
+                    "geometry": {
+                      "radius": 0.012
+                    },
+                    "style": {
+                      "stroke": "#dbe7f1",
+                      "fill": "#f0b65e",
+                      "stroke_width": 0.004
+                    },
+                    "actions": []
+                  }
+                ]
+              },
+              {
+                "id": "connecting-rod",
+                "type": "line",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.56,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "start": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "end": {
+                    "x": 0.29,
+                    "y": 0
+                  }
+                },
+                "style": {
+                  "stroke": "#f0b65e",
+                  "fill": "none",
+                  "stroke_width": 0.014
+                },
+                "actions": [],
+                "binding": {
+                  "mechanism_id": "engine-drive",
+                  "role": "connecting_rod"
+                }
+              },
+              {
+                "id": "crank",
+                "type": "group",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.52,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "width": 1,
+                  "height": 1
+                },
+                "style": {
+                  "stroke": "#dbe7f1",
+                  "fill": "none",
+                  "stroke_width": 0.004
+                },
+                "actions": [],
+                "binding": {
+                  "mechanism_id": "engine-drive",
+                  "role": "crank"
+                },
+                "children": [
+                  {
+                    "id": "crank-track",
+                    "type": "circle",
+                    "transform": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 1,
+                      "rotation": 0,
+                      "opacity": 1
+                    },
+                    "geometry": {
+                      "radius": 0.105
+                    },
+                    "style": {
+                      "stroke": "#7da2bd",
+                      "fill": "none",
+                      "stroke_width": 0.004
+                    },
+                    "actions": []
+                  },
+                  {
+                    "id": "crank-arm",
+                    "type": "line",
+                    "transform": {
+                      "x": 0,
+                      "y": 0,
+                      "scale": 1,
+                      "rotation": 0,
+                      "opacity": 1
+                    },
+                    "geometry": {
+                      "start": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "end": {
+                        "x": 0.105,
+                        "y": 0
+                      }
+                    },
+                    "style": {
+                      "stroke": "#f0b65e",
+                      "fill": "none",
+                      "stroke_width": 0.014
+                    },
+                    "actions": []
+                  },
+                  {
+                    "id": "crank-pin",
+                    "type": "circle",
+                    "transform": {
+                      "x": 0.105,
+                      "y": 0,
+                      "scale": 1,
+                      "rotation": 0,
+                      "opacity": 1
+                    },
+                    "geometry": {
+                      "radius": 0.015
+                    },
+                    "style": {
+                      "stroke": "#dbe7f1",
+                      "fill": "#f0b65e",
+                      "stroke_width": 0.004
+                    },
+                    "actions": []
+                  }
+                ]
+              }
+            ],
+            "mechanisms": [
+              {
+                "id": "engine-drive",
+                "type": "slider_crank",
+                "local_geometry_space": "isotropic",
+                "params": {
+                  "crank_center": {
+                    "x": 0.5,
+                    "y": 0.52
+                  },
+                  "crank_radius": 0.105,
+                  "connecting_rod_length": 0.29,
+                  "cylinder_axis": {
+                    "x": 0,
+                    "y": -1
+                  },
+                  "initial_angle": 1.5707963267948966,
+                  "rotational_speed": 1.5707963267948966
+                },
+                "timeline": [
+                  {
+                    "start_seconds": 0,
+                    "duration_seconds": 3,
+                    "mode": "run"
+                  },
+                  {
+                    "start_seconds": 3,
+                    "duration_seconds": 1,
+                    "mode": "hold"
+                  },
+                  {
+                    "start_seconds": 4,
+                    "duration_seconds": 4,
+                    "mode": "run"
+                  }
+                ],
+                "bindings": {
+                  "crank": "crank",
+                  "connecting_rod": "connecting-rod",
+                  "piston": "piston"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
