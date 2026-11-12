@@ -97,8 +97,14 @@ export function searchVisualAssets(assets,queryInput,{limit=VISUAL_ASSET_SEMANTI
 
 export function selectVisualAssetPromptCandidates(searchResult,{limit=4,minScore=42,ambiguityMargin=18}={}){
   const ranked=searchResult?.results||[];if(!ranked.length)return[];
-  if(searchResult.ambiguous&&ranked[0].score-ranked[1].score<ambiguityMargin)return[];
-  return ranked.filter(item=>item.score>=minScore).slice(0,Math.min(4,Math.max(1,limit))).map(({asset,score,reasons})=>{const m=metadataOf(asset);return{asset_id:asset.asset_id,title:m.title,primary_subject:m.primary_subject,category:m.category,category_id:m.category_id,subcategory_id:m.subcategory_id,subcategory_label:m.subcategory_label,related_domains:m.related_domains,description:m.description,keywords_vi:m.keywords_vi,aliases_en:m.aliases_en,visual_type:m.visual_type,viewpoint:m.viewpoint,educational_usage:m.educational_usage,scientific_domain:m.scientific_domain,review_status:m.review_status,score,reasons};});
+  let candidates=ranked.filter(item=>item.score>=minScore);
+  if(searchResult.ambiguous&&ranked[0].score-ranked[1].score<ambiguityMargin){
+    const query=normalizeVisualAssetSearchText(searchResult.query).split(' ').filter(token=>token&&!['gioi','thieu','huong','dan','video'].includes(token)).join(' ');
+    const exactSubjectMatches=candidates.filter(({asset})=>{const m=metadataOf(asset),identity=[m.primary_subject,m.title,...m.keywords_vi,...m.aliases_en];return query&&identity.some(value=>normalizeVisualAssetSearchText(value)===query);});
+    if(!exactSubjectMatches.length)return[];
+    candidates=exactSubjectMatches;
+  }
+  return candidates.slice(0,Math.min(4,Math.max(1,limit))).map(({asset,score,reasons})=>{const m=metadataOf(asset);return{asset_id:asset.asset_id,title:m.title,primary_subject:m.primary_subject,category:m.category,category_id:m.category_id,subcategory_id:m.subcategory_id,subcategory_label:m.subcategory_label,related_domains:m.related_domains,description:m.description,keywords_vi:m.keywords_vi,aliases_en:m.aliases_en,visual_type:m.visual_type,viewpoint:m.viewpoint,educational_usage:m.educational_usage,scientific_domain:m.scientific_domain,review_status:m.review_status,score,reasons};});
 }
 
 export function buildVisualAssetPromptCatalog(candidates,{maxChars=VISUAL_ASSET_SEMANTIC_LIMITS.catalog_chars,maxItems=4}={}){
