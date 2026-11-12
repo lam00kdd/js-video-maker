@@ -1,0 +1,294 @@
+{
+  "visual_dsl_version": 2,
+  "motion_mode": "scenegraph",
+  "title": "Scientific Human Image-Backed Demo",
+  "aspect_ratio": "both",
+  "scenes": [
+    {
+      "title": "Image-backed teacher · landscape",
+      "estimated_seconds": 12,
+      "narration": "Giáo viên hoạt hình được ghép từ các PNG có nền trong suốt. Đầu, thân, hông, cánh tay và chân bám theo các khớp của Human Rig M1; idle, breathe và blink lấy thời gian tuyệt đối từ M2.",
+      "background": "#edf3f6",
+      "scene_graph": {
+        "version": 2,
+        "coordinate_space": "normalized",
+        "objects": [
+          {
+            "id": "floor",
+            "type": "line",
+            "transform": {
+              "x": 0,
+              "y": 0,
+              "scale": 1,
+              "rotation": 0,
+              "opacity": 1
+            },
+            "geometry": {
+              "start": {
+                "x": 0.06,
+                "y": 0.96
+              },
+              "end": {
+                "x": 0.94,
+                "y": 0.96
+              }
+            },
+            "style": {
+              "stroke": "#607b90",
+              "fill": "none",
+              "stroke_width": 0.003,
+              "line_cap": "round"
+            }
+          }
+        ],
+        "character_instances": [
+          {
+            "instance_id": "teacher_demo",
+            "character_id": "char_cp2_demo_teacher",
+            "character_version": "1.0.1",
+            "character_version_checksum": "23b848d44f86c0b9a6eb49e3d0d7df03855c7a1077741e9eaab64cd749dc8d73",
+            "transform": {
+              "x": 0.32,
+              "y": 0.62,
+              "scale": 0.9,
+              "rotation": 0,
+              "opacity": 1
+            },
+            "motion_style": "natural",
+            "actions": [
+              {
+                "id": "idle",
+                "motion": "idle",
+                "start_seconds": 0,
+                "duration_seconds": 12,
+                "loop_mode": "repeat",
+                "parameters": {
+                  "intensity": 0.45,
+                  "cycle_seconds": 4
+                }
+              },
+              {
+                "id": "breathe",
+                "motion": "breathe",
+                "start_seconds": 0,
+                "duration_seconds": 12,
+                "loop_mode": "repeat",
+                "parameters": {
+                  "intensity": 0.32,
+                  "cycle_seconds": 3
+                }
+              },
+              {
+                "id": "blink",
+                "motion": "blink",
+                "start_seconds": 0,
+                "duration_seconds": 12,
+                "loop_mode": "repeat",
+                "parameters": {
+                  "seed": 2408,
+                  "interval_min_seconds": 2,
+                  "interval_max_seconds": 3,
+                  "blink_duration_seconds": 0.16
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "variants": {
+    "landscape": {
+      "scenes": [
+        {
+          "title": "Image-backed teacher · landscape",
+          "estimated_seconds": 12,
+          "narration": "Giáo viên hoạt hình được ghép từ các PNG có nền trong suốt. Đầu, thân, hông, cánh tay và chân bám theo các khớp của Human Rig M1; idle, breathe và blink lấy thời gian tuyệt đối từ M2.",
+          "background": "#edf3f6",
+          "scene_graph": {
+            "version": 2,
+            "coordinate_space": "normalized",
+            "objects": [
+              {
+                "id": "floor",
+                "type": "line",
+                "transform": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "start": {
+                    "x": 0.06,
+                    "y": 0.96
+                  },
+                  "end": {
+                    "x": 0.94,
+                    "y": 0.96
+                  }
+                },
+                "style": {
+                  "stroke": "#607b90",
+                  "fill": "none",
+                  "stroke_width": 0.003,
+                  "line_cap": "round"
+                }
+              }
+            ],
+            "character_instances": [
+              {
+                "instance_id": "teacher_demo",
+                "character_id": "char_cp2_demo_teacher",
+                "character_version": "1.0.1",
+                "character_version_checksum": "23b848d44f86c0b9a6eb49e3d0d7df03855c7a1077741e9eaab64cd749dc8d73",
+                "transform": {
+                  "x": 0.32,
+                  "y": 0.62,
+                  "scale": 0.9,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "motion_style": "natural",
+                "actions": [
+                  {
+                    "id": "idle",
+                    "motion": "idle",
+                    "start_seconds": 0,
+                    "duration_seconds": 12,
+                    "loop_mode": "repeat",
+                    "parameters": {
+                      "intensity": 0.45,
+                      "cycle_seconds": 4
+                    }
+                  },
+                  {
+                    "id": "breathe",
+                    "motion": "breathe",
+                    "start_seconds": 0,
+                    "duration_seconds": 12,
+                    "loop_mode": "repeat",
+                    "parameters": {
+                      "intensity": 0.32,
+                      "cycle_seconds": 3
+                    }
+                  },
+                  {
+                    "id": "blink",
+                    "motion": "blink",
+                    "start_seconds": 0,
+                    "duration_seconds": 12,
+                    "loop_mode": "repeat",
+                    "parameters": {
+                      "seed": 2408,
+                      "interval_min_seconds": 2,
+                      "interval_max_seconds": 3,
+                      "blink_duration_seconds": 0.16
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "portrait": {
+      "scenes": [
+        {
+          "title": "Image-backed teacher · portrait",
+          "estimated_seconds": 12,
+          "narration": "Giáo viên hoạt hình được ghép từ các PNG có nền trong suốt. Đầu, thân, hông, cánh tay và chân bám theo các khớp của Human Rig M1; idle, breathe và blink lấy thời gian tuyệt đối từ M2.",
+          "background": "#edf3f6",
+          "scene_graph": {
+            "version": 2,
+            "coordinate_space": "normalized",
+            "objects": [
+              {
+                "id": "floor",
+                "type": "line",
+                "transform": {
+                  "x": 0,
+                  "y": 0,
+                  "scale": 1,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "geometry": {
+                  "start": {
+                    "x": 0.06,
+                    "y": 0.96
+                  },
+                  "end": {
+                    "x": 0.94,
+                    "y": 0.96
+                  }
+                },
+                "style": {
+                  "stroke": "#607b90",
+                  "fill": "none",
+                  "stroke_width": 0.003,
+                  "line_cap": "round"
+                }
+              }
+            ],
+            "character_instances": [
+              {
+                "instance_id": "teacher_demo",
+                "character_id": "char_cp2_demo_teacher",
+                "character_version": "1.0.1",
+                "character_version_checksum": "23b848d44f86c0b9a6eb49e3d0d7df03855c7a1077741e9eaab64cd749dc8d73",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.54,
+                  "scale": 1.22,
+                  "rotation": 0,
+                  "opacity": 1
+                },
+                "motion_style": "natural",
+                "actions": [
+                  {
+                    "id": "idle",
+                    "motion": "idle",
+                    "start_seconds": 0,
+                    "duration_seconds": 12,
+                    "loop_mode": "repeat",
+                    "parameters": {
+                      "intensity": 0.45,
+                      "cycle_seconds": 4
+                    }
+                  },
+                  {
+                    "id": "breathe",
+                    "motion": "breathe",
+                    "start_seconds": 0,
+                    "duration_seconds": 12,
+                    "loop_mode": "repeat",
+                    "parameters": {
+                      "intensity": 0.32,
+                      "cycle_seconds": 3
+                    }
+                  },
+                  {
+                    "id": "blink",
+                    "motion": "blink",
+                    "start_seconds": 0,
+                    "duration_seconds": 12,
+                    "loop_mode": "repeat",
+                    "parameters": {
+                      "seed": 2408,
+                      "interval_min_seconds": 2,
+                      "interval_max_seconds": 3,
+                      "blink_duration_seconds": 0.16
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

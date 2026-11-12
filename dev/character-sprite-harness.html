@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CP4.3 Sprite Animation Harness</title>
+  <style>
+    :root{color-scheme:dark;font:14px/1.5 system-ui,sans-serif;background:#0e131b;color:#eaf0f7}body{margin:0;padding:24px}.shell{max-width:980px;margin:auto}header{display:flex;justify-content:space-between;align-items:end;gap:16px}h1{margin:4px 0 18px}small,.muted{color:#9eacbd}.layout{display:grid;grid-template-columns:minmax(250px,.8fr) minmax(300px,1fr);gap:16px}.panel{padding:18px;border:1px solid #344052;border-radius:12px;background:#171e29}.controls{display:grid;gap:12px}.controls label{display:grid;gap:6px}.controls select{padding:9px;background:#101722;color:#eef;border:1px solid #48566a;border-radius:6px}.stage{display:grid;place-items:center;min-height:460px;border:1px solid #3e4b5f;border-radius:9px;background-color:#d8dce2;background-image:linear-gradient(45deg,#b9bec7 25%,transparent 25%),linear-gradient(-45deg,#b9bec7 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#b9bec7 75%),linear-gradient(-45deg,transparent 75%,#b9bec7 75%);background-size:20px 20px;background-position:0 0,0 10px,10px -10px,-10px 0}.stage canvas{height:min(68vh,420px);max-width:100%;width:auto}.diagnostics{font:12px/1.6 ui-monospace,monospace;white-space:pre-wrap;color:#b9cbea}@media(max-width:720px){body{padding:14px}.layout{grid-template-columns:1fr}.stage{min-height:360px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header><div><small>DEVELOPMENT HARNESS · CP4.3</small><h1>Sprite animation preview</h1></div><small>Saved Characters are read-only · timelines are temporary</small></header>
+    <div class="layout">
+      <section class="panel controls">
+        <label>Sprite Character<select data-character aria-label="Sprite Character"></select></label>
+        <label>Preview mode<select data-mode aria-label="Animation mode"><option value="pose">Pose / Pose Timeline</option><option value="clip">Animation Clip</option></select></label>
+        <div data-pose-controls>
+          <label>Pose<select data-pose aria-label="Sprite pose"></select></label>
+          <label>Micro-motion<select data-motion><option>none</option><option>breathing</option><option>sway</option><option>float</option><option>gentle_bob</option></select></label>
+          <label>Transition<select data-transition><option>cut</option><option>crossfade</option></select></label>
+          <label><span><input type="checkbox" data-loop> Loop timeline</span></label>
+          <p data-temporary-timeline>Temporary timeline: selected pose · 0–2 s; next approved pose · 2–4 s</p>
+        </div>
+        <div data-clip-controls hidden>
+          <label>Saved animation clip<select data-clip aria-label="Saved animation clip"></select></label>
+          <p class="muted" data-clip-availability>No saved clips for this character.</p>
+          <label><span><input type="checkbox" data-clip-loop> Loop clip</span></label>
+          <div><button type="button" data-previous-frame>Previous Frame</button> <button type="button" data-next-frame>Next Frame</button></div>
+          <p class="muted" data-clip-details></p>
+        </div>
+        <div><button data-play>Play</button> <button data-stop>Stop</button></div>
+        <input data-seek type="range" min="0" max="100" step="0.01" value="0" aria-label="Seek timeline"><output data-time>0.00 / 4.00 s</output>
+        <p class="muted">Only approved poses with a valid image and current Master revision are selectable. Missing or unavailable registry poses remain visible with a reason.</p>
+        <pre class="diagnostics" data-diagnostics></pre>
+      </section>
+      <section class="panel"><div class="stage"><canvas data-preview width="256" height="384" aria-label="Sprite preview"></canvas></div><p class="muted" data-status>Loading saved Sprite Characters…</p></section>
+    </div>
+  </main>
+  <script type="module" src="./character-sprite-harness.js"></script>
+</body>
+</html>

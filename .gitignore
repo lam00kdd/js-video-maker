@@ -1,5 +1,7 @@
 .runtime/
 logs/
+data/*.sqlite
+data/*.sqlite-*
 node_modules/
 social-function.tmp
 .env

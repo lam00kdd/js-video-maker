@@ -1,0 +1,40 @@
+{
+  "schema": "lam.motion.video",
+  "schema_version": 3,
+  "title": "How a bicycle pump moves air",
+  "language": "vi-VN",
+  "topic": "Bicycle pump operation",
+  "audience": "Grade 6 science learners",
+  "learning_objectives": ["Explain how piston motion changes pressure and moves air through valves."],
+  "structure": {"opening": "A familiar pump raises a question.", "development": "Show the piston and one-way valves.", "conclusion": "Connect the pressure difference to tire inflation."},
+  "aspect_ratio": "9:16",
+  "voice": {"voice_id": "vi-VN-approved-voice", "rate": 1},
+  "subtitles": {"enabled": true, "size": "large", "safe_region": "subtitle"},
+  "metadata": {"social": {"caption": "A clear look inside a bicycle pump."}, "youtube": {"title": "How a Bicycle Pump Works", "tags": ["science", "bicycle pump"]}},
+  "art_direction": {"palette": {"ink": "#16324A", "metal": "#A9C3D5", "air": "#29A7D8", "accent": "#F0A94A"}, "type_style": "bundled-sans-rounded", "illustration_style": "clean technical cutaway with soft material shading"},
+  "assets": [],
+  "symbols": {
+    "valve": {"parameters": {"color": {"type": "color", "default": "#F0A94A"}}, "root": {"type": "group", "id": "valve", "children": [{"type": "rounded_rect", "id": "seat", "transform": {"x": 0.5, "y": 0.56, "scale_x": 0.72, "scale_y": 0.18}, "style": {"fill": "$color"}}, {"type": "line", "id": "stem", "geometry": {"x1": 0.5, "y1": 0.2, "x2": 0.5, "y2": 0.52}, "style": {"stroke": "#16324A", "stroke_width": 0.035}}]}}
+  },
+  "characters": [],
+  "scenes": [{
+    "id": "pump-cutaway",
+    "title": "A piston pushes air through a valve",
+    "duration_seconds": 12,
+    "narration": "When the handle pushes the piston down, pressure inside the pump rises. The inlet valve closes and air moves through the outlet valve toward the tire.",
+    "layout": {"safe_regions": ["title", "subtitle"], "focus": "cylinder"},
+    "camera": {"from": {"x": 0.5, "y": 0.5, "scale": 1}, "to": {"x": 0.5, "y": 0.47, "scale": 1.06}, "duration_seconds": 3},
+    "root": {"type": "group", "id": "scene", "children": [
+      {"type": "rounded_rect", "id": "cylinder", "transform": {"x": 0.5, "y": 0.5, "scale_x": 0.42, "scale_y": 0.58}, "style": {"fill": "#DCEAF1", "stroke": "#16324A", "stroke_width": 0.012, "shadow": {"color": "#16324A44", "blur": 6, "x": 0, "y": 5}}},
+      {"type": "rect", "id": "air-column", "transform": {"x": 0.5, "y": 0.59, "scale_x": 0.31, "scale_y": 0.28}, "style": {"fill": {"linear": [{"offset": 0, "color": "#8BDCF1"}, {"offset": 1, "color": "#29A7D8"}]}}},
+      {"type": "rounded_rect", "id": "piston", "transform": {"x": 0.5, "y": 0.39, "scale_x": 0.35, "scale_y": 0.07}, "style": {"fill": "#A9C3D5", "stroke": "#16324A", "stroke_width": 0.01}},
+      {"type": "symbol_instance", "id": "outlet-valve", "symbol_ref": "valve", "parameters": {"color": "#F0A94A"}, "transform": {"x": 0.71, "y": 0.69, "scale_x": 0.42, "scale_y": 0.42}},
+      {"type": "path", "id": "airflow", "geometry": {"d": "M 0.42 0.72 C 0.52 0.82 0.64 0.82 0.75 0.74"}, "style": {"fill": "none", "stroke": "#087FAE", "stroke_width": 0.012, "cap": "round", "join": "round"}},
+      {"type": "text", "id": "pressure-label", "text": "Pressure rises", "transform": {"x": 0.5, "y": 0.83}, "layout": {"max_width": 0.7, "align": "center", "wrap": "word", "font_token": "bundled-sans-rounded", "size": 0.045, "weight": 700}, "style": {"fill": "#16324A"}}
+    ]},
+    "tracks": [
+      {"target": "piston", "property": "transform.y", "keyframes": [{"at": 0, "value": 0.34}, {"at": 2.5, "value": 0.43, "easing": "ease_in_out"}]},
+      {"target": "airflow", "property": "draw_progress", "keyframes": [{"at": 2, "value": 0}, {"at": 4, "value": 1, "easing": "ease_out"}]}
+    ]
+  }]
+}

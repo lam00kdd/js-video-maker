@@ -1,0 +1,6 @@
+{
+  "visual_dsl_version": 3,
+  "title": "Invalid path fixture",
+  "aspect_ratio": "16:9",
+  "scenes": [{"id": "bad","title": "Unsupported arc","duration_seconds": 4,"narration": "Fixture intentionally uses an unsupported path command.","stage": {"width": 1600,"height": 900,"background": "#FFFFFF"},"root": {"id": "root","type": "group","children": [{"id": "arc","type": "path","geometry": {"d": "M 20 20 A 40 40 0 0 1 100 100"},"style": {"stroke": "#000000","stroke_width": 3}}]}}]
+}

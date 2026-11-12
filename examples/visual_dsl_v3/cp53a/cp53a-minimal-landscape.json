@@ -1,0 +1,308 @@
+{
+  "visual_dsl_version": 3,
+  "title": "Ví dụ tối thiểu V3 · ngang",
+  "language": "vi-VN",
+  "topic": "Nguyên lý bơm xe đạp",
+  "audience": "Học sinh",
+  "learning_objectives": [
+    "Giải thích cách pít-tông đẩy không khí qua van một chiều."
+  ],
+  "aspect_ratio": "16:9",
+  "voice": {
+    "voice_id": "phuong_linh",
+    "rate": 1,
+    "auto_generate": true
+  },
+  "subtitles": {
+    "enabled": true,
+    "size": "large",
+    "karaoke": true
+  },
+  "metadata": {
+    "youtube": {
+      "title": "Ví dụ tối thiểu V3 · ngang",
+      "description": ""
+    },
+    "social_post": {
+      "caption": "",
+      "hashtags": [],
+      "cta": ""
+    }
+  },
+  "art_direction": {
+    "preset": "scientific_premium",
+    "style_name": "Minh họa khoa học cao cấp"
+  },
+  "tokens": {
+    "ink": "#153746",
+    "teal": "#2BB7B0",
+    "coral": "#F07858"
+  },
+  "outro": {
+    "enabled": false,
+    "duration_seconds": 0
+  },
+  "symbols": {
+    "flow_arrow": {
+      "id": "flow_arrow",
+      "view_box": {
+        "width": 100,
+        "height": 40
+      },
+      "root": {
+        "id": "arrow-root",
+        "type": "group",
+        "children": [
+          {
+            "id": "arrow-shaft",
+            "type": "path",
+            "geometry": {
+              "d": "M 2 20 C 22 20 55 20 78 20"
+            },
+            "style": {
+              "fill": "none",
+              "stroke": "#2BB7B0",
+              "stroke_width": 6,
+              "line_cap": "round"
+            }
+          },
+          {
+            "id": "arrow-head",
+            "type": "polygon",
+            "geometry": {
+              "points": [
+                [
+                  76,
+                  8
+                ],
+                [
+                  98,
+                  20
+                ],
+                [
+                  76,
+                  32
+                ]
+              ]
+            },
+            "style": {
+              "fill": "#2BB7B0"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "Bơm đẩy không khí vào lốp",
+      "duration_seconds": 12,
+      "narration": "Khi ấn tay cầm, pít-tông nén không khí và đẩy khí qua van một chiều vào lốp xe.",
+      "stage": {
+        "width": 1600,
+        "height": 900,
+        "background": "#F1F7F8"
+      },
+      "layout": {
+        "minimum_text_px": 18,
+        "safe_regions": [
+          {
+            "name": "subtitle",
+            "x": 0,
+            "y": 702,
+            "width": 1600,
+            "height": 180
+          }
+        ]
+      },
+      "timeline": {
+        "tracks": []
+      },
+      "root": {
+        "id": "root-landscape",
+        "type": "group",
+        "children": [
+          {
+            "id": "pump-body",
+            "type": "rounded_rect",
+            "z_index": 0,
+            "transform": {
+              "x": 670,
+              "y": 180
+            },
+            "geometry": {
+              "x": 0,
+              "y": 0,
+              "width": 300,
+              "height": 470,
+              "radius": 54
+            },
+            "style": {
+              "fill": {
+                "type": "linear",
+                "units": "local",
+                "x1": 0,
+                "y1": 0,
+                "x2": 300,
+                "y2": 470,
+                "stops": [
+                  {
+                    "offset": 0,
+                    "color": "#F1F7F8"
+                  },
+                  {
+                    "offset": 1,
+                    "color": "#9FBAC0"
+                  }
+                ]
+              },
+              "stroke": "#153746",
+              "stroke_width": 8,
+              "shadow": {
+                "color": "#153746",
+                "blur": 14,
+                "offset_x": 0,
+                "offset_y": 8,
+                "opacity": 0.16,
+                "enabled": true
+              }
+            }
+          },
+          {
+            "id": "piston",
+            "type": "group",
+            "z_index": 2,
+            "transform": {
+              "x": 820,
+              "y": 285
+            },
+            "children": [
+              {
+                "id": "piston-rod",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": -18,
+                  "y": 0,
+                  "width": 36,
+                  "height": 190,
+                  "radius": 18
+                },
+                "style": {
+                  "fill": "#153746"
+                }
+              },
+              {
+                "id": "piston-grip",
+                "type": "rounded_rect",
+                "transform": {
+                  "x": -82,
+                  "y": 182
+                },
+                "geometry": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 164,
+                  "height": 36,
+                  "radius": 16
+                },
+                "style": {
+                  "fill": "#F07858",
+                  "stroke": "#153746",
+                  "stroke_width": 4
+                }
+              }
+            ]
+          },
+          {
+            "id": "air-flow",
+            "type": "path",
+            "z_index": 4,
+            "transform": {
+              "x": 915,
+              "y": 618
+            },
+            "geometry": {
+              "d": "M 0 0 C 90 34 170 34 260 0"
+            },
+            "style": {
+              "fill": "none",
+              "stroke": "#2BB7B0",
+              "stroke_width": 14,
+              "line_cap": "round"
+            }
+          },
+          {
+            "id": "air-arrow-mark",
+            "type": "symbol_instance",
+            "z_index": 5,
+            "transform": {
+              "x": 975,
+              "y": 577
+            },
+            "geometry": {
+              "symbol": "flow_arrow",
+              "width": 100,
+              "height": 40
+            },
+            "style_overrides": {
+              "stroke": "#2BB7B0"
+            }
+          },
+          {
+            "id": "title",
+            "type": "text",
+            "z_index": 6,
+            "transform": {
+              "x": 80,
+              "y": 72
+            },
+            "geometry": {
+              "x": 0,
+              "y": 0,
+              "text": "BƠM XE ĐẠP · NGUYÊN LÝ",
+              "font_size": 38,
+              "font_family": "Arial",
+              "font_weight": "bold",
+              "text_align": "left",
+              "text_baseline": "top",
+              "max_width": 1440,
+              "wrap": "word",
+              "line_height": 1.2,
+              "max_lines": 2
+            },
+            "style": {
+              "fill": "#153746"
+            }
+          },
+          {
+            "id": "flow-label",
+            "type": "text",
+            "z_index": 6,
+            "transform": {
+              "x": 100,
+              "y": 690
+            },
+            "geometry": {
+              "x": 0,
+              "y": 0,
+              "text": "Không khí đi theo một chiều",
+              "font_size": 30,
+              "font_family": "Arial",
+              "font_weight": "600",
+              "text_align": "left",
+              "text_baseline": "top",
+              "max_width": 1400,
+              "wrap": "word",
+              "line_height": 1.2,
+              "max_lines": 2
+            },
+            "style": {
+              "fill": "#153746"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

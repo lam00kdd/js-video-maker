@@ -1,0 +1,1303 @@
+{
+  "character_id": "char_cp2_demo_teacher",
+  "display_name": "CP2 Image-Backed Teacher Demo",
+  "description": "Technical renderer fixture; simple educational cartoon artwork, not production art.",
+  "version": "1.0.1",
+  "rig": {
+    "id": "cp2_adult_teacher",
+    "joints": [
+      {
+        "id": "root",
+        "parent_id": null,
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -0.35,
+          "max": 0.35
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "pelvis",
+        "parent_id": "root",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -0.35,
+          "max": 0.35
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "torso",
+        "parent_id": "pelvis",
+        "position": {
+          "x": 0,
+          "y": -0.045
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -0.35,
+          "max": 0.35
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "neck",
+        "parent_id": "torso",
+        "position": {
+          "x": 0,
+          "y": -0.14
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -0.35,
+          "max": 0.35
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "head",
+        "parent_id": "neck",
+        "position": {
+          "x": 0,
+          "y": -0.055
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -0.35,
+          "max": 0.35
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "left_upper_arm",
+        "parent_id": "torso",
+        "position": {
+          "x": -0.105,
+          "y": -0.102
+        },
+        "rotation": -0.12,
+        "rest_pose": {
+          "rotation": -0.12
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -1.5,
+          "max": 1.5
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "left_forearm",
+        "parent_id": "left_upper_arm",
+        "position": {
+          "x": -0.145,
+          "y": 0.035
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -1.5,
+          "max": 1.5
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "left_hand",
+        "parent_id": "left_forearm",
+        "position": {
+          "x": -0.085,
+          "y": 0.075
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -0.35,
+          "max": 0.35
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "right_upper_arm",
+        "parent_id": "torso",
+        "position": {
+          "x": 0.105,
+          "y": -0.102
+        },
+        "rotation": 0.12,
+        "rest_pose": {
+          "rotation": 0.12
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -1.5,
+          "max": 1.5
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "right_forearm",
+        "parent_id": "right_upper_arm",
+        "position": {
+          "x": 0.145,
+          "y": 0.035
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -1.5,
+          "max": 1.5
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "right_hand",
+        "parent_id": "right_forearm",
+        "position": {
+          "x": 0.085,
+          "y": 0.075
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -0.35,
+          "max": 0.35
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "left_thigh",
+        "parent_id": "pelvis",
+        "position": {
+          "x": -0.055,
+          "y": 0.045
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -1.5,
+          "max": 1.5
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "left_shin",
+        "parent_id": "left_thigh",
+        "position": {
+          "x": -0.01,
+          "y": 0.15
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -1.5,
+          "max": 1.5
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "left_foot",
+        "parent_id": "left_shin",
+        "position": {
+          "x": -0.025,
+          "y": 0.135
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -0.35,
+          "max": 0.35
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "right_thigh",
+        "parent_id": "pelvis",
+        "position": {
+          "x": 0.055,
+          "y": 0.045
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -1.5,
+          "max": 1.5
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "right_shin",
+        "parent_id": "right_thigh",
+        "position": {
+          "x": 0.01,
+          "y": 0.15
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -1.5,
+          "max": 1.5
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      },
+      {
+        "id": "right_foot",
+        "parent_id": "right_shin",
+        "position": {
+          "x": 0.025,
+          "y": 0.135
+        },
+        "rotation": 0,
+        "rest_pose": {
+          "rotation": 0
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "limits": {
+          "min": -0.35,
+          "max": 0.35
+        },
+        "length": 0,
+        "z_index": 0,
+        "visual_part_id": null
+      }
+    ],
+    "parts": [],
+    "ik_chains": []
+  },
+  "manifest": {
+    "appearance_id": "cp2_demo_teacher_image",
+    "version": "1.0.1",
+    "backend": "image",
+    "rig_compatibility": {
+      "rig_semantics": "m1-human-rig",
+      "proportion_profile": "adult",
+      "required_joints": [
+        "root",
+        "pelvis",
+        "torso",
+        "neck",
+        "head",
+        "left_upper_arm",
+        "left_forearm",
+        "left_hand",
+        "right_upper_arm",
+        "right_forearm",
+        "right_hand",
+        "left_thigh",
+        "left_shin",
+        "left_foot",
+        "right_thigh",
+        "right_shin",
+        "right_foot"
+      ]
+    },
+    "parts": [
+      {
+        "id": "neck",
+        "type": "image",
+        "asset_id": "libsha256_cd6d9002e150d47f986f8b8ad5d27bbee136dce014588785857fd869b4848f5c",
+        "source_dimensions_px": {
+          "width": 104,
+          "height": 88
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "joint_id": "neck"
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 52,
+          "y": 44
+        },
+        "size_rig_units": {
+          "width": 0.07,
+          "height": 0.05923077
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": -0.02
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 32,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "torso",
+        "type": "image",
+        "asset_id": "libsha256_cfa8614f0697bb783fdd0034b7f2f3a1deb18a438c756a978e0abae2e7c9a964",
+        "source_dimensions_px": {
+          "width": 256,
+          "height": 220
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "joint_id": "torso"
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 128,
+          "y": 110
+        },
+        "size_rig_units": {
+          "width": 0.21,
+          "height": 0.18046875
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": -0.015
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 34,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "pelvis",
+        "type": "image",
+        "asset_id": "libsha256_fdf45afe36e4984f4e735d9d6c33cdf425bf7c82bc0759937bbd25d863109bb9",
+        "source_dimensions_px": {
+          "width": 200,
+          "height": 150
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "joint_id": "pelvis"
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 100,
+          "y": 60
+        },
+        "size_rig_units": {
+          "width": 0.18,
+          "height": 0.135
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": 0.005
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 20,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "left_upper_arm",
+        "type": "image",
+        "asset_id": "libsha256_6efebb750eed4f2aca5d784fde1840071efabef424e7caec8c000a2cffdc1cc8",
+        "source_dimensions_px": {
+          "width": 216,
+          "height": 88
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "from_joint_id": "left_upper_arm",
+          "to_joint_id": "left_forearm",
+          "attachment_points_px": {
+            "from": {
+              "x": 16,
+              "y": 44
+            },
+            "to": {
+              "x": 200,
+              "y": 44
+            }
+          }
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 16,
+          "y": 44
+        },
+        "size_rig_units": {
+          "width": 0.15,
+          "height": 0.06111111
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 25,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "right_upper_arm",
+        "type": "image",
+        "asset_id": "libsha256_6efebb750eed4f2aca5d784fde1840071efabef424e7caec8c000a2cffdc1cc8",
+        "source_dimensions_px": {
+          "width": 216,
+          "height": 88
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "from_joint_id": "right_upper_arm",
+          "to_joint_id": "right_forearm",
+          "attachment_points_px": {
+            "from": {
+              "x": 16,
+              "y": 44
+            },
+            "to": {
+              "x": 200,
+              "y": 44
+            }
+          }
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 16,
+          "y": 44
+        },
+        "size_rig_units": {
+          "width": 0.15,
+          "height": 0.06111111
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 25,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "left_forearm",
+        "type": "image",
+        "asset_id": "libsha256_bc098e50b7e3a648005e9e710ff44ab1574db9d7aa1c4e133b6e146b0888baa7",
+        "source_dimensions_px": {
+          "width": 216,
+          "height": 80
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "from_joint_id": "left_forearm",
+          "to_joint_id": "left_hand",
+          "attachment_points_px": {
+            "from": {
+              "x": 16,
+              "y": 40
+            },
+            "to": {
+              "x": 200,
+              "y": 40
+            }
+          }
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 16,
+          "y": 40
+        },
+        "size_rig_units": {
+          "width": 0.115,
+          "height": 0.04259259
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 38,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "right_forearm",
+        "type": "image",
+        "asset_id": "libsha256_bc098e50b7e3a648005e9e710ff44ab1574db9d7aa1c4e133b6e146b0888baa7",
+        "source_dimensions_px": {
+          "width": 216,
+          "height": 80
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "from_joint_id": "right_forearm",
+          "to_joint_id": "right_hand",
+          "attachment_points_px": {
+            "from": {
+              "x": 16,
+              "y": 40
+            },
+            "to": {
+              "x": 200,
+              "y": 40
+            }
+          }
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 16,
+          "y": 40
+        },
+        "size_rig_units": {
+          "width": 0.115,
+          "height": 0.04259259
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 38,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "left_hand",
+        "type": "image",
+        "asset_id": "libsha256_0faa23c6b86381448c0b6404883a3993a8892214cdc85967ed0e53ccfcd1459e",
+        "source_dimensions_px": {
+          "width": 128,
+          "height": 128
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "joint_id": "left_hand"
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 64,
+          "y": 78
+        },
+        "size_rig_units": {
+          "width": 0.06,
+          "height": 0.06
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 43,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "right_hand",
+        "type": "image",
+        "asset_id": "libsha256_0faa23c6b86381448c0b6404883a3993a8892214cdc85967ed0e53ccfcd1459e",
+        "source_dimensions_px": {
+          "width": 128,
+          "height": 128
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "joint_id": "right_hand"
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 64,
+          "y": 78
+        },
+        "size_rig_units": {
+          "width": 0.06,
+          "height": 0.06
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 43,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "left_thigh",
+        "type": "image",
+        "asset_id": "libsha256_43781632e8a976ba8e2d607f9df297c56b6c1402f90a023f6b3d57060417ab44",
+        "source_dimensions_px": {
+          "width": 228,
+          "height": 100
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "from_joint_id": "left_thigh",
+          "to_joint_id": "left_shin",
+          "attachment_points_px": {
+            "from": {
+              "x": 16,
+              "y": 50
+            },
+            "to": {
+              "x": 212,
+              "y": 50
+            }
+          }
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 16,
+          "y": 50
+        },
+        "size_rig_units": {
+          "width": 0.15,
+          "height": 0.06578947
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 13,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "right_thigh",
+        "type": "image",
+        "asset_id": "libsha256_43781632e8a976ba8e2d607f9df297c56b6c1402f90a023f6b3d57060417ab44",
+        "source_dimensions_px": {
+          "width": 228,
+          "height": 100
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "from_joint_id": "right_thigh",
+          "to_joint_id": "right_shin",
+          "attachment_points_px": {
+            "from": {
+              "x": 16,
+              "y": 50
+            },
+            "to": {
+              "x": 212,
+              "y": 50
+            }
+          }
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 16,
+          "y": 50
+        },
+        "size_rig_units": {
+          "width": 0.15,
+          "height": 0.06578947
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 13,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "left_shin",
+        "type": "image",
+        "asset_id": "libsha256_10923e6cf93023bc2a04a918e4e5db96f60ce5a61036512d1fc636b01d896790",
+        "source_dimensions_px": {
+          "width": 228,
+          "height": 96
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "from_joint_id": "left_shin",
+          "to_joint_id": "left_foot",
+          "attachment_points_px": {
+            "from": {
+              "x": 16,
+              "y": 48
+            },
+            "to": {
+              "x": 212,
+              "y": 48
+            }
+          }
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 16,
+          "y": 48
+        },
+        "size_rig_units": {
+          "width": 0.135,
+          "height": 0.05684211
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 11,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "right_shin",
+        "type": "image",
+        "asset_id": "libsha256_10923e6cf93023bc2a04a918e4e5db96f60ce5a61036512d1fc636b01d896790",
+        "source_dimensions_px": {
+          "width": 228,
+          "height": 96
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "from_joint_id": "right_shin",
+          "to_joint_id": "right_foot",
+          "attachment_points_px": {
+            "from": {
+              "x": 16,
+              "y": 48
+            },
+            "to": {
+              "x": 212,
+              "y": 48
+            }
+          }
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 16,
+          "y": 48
+        },
+        "size_rig_units": {
+          "width": 0.135,
+          "height": 0.05684211
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 11,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "left_foot",
+        "type": "image",
+        "asset_id": "libsha256_82aa3789c7bb419411233be6e06464789fa935f1bad75d550e69026656e2f457",
+        "source_dimensions_px": {
+          "width": 224,
+          "height": 108
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "joint_id": "left_foot"
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 32,
+          "y": 55
+        },
+        "size_rig_units": {
+          "width": 0.13,
+          "height": 0.06267857
+        },
+        "transform": {
+          "offset": {
+            "x": -0.005,
+            "y": 0.015
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 17,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "right_foot",
+        "type": "image",
+        "asset_id": "libsha256_82aa3789c7bb419411233be6e06464789fa935f1bad75d550e69026656e2f457",
+        "source_dimensions_px": {
+          "width": 224,
+          "height": 108
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "joint_id": "right_foot"
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 32,
+          "y": 55
+        },
+        "size_rig_units": {
+          "width": 0.13,
+          "height": 0.06267857
+        },
+        "transform": {
+          "offset": {
+            "x": 0.005,
+            "y": 0.015
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 17,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "head",
+        "type": "image",
+        "asset_id": "libsha256_5385d9fca7d7d6340ceb8cc029685ef04e01660be636a0a7e0130fc0607a219a",
+        "source_dimensions_px": {
+          "width": 256,
+          "height": 260
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "joint_id": "head"
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 128,
+          "y": 130
+        },
+        "size_rig_units": {
+          "width": 0.19,
+          "height": 0.19296875
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": -0.004
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 55,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      },
+      {
+        "id": "eye_left",
+        "type": "image",
+        "asset_id": "libsha256_2fe7540e56d9d8dbc4c2bf34346e6002f2c0eb657cbec47b7c9a6d446ffd9ec4",
+        "source_dimensions_px": {
+          "width": 56,
+          "height": 74
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "joint_id": "head"
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 28,
+          "y": 37
+        },
+        "size_rig_units": {
+          "width": 0.014,
+          "height": 0.0185
+        },
+        "transform": {
+          "offset": {
+            "x": -0.034,
+            "y": -0.012
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 62,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {
+          "eye_left": "blink.eye_left"
+        }
+      },
+      {
+        "id": "eye_right",
+        "type": "image",
+        "asset_id": "libsha256_2fe7540e56d9d8dbc4c2bf34346e6002f2c0eb657cbec47b7c9a6d446ffd9ec4",
+        "source_dimensions_px": {
+          "width": 56,
+          "height": 74
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "joint_id": "head"
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 28,
+          "y": 37
+        },
+        "size_rig_units": {
+          "width": 0.014,
+          "height": 0.0185
+        },
+        "transform": {
+          "offset": {
+            "x": 0.034,
+            "y": -0.012
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 62,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {
+          "eye_right": "blink.eye_right"
+        }
+      },
+      {
+        "id": "smile",
+        "type": "image",
+        "asset_id": "libsha256_347e46a8fd56e05f70b8ab11cbe2931524ad0d09dcc21e2765d1fd80c98520cd",
+        "source_dimensions_px": {
+          "width": 80,
+          "height": 46
+        },
+        "alpha": true,
+        "opacity": 1,
+        "binding": {
+          "joint_id": "head"
+        },
+        "pivot": {
+          "space": "image_px",
+          "x": 40,
+          "y": 23
+        },
+        "size_rig_units": {
+          "width": 0.045,
+          "height": 0.025875
+        },
+        "transform": {
+          "offset": {
+            "x": 0,
+            "y": 0.031
+          },
+          "rotation": 0,
+          "scale": 1
+        },
+        "z_index": 63,
+        "visible": true,
+        "required": true,
+        "feature_bindings": {}
+      }
+    ]
+  },
+  "assets": [
+    {
+      "id": "libsha256_cd6d9002e150d47f986f8b8ad5d27bbee136dce014588785857fd869b4848f5c",
+      "filename": "assets/neck.png",
+      "mime_type": "image/png",
+      "sha256": "cd6d9002e150d47f986f8b8ad5d27bbee136dce014588785857fd869b4848f5c",
+      "size": 1760,
+      "width": 104,
+      "height": 88
+    },
+    {
+      "id": "libsha256_cfa8614f0697bb783fdd0034b7f2f3a1deb18a438c756a978e0abae2e7c9a964",
+      "filename": "assets/torso.png",
+      "mime_type": "image/png",
+      "sha256": "cfa8614f0697bb783fdd0034b7f2f3a1deb18a438c756a978e0abae2e7c9a964",
+      "size": 9253,
+      "width": 256,
+      "height": 220
+    },
+    {
+      "id": "libsha256_fdf45afe36e4984f4e735d9d6c33cdf425bf7c82bc0759937bbd25d863109bb9",
+      "filename": "assets/pelvis.png",
+      "mime_type": "image/png",
+      "sha256": "fdf45afe36e4984f4e735d9d6c33cdf425bf7c82bc0759937bbd25d863109bb9",
+      "size": 4165,
+      "width": 200,
+      "height": 150
+    },
+    {
+      "id": "libsha256_6efebb750eed4f2aca5d784fde1840071efabef424e7caec8c000a2cffdc1cc8",
+      "filename": "assets/upper_arm.png",
+      "mime_type": "image/png",
+      "sha256": "6efebb750eed4f2aca5d784fde1840071efabef424e7caec8c000a2cffdc1cc8",
+      "size": 4604,
+      "width": 216,
+      "height": 88
+    },
+    {
+      "id": "libsha256_bc098e50b7e3a648005e9e710ff44ab1574db9d7aa1c4e133b6e146b0888baa7",
+      "filename": "assets/forearm.png",
+      "mime_type": "image/png",
+      "sha256": "bc098e50b7e3a648005e9e710ff44ab1574db9d7aa1c4e133b6e146b0888baa7",
+      "size": 3796,
+      "width": 216,
+      "height": 80
+    },
+    {
+      "id": "libsha256_0faa23c6b86381448c0b6404883a3993a8892214cdc85967ed0e53ccfcd1459e",
+      "filename": "assets/hand.png",
+      "mime_type": "image/png",
+      "sha256": "0faa23c6b86381448c0b6404883a3993a8892214cdc85967ed0e53ccfcd1459e",
+      "size": 5771,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "libsha256_43781632e8a976ba8e2d607f9df297c56b6c1402f90a023f6b3d57060417ab44",
+      "filename": "assets/thigh.png",
+      "mime_type": "image/png",
+      "sha256": "43781632e8a976ba8e2d607f9df297c56b6c1402f90a023f6b3d57060417ab44",
+      "size": 3310,
+      "width": 228,
+      "height": 100
+    },
+    {
+      "id": "libsha256_10923e6cf93023bc2a04a918e4e5db96f60ce5a61036512d1fc636b01d896790",
+      "filename": "assets/shin.png",
+      "mime_type": "image/png",
+      "sha256": "10923e6cf93023bc2a04a918e4e5db96f60ce5a61036512d1fc636b01d896790",
+      "size": 3430,
+      "width": 228,
+      "height": 96
+    },
+    {
+      "id": "libsha256_82aa3789c7bb419411233be6e06464789fa935f1bad75d550e69026656e2f457",
+      "filename": "assets/foot.png",
+      "mime_type": "image/png",
+      "sha256": "82aa3789c7bb419411233be6e06464789fa935f1bad75d550e69026656e2f457",
+      "size": 5327,
+      "width": 224,
+      "height": 108
+    },
+    {
+      "id": "libsha256_5385d9fca7d7d6340ceb8cc029685ef04e01660be636a0a7e0130fc0607a219a",
+      "filename": "assets/head.png",
+      "mime_type": "image/png",
+      "sha256": "5385d9fca7d7d6340ceb8cc029685ef04e01660be636a0a7e0130fc0607a219a",
+      "size": 16351,
+      "width": 256,
+      "height": 260
+    },
+    {
+      "id": "libsha256_2fe7540e56d9d8dbc4c2bf34346e6002f2c0eb657cbec47b7c9a6d446ffd9ec4",
+      "filename": "assets/eye.png",
+      "mime_type": "image/png",
+      "sha256": "2fe7540e56d9d8dbc4c2bf34346e6002f2c0eb657cbec47b7c9a6d446ffd9ec4",
+      "size": 5163,
+      "width": 56,
+      "height": 74
+    },
+    {
+      "id": "libsha256_347e46a8fd56e05f70b8ab11cbe2931524ad0d09dcc21e2765d1fd80c98520cd",
+      "filename": "assets/smile.png",
+      "mime_type": "image/png",
+      "sha256": "347e46a8fd56e05f70b8ab11cbe2931524ad0d09dcc21e2765d1fd80c98520cd",
+      "size": 1991,
+      "width": 80,
+      "height": 46
+    }
+  ],
+  "manifest_checksum": "1464d939249c609d2ae798114b0c3ff43fa75fb20a0010ff8433f8a8905ef60d",
+  "content_checksum": "23b848d44f86c0b9a6eb49e3d0d7df03855c7a1077741e9eaab64cd749dc8d73"
+}

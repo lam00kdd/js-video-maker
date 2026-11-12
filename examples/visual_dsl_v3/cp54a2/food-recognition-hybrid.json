@@ -1,0 +1,64 @@
+{
+  "visual_dsl_version": 3,
+  "title": "Nhận biết các nhóm thực phẩm",
+  "language": "vi-VN",
+  "topic": "Nhận biết gạo, ngô, khoai lang, cá, trứng và rau xanh",
+  "audience": "Học sinh lớp 6",
+  "learning_objectives": ["Nhận diện sáu thực phẩm qua hình ảnh và gọi tên đúng."],
+  "aspect_ratio": "both",
+  "voice": { "voice_id": "phuong_linh", "rate": 1, "auto_generate": true },
+  "subtitles": { "enabled": true, "size": "large", "karaoke": true },
+  "metadata": { "youtube": { "title": "Nhận biết các nhóm thực phẩm", "description": "Fixture hình ảnh gốc cho CP5.4A-2." }, "social_post": { "caption": "Quan sát và gọi tên thực phẩm.", "hashtags": ["KHTN", "DinhDuong"], "cta": "Cùng quan sát nhé." } },
+  "art_direction": { "preset": "scientific_premium", "style_name": "Original asset and vector annotations" },
+  "assets": [],
+  "characters": [],
+  "symbols": {},
+  "variants": {
+    "landscape": {
+      "scenes": [
+        {
+          "id": "food_scene_landscape",
+          "title": "Sáu thực phẩm quen thuộc",
+          "duration_seconds": 10,
+          "narration": "Quan sát hình: bát cơm, bắp ngô, củ khoai lang, cá, trứng và rau xanh. Mỗi vật có hình dáng, màu sắc và cấu tạo riêng, nên ta có thể nhận biết bằng mắt thay vì thay chúng bằng những ký hiệu giống nhau.",
+          "stage": { "width": 1600, "height": 900, "background": "#F2F7F5" },
+          "layout": { "minimum_text_px": 18, "safe_regions": [{ "name": "subtitle", "x": 0, "y": 735, "width": 1600, "height": 165 }] },
+          "timeline": { "tracks": [{ "target_id": "food_artwork", "property": "scale_x", "keyframes": [{ "time_seconds": 0, "value": 0.98, "easing": "ease_out" }, { "time_seconds": 1.2, "value": 1 } ] }, { "target_id": "food_artwork", "property": "scale_y", "keyframes": [{ "time_seconds": 0, "value": 0.98, "easing": "ease_out" }, { "time_seconds": 1.2, "value": 1 } ] }, { "target_id": "camera", "property": "camera.zoom", "keyframes": [{ "time_seconds": 0, "value": 1 }, { "time_seconds": 2, "value": 1.04 }] }] },
+          "root": { "id": "food_root_landscape", "type": "group", "children": [
+            { "id": "food_title", "type": "text", "z_index": 10, "geometry": { "x": 70, "y": 75, "text": "NHẬN BIẾT THỰC PHẨM", "font_size": 42, "font_weight": "bold", "font_family": "Arial", "text_baseline": "top" }, "style": { "fill": "#153746" } },
+            { "id": "food_artwork", "type": "image", "z_index": 2, "geometry": { "asset_id": "visual_e535b3f07163e36526b709f92247f9c390ad292152c8f04bc28cbd06155bdddf", "x": 55, "y": 150, "width": 760, "height": 620, "fit": "contain" } },
+            { "id": "food_group_panel", "type": "rounded_rect", "z_index": 1, "geometry": { "x": 850, "y": 150, "width": 680, "height": 570, "radius": 28 }, "style": { "fill": "#FFFFFF", "shadow": { "color": "#153746", "blur": 10, "offset_x": 0, "offset_y": 4, "opacity": 0.12, "enabled": true } } },
+            { "id": "label_rice", "type": "text", "z_index": 10, "geometry": { "x": 900, "y": 205, "text": "BÁT CƠM", "font_size": 28, "font_weight": "bold", "text_baseline": "top" }, "style": { "fill": "#153746" } },
+            { "id": "label_corn", "type": "text", "z_index": 10, "geometry": { "x": 1220, "y": 205, "text": "BẮP NGÔ", "font_size": 28, "font_weight": "bold", "text_baseline": "top" }, "style": { "fill": "#153746" } },
+            { "id": "label_potato", "type": "text", "z_index": 10, "geometry": { "x": 900, "y": 370, "text": "KHOAI LANG", "font_size": 28, "font_weight": "bold", "text_baseline": "top" }, "style": { "fill": "#153746" } },
+            { "id": "label_fish", "type": "text", "z_index": 10, "geometry": { "x": 1220, "y": 370, "text": "CÁ", "font_size": 28, "font_weight": "bold", "text_baseline": "top" }, "style": { "fill": "#153746" } },
+            { "id": "label_egg", "type": "text", "z_index": 10, "geometry": { "x": 900, "y": 535, "text": "TRỨNG", "font_size": 28, "font_weight": "bold", "text_baseline": "top" }, "style": { "fill": "#153746" } },
+            { "id": "label_greens", "type": "text", "z_index": 10, "geometry": { "x": 1220, "y": 535, "text": "RAU XANH", "font_size": 28, "font_weight": "bold", "text_baseline": "top" }, "style": { "fill": "#153746" } },
+            { "id": "food_footer", "type": "text", "z_index": 10, "geometry": { "x": 75, "y": 805, "text": "HÌNH DẠNG KHÁC NHAU · DỄ NHẬN DIỆN", "font_size": 21, "font_weight": "600", "text_baseline": "top" }, "style": { "fill": "#48736D" } }
+          ] }
+        }
+      ]
+    },
+    "portrait": {
+      "scenes": [
+        {
+          "id": "food_scene_portrait",
+          "title": "Sáu thực phẩm quen thuộc",
+          "duration_seconds": 10,
+          "narration": "Quan sát hình: bát cơm, bắp ngô, củ khoai lang, cá, trứng và rau xanh. Mỗi vật có hình dáng, màu sắc và cấu tạo riêng, nên ta có thể nhận biết bằng mắt thay vì thay chúng bằng những ký hiệu giống nhau.",
+          "stage": { "width": 900, "height": 1600, "background": "#F2F7F5" },
+          "layout": { "minimum_text_px": 18, "safe_regions": [{ "name": "subtitle", "x": 0, "y": 1340, "width": 900, "height": 260 }] },
+          "timeline": { "tracks": [{ "target_id": "food_artwork_portrait", "property": "scale_x", "keyframes": [{ "time_seconds": 0, "value": 0.98 }, { "time_seconds": 1.2, "value": 1 }] }, { "target_id": "food_artwork_portrait", "property": "scale_y", "keyframes": [{ "time_seconds": 0, "value": 0.98 }, { "time_seconds": 1.2, "value": 1 }] }, { "target_id": "camera", "property": "camera.zoom", "keyframes": [{ "time_seconds": 0, "value": 1 }, { "time_seconds": 2, "value": 1.03 }] }] },
+          "root": { "id": "food_root_portrait", "type": "group", "children": [
+            { "id": "food_title_portrait", "type": "text", "z_index": 10, "geometry": { "x": 48, "y": 60, "text": "NHẬN BIẾT THỰC PHẨM", "font_size": 35, "font_weight": "bold", "text_baseline": "top" }, "style": { "fill": "#153746" } },
+            { "id": "food_artwork_portrait", "type": "image", "z_index": 2, "geometry": { "asset_id": "visual_e535b3f07163e36526b709f92247f9c390ad292152c8f04bc28cbd06155bdddf", "x": 35, "y": 155, "width": 830, "height": 830, "fit": "contain" } },
+            { "id": "food_labels_panel_portrait", "type": "rounded_rect", "z_index": 1, "geometry": { "x": 45, "y": 1010, "width": 810, "height": 280, "radius": 24 }, "style": { "fill": "#FFFFFF" } },
+            { "id": "food_labels_left", "type": "text", "z_index": 10, "geometry": { "x": 90, "y": 1055, "text": "BÁT CƠM\nBẮP NGÔ\nKHOAI LANG", "font_size": 26, "font_weight": "bold", "text_baseline": "top", "line_height": 1.55 }, "style": { "fill": "#153746" } },
+            { "id": "food_labels_right", "type": "text", "z_index": 10, "geometry": { "x": 480, "y": 1055, "text": "CÁ\nTRỨNG\nRAU XANH", "font_size": 26, "font_weight": "bold", "text_baseline": "top", "line_height": 1.55 }, "style": { "fill": "#153746" } },
+            { "id": "food_footer_portrait", "type": "text", "z_index": 10, "geometry": { "x": 65, "y": 1300, "text": "QUAN SÁT HÌNH DÁNG ĐỂ GỌI TÊN", "font_size": 21, "font_weight": "600", "text_baseline": "top" }, "style": { "fill": "#48736D" } }
+          ] }
+        }
+      ]
+    }
+  }
+}

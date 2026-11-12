@@ -1,0 +1,50 @@
+{
+  "schema_version": "character-art-manifest/0.1",
+  "character_id": "integration_fixture",
+  "fixture_only": true,
+  "quality_status": "schematic_contract_fixture_not_production_art",
+  "compatibility": {
+    "rig_semantics": "m1-human-rig",
+    "proportion_profile": "adult",
+    "retargeting": "none",
+    "required_joints": [
+      "head", "torso", "pelvis",
+      "left_upper_arm", "left_forearm", "left_hand",
+      "right_upper_arm", "right_forearm", "right_hand",
+      "left_thigh", "left_shin", "left_foot",
+      "right_thigh", "right_shin", "right_foot"
+    ]
+  },
+  "source": {
+    "format": "svg",
+    "file": "source/integration-fixture.svg",
+    "coordinate_space": "viewBox",
+    "canvas_dimensions_px": { "width": 1000, "height": 1600 },
+    "import_mode": "normalized_native_vector_primitives",
+    "renderer_status": "supported_subset_only"
+  },
+  "alternative_sources": [
+    { "format": "layered_png", "renderer_status": "deferred_no_character_image_part_renderer" }
+  ],
+  "units": { "runtime": "rig_local_fraction_of_short_canvas_edge", "source_metadata": "pixels" },
+  "assets": [
+    { "id": "head", "role": "head", "source_layer": "head", "source_dimensions_px": { "width": 300, "height": 340 }, "pivot_px": { "x": 150, "y": 300 }, "joint_id": "head", "runtime_binding": { "offset": { "x": 0, "y": -0.01 }, "width": 0.22, "height": 0.25, "rotation": 0 }, "z_index": 40 },
+    { "id": "torso", "role": "torso", "source_layer": "torso", "source_dimensions_px": { "width": 360, "height": 420 }, "pivot_px": { "x": 180, "y": 30 }, "joint_id": "torso", "runtime_binding": { "offset": { "x": 0, "y": -0.04 }, "width": 0.24, "height": 0.28, "rotation": 0 }, "z_index": 30 },
+    { "id": "pelvis", "role": "pelvis", "source_layer": "pelvis", "source_dimensions_px": { "width": 300, "height": 150 }, "pivot_px": { "x": 150, "y": 20 }, "joint_id": "pelvis", "runtime_binding": { "offset": { "x": 0, "y": 0.01 }, "width": 0.20, "height": 0.10, "rotation": 0 }, "z_index": 22 },
+    { "id": "left_upper_arm", "role": "upper_arm", "side": "left", "source_layer": "arm_upper_left", "source_dimensions_px": { "width": 180, "height": 300 }, "pivot_px": { "x": 90, "y": 25 }, "joint_id": "left_upper_arm", "runtime_binding": { "offset": { "x": 0, "y": 0.07 }, "width": 0.08, "height": 0.19, "rotation": 0 }, "z_index": 27 },
+    { "id": "left_lower_arm", "role": "lower_arm", "side": "left", "source_layer": "arm_lower_left", "source_dimensions_px": { "width": 140, "height": 270 }, "pivot_px": { "x": 70, "y": 22 }, "joint_id": "left_forearm", "runtime_binding": { "offset": { "x": 0, "y": 0.06 }, "width": 0.06, "height": 0.16, "rotation": 0 }, "z_index": 36 },
+    { "id": "left_hand", "role": "hand", "side": "left", "source_layer": "hand_left", "source_dimensions_px": { "width": 120, "height": 120 }, "pivot_px": { "x": 60, "y": 55 }, "joint_id": "left_hand", "runtime_binding": { "offset": { "x": 0, "y": 0 }, "width": 0.06, "height": 0.06, "rotation": 0 }, "z_index": 37 },
+    { "id": "right_upper_arm", "role": "upper_arm", "side": "right", "source_layer": "arm_upper_right", "source_dimensions_px": { "width": 180, "height": 300 }, "pivot_px": { "x": 90, "y": 25 }, "joint_id": "right_upper_arm", "runtime_binding": { "offset": { "x": 0, "y": 0.07 }, "width": 0.08, "height": 0.19, "rotation": 0 }, "z_index": 27 },
+    { "id": "right_lower_arm", "role": "lower_arm", "side": "right", "source_layer": "arm_lower_right", "source_dimensions_px": { "width": 140, "height": 270 }, "pivot_px": { "x": 70, "y": 22 }, "joint_id": "right_forearm", "runtime_binding": { "offset": { "x": 0, "y": 0.06 }, "width": 0.06, "height": 0.16, "rotation": 0 }, "z_index": 36 },
+    { "id": "right_hand", "role": "hand", "side": "right", "source_layer": "hand_right", "source_dimensions_px": { "width": 120, "height": 120 }, "pivot_px": { "x": 60, "y": 55 }, "joint_id": "right_hand", "runtime_binding": { "offset": { "x": 0, "y": 0 }, "width": 0.06, "height": 0.06, "rotation": 0 }, "z_index": 37 },
+    { "id": "left_upper_leg", "role": "upper_leg", "side": "left", "source_layer": "leg_upper_left", "source_dimensions_px": { "width": 170, "height": 330 }, "pivot_px": { "x": 85, "y": 18 }, "joint_id": "left_thigh", "runtime_binding": { "offset": { "x": 0, "y": 0.08 }, "width": 0.08, "height": 0.20, "rotation": 0 }, "z_index": 14 },
+    { "id": "left_lower_leg", "role": "lower_leg", "side": "left", "source_layer": "leg_lower_left", "source_dimensions_px": { "width": 150, "height": 320 }, "pivot_px": { "x": 75, "y": 18 }, "joint_id": "left_shin", "runtime_binding": { "offset": { "x": 0, "y": 0.08 }, "width": 0.07, "height": 0.19, "rotation": 0 }, "z_index": 14 },
+    { "id": "left_foot", "role": "foot", "side": "left", "source_layer": "foot_left", "source_dimensions_px": { "width": 180, "height": 100 }, "pivot_px": { "x": 75, "y": 25 }, "joint_id": "left_foot", "runtime_binding": { "offset": { "x": 0.02, "y": 0.02 }, "width": 0.12, "height": 0.06, "rotation": 0 }, "z_index": 16 },
+    { "id": "right_upper_leg", "role": "upper_leg", "side": "right", "source_layer": "leg_upper_right", "source_dimensions_px": { "width": 170, "height": 330 }, "pivot_px": { "x": 85, "y": 18 }, "joint_id": "right_thigh", "runtime_binding": { "offset": { "x": 0, "y": 0.08 }, "width": 0.08, "height": 0.20, "rotation": 0 }, "z_index": 14 },
+    { "id": "right_lower_leg", "role": "lower_leg", "side": "right", "source_layer": "leg_lower_right", "source_dimensions_px": { "width": 150, "height": 320 }, "pivot_px": { "x": 75, "y": 18 }, "joint_id": "right_shin", "runtime_binding": { "offset": { "x": 0, "y": 0.08 }, "width": 0.07, "height": 0.19, "rotation": 0 }, "z_index": 14 },
+    { "id": "right_foot", "role": "foot", "side": "right", "source_layer": "foot_right", "source_dimensions_px": { "width": 180, "height": 100 }, "pivot_px": { "x": 105, "y": 25 }, "joint_id": "right_foot", "runtime_binding": { "offset": { "x": 0.02, "y": 0.02 }, "width": 0.12, "height": 0.06, "rotation": 0 }, "z_index": 16 },
+    { "id": "hair_front", "role": "hair_front", "optional": true, "source_layer": "hair_front", "source_dimensions_px": { "width": 330, "height": 170 }, "pivot_px": { "x": 165, "y": 140 }, "joint_id": "head", "runtime_binding": { "offset": { "x": 0, "y": -0.08 }, "width": 0.23, "height": 0.11, "rotation": 0 }, "z_index": 56 },
+    { "id": "shirt_front", "role": "clothing", "optional": true, "source_layer": "shirt_front", "source_dimensions_px": { "width": 380, "height": 430 }, "pivot_px": { "x": 190, "y": 20 }, "joint_id": "torso", "runtime_binding": { "offset": { "x": 0, "y": -0.07 }, "width": 0.25, "height": 0.28, "rotation": 0 }, "z_index": 33 },
+    { "id": "helmet", "role": "accessory", "optional": true, "source_layer": "helmet", "source_dimensions_px": { "width": 360, "height": 210 }, "pivot_px": { "x": 180, "y": 180 }, "joint_id": "head", "runtime_binding": { "offset": { "x": 0, "y": -0.11 }, "width": 0.26, "height": 0.15, "rotation": 0 }, "z_index": 58 }
+  ]
+}

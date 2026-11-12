@@ -16,20 +16,29 @@ if not defined NODE_EXE if exist "%LOCALAPPDATA%\OpenAI\Codex\runtimes\cua_node\
 
 if not defined NODE_EXE (
   echo [ERROR] Node.js was not found.
-  echo Install Node.js 20 or newer, then run this file again.
+  echo Install Node.js 22.13 or newer, then run this file again.
   echo https://nodejs.org/
   pause
   exit /b 1
 )
 
-for /f "tokens=1 delims=.v" %%V in ('"%NODE_EXE%" --version') do set "NODE_MAJOR=%%V"
+for /f "tokens=1,2 delims=.v" %%V in ('"%NODE_EXE%" --version') do (
+  set "NODE_MAJOR=%%V"
+  set "NODE_MINOR=%%W"
+)
 if not defined NODE_MAJOR (
   echo [ERROR] Could not determine the Node.js version.
   pause
   exit /b 1
 )
-if %NODE_MAJOR% LSS 20 (
-  echo [ERROR] Node.js 20 or newer is required. Found version:
+if %NODE_MAJOR% LSS 22 (
+  echo [ERROR] Node.js 22.13 or newer is required. Found version:
+  "%NODE_EXE%" --version
+  pause
+  exit /b 1
+)
+if %NODE_MAJOR% EQU 22 if %NODE_MINOR% LSS 13 (
+  echo [ERROR] Node.js 22.13 or newer is required. Found version:
   "%NODE_EXE%" --version
   pause
   exit /b 1

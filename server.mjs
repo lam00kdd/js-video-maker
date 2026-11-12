@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { appendFileSync } from 'node:fs';
 import { spawn } from 'node:child_process';
 import { randomUUID } from 'node:crypto';
+import { PublishedCharacterSqliteStore } from './server/character-library-sqlite.mjs';
 
 const root = fileURLToPath(new URL('.', import.meta.url));
 const logDir = join(root, 'logs');
@@ -18,12 +19,35 @@ const ttsWorker = join(ttsRoot, 'korvatts_worker.py');
 const ttsAssets = join(ttsRoot, 'assets');
 const ttsTemp = join(ttsRoot, 'tmp');
 mkdirSync(ttsTemp, { recursive: true });
+const characterLibraryDbPath = join(root, 'data', 'character-library.sqlite');
+const characterLibrary = new PublishedCharacterSqliteStore(characterLibraryDbPath);
 function runKorva(request) { return new Promise((resolve, reject) => { const requestId = randomUUID(), inputPath = join(ttsTemp, `${requestId}.request`), outputPath = join(ttsTemp, `${requestId}.stdout`), errorPath = join(ttsTemp, `${requestId}.stderr`); let inputFd, outputFd, errorFd; try { writeFileSync(inputPath, `${JSON.stringify(request)}\n`, 'utf8'); inputFd = openSync(inputPath, 'r'); outputFd = openSync(outputPath, 'w'); errorFd = openSync(errorPath, 'w'); const child = spawn(ttsPython, [ttsWorker, '--serve'], { windowsHide: true, stdio: [inputFd, outputFd, errorFd], env: { ...process.env, PYTHONIOENCODING: 'utf-8', KORVATTS_ASSETS_DIR: ttsAssets, VIDEO04A_TEMP_DIR: ttsTemp, HF_HUB_OFFLINE: '1', HF_DATASETS_OFFLINE: '1' } }); closeSync(inputFd); inputFd = null; closeSync(outputFd); outputFd = null; closeSync(errorFd); errorFd = null; child.on('error', error => { cleanup(); reject(error); }); child.on('close', code => { try { const output = existsSync(outputPath) ? readFileSync(outputPath, 'utf8').trim().split(/\r?\n/)[0] : ''; const stderr = existsSync(errorPath) ? readFileSync(errorPath, 'utf8').trim() : ''; if (code !== 0 && !output) throw new Error((stderr || `KorvaTTS exited ${code}`).slice(-1200)); resolve(JSON.parse(output)); } catch (error) { reject(error); } finally { cleanup(); } }); } catch (error) { if (inputFd !== undefined && inputFd !== null) closeSync(inputFd); if (outputFd !== undefined && outputFd !== null) closeSync(outputFd); if (errorFd !== undefined && errorFd !== null) closeSync(errorFd); cleanup(); reject(error); } function cleanup() { for (const path of [inputPath, outputPath, errorPath]) if (existsSync(path)) { try { unlinkSync(path); } catch {} } } }); }
 async function readRequestJson(req, maxBytes = 16 * 1024) { const chunks = []; let size = 0; for await (const chunk of req) { size += chunk.length; if (size > maxBytes) throw new Error('Request body too large.'); chunks.push(chunk); } return JSON.parse(Buffer.concat(chunks).toString('utf8')); }
 const korvaVoiceIds = ['bao_kim', 'gia_bao', 'hoang_nam', 'huu_dat', 'khanh_vy', 'ngoc_huyen', 'phuong_linh', 'quang_huy', 'quynh_nhu', 'thanh_phong'];
 function normalizeKorvaVoice(value) { const key = String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, ''); return korvaVoiceIds.includes(key) ? key : korvaVoiceIds.find(id => key.endsWith(id)) || 'phuong_linh'; }
+function sendJson(res, status, body) { res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(body)); }
 const server = createServer((req, res) => {
   const pathname = new URL(req.url, 'http://localhost').pathname;
+  if (pathname === '/api/character-library/status' && req.method === 'GET') { sendJson(res, 200, characterLibrary.status()); return; }
+  if (pathname === '/api/character-library/characters' && req.method === 'GET') { sendJson(res, 200, { characters: characterLibrary.listCharacters() }); return; }
+  if (pathname === '/api/character-library/versions' && req.method === 'GET') { sendJson(res, 200, { versions: characterLibrary.listVersions() }); return; }
+  if (pathname === '/api/character-library/sprite-versions' && req.method === 'GET') { sendJson(res, 200, { versions: characterLibrary.listSpriteVersions() }); return; }
+  const libraryVersionMatch = pathname.match(/^\/api\/character-library\/characters\/([^/]+)\/versions\/([^/]+)$/);
+  if (libraryVersionMatch && req.method === 'GET') {
+    const version = characterLibrary.getVersion(decodeURIComponent(libraryVersionMatch[1]), decodeURIComponent(libraryVersionMatch[2]));
+    if (!version) { sendJson(res, 404, { error: 'Published character version was not found in local SQLite.' }); return; }
+    sendJson(res, 200, { version }); return;
+  }
+  const libraryAssetMatch = pathname.match(/^\/api\/character-library\/assets\/([^/]+)$/);
+  if (libraryAssetMatch && req.method === 'GET') {
+    const asset = characterLibrary.getAsset(decodeURIComponent(libraryAssetMatch[1]));
+    if (!asset) { sendJson(res, 404, { error: 'Published character asset was not found in local SQLite.' }); return; }
+    res.writeHead(200, { 'Content-Type': asset.mime_type, 'Content-Length': asset.byte_length, 'Cache-Control': 'public, max-age=31536000, immutable', 'X-Content-SHA256': asset.sha256 }); res.end(asset.data); return;
+  }
+  if (pathname === '/api/character-library/import' && req.method === 'POST') {
+    (async () => { try { const bundle = await readRequestJson(req, 512 * 1024 * 1024); sendJson(res, 200, characterLibrary.importBundle(bundle)); }
+      catch (error) { log(`Character Library SQLite import failed: ${error.message}`); sendJson(res, 422, { error: error.message || String(error) }); } })(); return;
+  }
   if (pathname === '/api/tts/voices' && req.method === 'GET') { runKorva({ id: randomUUID(), op: 'status' }).then(body => { if (!body.ok || body.status !== 'ready') throw new Error(body.error || 'Vietnamese TTS model is unavailable.'); const names = { bao_kim: 'Bảo Kim', gia_bao: 'Gia Bảo', hoang_nam: 'Hoàng Nam', huu_dat: 'Hữu Đạt', khanh_vy: 'Khánh Vy', ngoc_huyen: 'Ngọc Huyền', phuong_linh: 'Phương Linh', quang_huy: 'Quang Huy', quynh_nhu: 'Quỳnh Như', thanh_phong: 'Thanh Phong' }; res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }); res.end(JSON.stringify({ voices: body.voices.map(id => ({ id, name: names[id] || id })), provider: 'KorvaTTS' })); }).catch(error => { log(`TTS voice listing failed: ${error.message}`); res.writeHead(503, { 'Content-Type': 'application/json; charset=utf-8' }); res.end(JSON.stringify({ error: error.message })); }); return; }
   if (pathname === '/api/tts/synthesize' && req.method === 'POST') { (async () => { let outputPath; try { const body = await readRequestJson(req); if (typeof body.text !== 'string' || !body.text.trim() || body.text.length > 5000) throw new Error('Lời thoại phải có từ 1 đến 5.000 ký tự.'); const voice = normalizeKorvaVoice(body.voice); const speed = Math.max(0.5, Math.min(2, Number(body.rate) || 1)); const jobId = randomUUID().replaceAll('-', ''); const result = await runKorva({ id: randomUUID(), op: 'synthesize', job_id: jobId, text: body.text, voice, speed, total_steps: 24 }); if (!result.ok) throw new Error(result.error || 'Vietnamese TTS generation failed.'); outputPath = join(ttsTemp, `${jobId}.wav`); const wav = readFileSync(outputPath); res.writeHead(200, { 'Content-Type': 'audio/wav', 'Content-Length': wav.length, 'Cache-Control': 'no-store' }); res.end(wav); } catch (error) { log(`TTS synthesis failed: ${error.message}`); if (!res.headersSent) { res.writeHead(422, { 'Content-Type': 'application/json; charset=utf-8' }); res.end(JSON.stringify({ error: error.message })); } } finally { if (outputPath && existsSync(outputPath)) unlinkSync(outputPath); } })(); return; }
   const relative = normalize(pathname === '/' ? 'index.html' : pathname.slice(1));

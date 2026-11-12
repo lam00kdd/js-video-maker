@@ -1,0 +1,43 @@
+{
+  "schema": "lam.motion.video",
+  "schema_version": 3,
+  "title": "Two ways a robot can move",
+  "language": "vi-VN",
+  "topic": "Robot movement",
+  "audience": "Middle school learners",
+  "learning_objectives": ["Compare wheeled movement with a robot arm's rotation."],
+  "structure": {"opening": "Two learners pose a question.", "development": "A robot host demonstrates two motions.", "conclusion": "Movement depends on the robot's design."},
+  "aspect_ratio": "16:9",
+  "voice": {"voice_id": "vi-VN-approved-voice", "rate": 1},
+  "subtitles": {"enabled": true, "size": "large", "safe_region": "subtitle"},
+  "metadata": {"social": {"caption": "Different robot designs create different motion."}, "youtube": {"title": "How Robots Move", "tags": ["robotics", "education"]}},
+  "art_direction": {"palette": {"navy": "#152A43", "mint": "#4FC7B0", "gold": "#F2B65E"}, "type_style": "bundled-sans-rounded", "illustration_style": "friendly editorial science illustration"},
+  "assets": [],
+  "symbols": {"motion-arrow": {"parameters": {"color": {"type": "color", "default": "#F2B65E"}}, "root": {"type": "group", "id": "arrow", "children": [{"type": "path", "id": "curve", "geometry": {"d": "M 0.1 0.7 C 0.25 0.05 0.72 0.05 0.88 0.48"}, "style": {"fill": "none", "stroke": "$color", "stroke_width": 0.04, "cap": "round"}}, {"type": "polygon", "id": "head", "geometry": {"points": [[0.72, 0.34], [0.95, 0.46], [0.75, 0.62]]}, "style": {"fill": "$color"}}]}}},
+  "characters": [
+    {"ref": "learner-sprite", "character_id": "REPLACE_WITH_SPRITE_LIBRARY_ID", "character_type": "sprite", "published_version": "REPLACE_WITH_SPRITE_VERSION", "checksum": "REPLACE_WITH_SPRITE_CHECKSUM", "approved_capabilities": ["idle", "talk"]},
+    {"ref": "robot-rig", "character_id": "REPLACE_WITH_RIGGED_LIBRARY_ID", "character_type": "rigged", "published_version": "REPLACE_WITH_RIGGED_VERSION", "checksum": "REPLACE_WITH_RIGGED_CHECKSUM", "approved_capabilities": ["idle", "point", "arm_raise"]}
+  ],
+  "scenes": [{
+    "id": "compare-motion",
+    "title": "Wheels roll while an arm rotates",
+    "duration_seconds": 14,
+    "narration": "Wheels let this robot roll across the floor. A robot arm uses joints to rotate and reach. Each design supports a different kind of movement.",
+    "layout": {"safe_regions": ["title", "subtitle"], "focus": "two-motion-types"},
+    "root": {"type": "group", "id": "scene", "children": [
+      {"type": "rounded_rect", "id": "lab-floor", "transform": {"x": 0.5, "y": 0.82, "scale_x": 0.92, "scale_y": 0.08}, "style": {"fill": "#DCE9E8"}, "z": 0},
+      {"type": "character_instance", "id": "learner", "character_ref": "learner-sprite", "transform": {"x": 0.18, "y": 0.68, "scale": 0.72, "origin": "bottom_center"}, "z": 10},
+      {"type": "character_instance", "id": "robot", "character_ref": "robot-rig", "transform": {"x": 0.73, "y": 0.66, "scale": 0.84, "origin": "bottom_center"}, "z": 20},
+      {"type": "symbol_instance", "id": "wheel-arrow", "symbol_ref": "motion-arrow", "parameters": {"color": "#4FC7B0"}, "transform": {"x": 0.27, "y": 0.4, "scale_x": 0.38, "scale_y": 0.22}, "z": 30},
+      {"type": "symbol_instance", "id": "arm-arrow", "symbol_ref": "motion-arrow", "parameters": {"color": "#F2B65E"}, "transform": {"x": 0.68, "y": 0.33, "rotation": -0.4, "scale_x": 0.28, "scale_y": 0.2}, "z": 40},
+      {"type": "text", "id": "wheel-label", "text": "ROLLING", "transform": {"x": 0.3, "y": 0.32}, "layout": {"max_width": 0.3, "align": "center", "font_token": "bundled-sans-rounded", "size": 0.035, "weight": 700}, "style": {"fill": "#152A43"}, "z": 50},
+      {"type": "text", "id": "arm-label", "text": "ROTATION", "transform": {"x": 0.71, "y": 0.25}, "layout": {"max_width": 0.3, "align": "center", "font_token": "bundled-sans-rounded", "size": 0.035, "weight": 700}, "style": {"fill": "#152A43"}, "z": 50}
+    ]},
+    "tracks": [
+      {"target": "learner", "property": "character_action", "action": "talk", "keyframes": [{"at": 0, "value": true}, {"at": 5, "value": false}]},
+      {"target": "robot", "property": "character_action", "action": "arm_raise", "keyframes": [{"at": 6, "value": false}, {"at": 8, "value": true, "easing": "ease_in_out"}, {"at": 11, "value": false}]},
+      {"target": "wheel-arrow", "property": "opacity", "keyframes": [{"at": 1, "value": 0}, {"at": 2, "value": 1, "easing": "ease_out"}]},
+      {"target": "arm-arrow", "property": "opacity", "keyframes": [{"at": 6, "value": 0}, {"at": 7, "value": 1, "easing": "ease_out"}]}
+    ]
+  }]
+}

@@ -1,0 +1,56 @@
+{
+  "benchmark_version": "CP5.3B-static-prompt-benchmarks",
+  "note": "Deterministic inputs and human-review targets only. These are not AI-generated JSON outputs or scientific validation results.",
+  "benchmarks": [
+    {
+      "id": "bicycle-pump",
+      "topic": "Máy bơm xe đạp: van nạp, nén khí và van xả",
+      "audience": "Học sinh lớp 6",
+      "duration": "45",
+      "aspect_ratio": "16:9",
+      "preset": "scientific_premium",
+      "scientific_detail_level": "detailed",
+      "review_targets": ["recognizable pump silhouette", "piston and cylinder relationship", "intake versus outlet valve behavior", "airflow direction matches narration"]
+    },
+    {
+      "id": "inductive-proximity-sensor",
+      "topic": "Cảm biến tiệm cận cảm ứng trên băng tải",
+      "audience": "Học sinh lớp 8",
+      "duration": "45",
+      "aspect_ratio": "16:9",
+      "preset": "scientific_premium",
+      "scientific_detail_level": "detailed",
+      "review_targets": ["sensor body and sensing face", "metal target", "sensing zone at the correct face", "switching signal toward controller"]
+    },
+    {
+      "id": "induction-motor",
+      "topic": "Động cơ điện không đồng bộ: stato, rôto và trục",
+      "audience": "Học sinh lớp 8",
+      "duration": "60",
+      "aspect_ratio": "both",
+      "preset": "scientific_premium",
+      "scientific_detail_level": "advanced",
+      "review_targets": ["stator and rotor are distinct", "shaft rotates around a plausible axis", "one motor type is kept internally consistent", "portrait is independently recomposed"]
+    },
+    {
+      "id": "industrial-robot-arm",
+      "topic": "Cánh tay robot công nghiệp gắp phôi trong vùng làm việc",
+      "audience": "Học sinh lớp 9",
+      "duration": "60",
+      "aspect_ratio": "both",
+      "preset": "educational_cartoon_premium",
+      "scientific_detail_level": "detailed",
+      "review_targets": ["base, links, joints and end effector", "workpiece interaction", "plausible joint sequence and workspace", "cartoon style preserves mechanism"]
+    },
+    {
+      "id": "water-filtration-lab",
+      "topic": "Thí nghiệm lọc nước trong phòng thí nghiệm trường học",
+      "audience": "Học sinh lớp 6",
+      "duration": "45",
+      "aspect_ratio": "9:16",
+      "preset": "educational_cartoon_premium",
+      "scientific_detail_level": "basic",
+      "review_targets": ["appropriate apparatus and spatial relationships", "process order is clear", "cause and result are not overstated", "portrait hierarchy leaves subtitle-safe space"]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "format": "lam-visual-asset-package",
+  "version": 1,
+  "created_at": "2026-11-12T00:00:00.000Z",
+  "assets": [
+    {
+      "asset_id": "visual_e535b3f07163e36526b709f92247f9c390ad292152c8f04bc28cbd06155bdddf",
+      "sha256": "e535b3f07163e36526b709f92247f9c390ad292152c8f04bc28cbd06155bdddf",
+      "mime_type": "image/png",
+      "width": 1254,
+      "height": 1254,
+      "byte_size": 1667643,
+      "display_name": "Original educational food subject sheet",
+      "category": "benchmark",
+      "subject": "Bowl of rice, corn, sweet potato, fish, egg and leafy vegetables",
+      "provenance": "Original AI-generated benchmark artwork for LAM AI Motion Studio CP5.4A-2.",
+      "license_notes": "Project test fixture; generated for this project. Not scientific source material.",
+      "imported_at": "2026-11-12T00:00:00.000Z",
+      "storage": "indexeddb-blob-v1",
+      "path": "assets/e535b3f07163e36526b709f92247f9c390ad292152c8f04bc28cbd06155bdddf.png"
+    },
+    {
+      "asset_id": "visual_85fa1f6898bd11ba3a85513197243bdf6446629cf2605d8fc88b85069bc41077",
+      "sha256": "85fa1f6898bd11ba3a85513197243bdf6446629cf2605d8fc88b85069bc41077",
+      "mime_type": "image/png",
+      "width": 1536,
+      "height": 1024,
+      "byte_size": 1893616,
+      "display_name": "Generic inductive proximity sensor cutout",
+      "category": "benchmark",
+      "subject": "Representative cylindrical inductive proximity sensor, no manufacturer/model claim",
+      "provenance": "Original AI-generated benchmark artwork for LAM AI Motion Studio CP5.4A-2.",
+      "license_notes": "Project test fixture; generated for this project. Not a product datasheet.",
+      "imported_at": "2026-11-12T00:00:00.000Z",
+      "storage": "indexeddb-blob-v1",
+      "path": "assets/85fa1f6898bd11ba3a85513197243bdf6446629cf2605d8fc88b85069bc41077.png"
+    },
+    {
+      "asset_id": "visual_3c66bcf2b7946111b0c50ad97d93182e7d98f1db464981edf0d47b2308111222",
+      "sha256": "3c66bcf2b7946111b0c50ad97d93182e7d98f1db464981edf0d47b2308111222",
+      "mime_type": "image/png",
+      "width": 1024,
+      "height": 1536,
+      "byte_size": 1686306,
+      "display_name": "Original bicycle floor pump cutaway illustration",
+      "category": "benchmark",
+      "subject": "Representative floor pump with visible cylinder, piston and hose",
+      "provenance": "Original AI-generated benchmark artwork for LAM AI Motion Studio CP5.4A-2.",
+      "license_notes": "Project test fixture; generated for this project. Not a product datasheet.",
+      "imported_at": "2026-11-12T00:00:00.000Z",
+      "storage": "indexeddb-blob-v1",
+      "path": "assets/3c66bcf2b7946111b0c50ad97d93182e7d98f1db464981edf0d47b2308111222.png"
+    }
+  ]
+}

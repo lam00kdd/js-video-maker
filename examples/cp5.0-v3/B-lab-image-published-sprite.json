@@ -1,0 +1,33 @@
+{
+  "schema": "lam.motion.video",
+  "schema_version": 3,
+  "title": "A robot detects an object",
+  "language": "vi-VN",
+  "topic": "Robot sensors",
+  "audience": "Grade 6 science learners",
+  "learning_objectives": ["Describe how a sensor supplies information to a robot controller."],
+  "structure": {"opening": "Meet the robot in its lab.", "development": "Trace the sensor signal.", "conclusion": "The controller uses the signal to respond."},
+  "aspect_ratio": "9:16",
+  "voice": {"voice_id": "vi-VN-approved-voice", "rate": 1},
+  "subtitles": {"enabled": true, "size": "large", "safe_region": "subtitle"},
+  "metadata": {"social": {"caption": "Sensors help robots respond."}, "youtube": {"title": "How a Robot Sensor Works", "tags": ["robot", "sensor"]}},
+  "art_direction": {"palette": {"deep": "#182D45", "cyan": "#42C6D8", "warm": "#F3B65E"}, "type_style": "bundled-sans-rounded", "illustration_style": "layered modern science illustration"},
+  "assets": [{"asset_id": "lab-background", "mime_type": "image/webp", "width": 1600, "height": 2400, "sha256": "REPLACE_WITH_REAL_ASSET_SHA256", "provenance": {"source": "locally licensed lab illustration", "license": "REPLACE_WITH_VERIFIED_LICENSE"}, "path": "assets/lab-background.webp"}],
+  "symbols": {},
+  "characters": [{"ref": "host", "character_id": "REPLACE_WITH_LIBRARY_CHARACTER_ID", "character_type": "sprite", "published_version": "REPLACE_WITH_LIBRARY_VERSION", "checksum": "REPLACE_WITH_LIBRARY_CHECKSUM", "approved_capabilities": ["idle", "point"]}],
+  "scenes": [{
+    "id": "sensor-signal",
+    "title": "The sensor sends a signal to the controller",
+    "duration_seconds": 10,
+    "narration": "A sensor detects information about the robot's surroundings. It sends a signal to the controller, which can then choose a response.",
+    "layout": {"safe_regions": ["title", "subtitle"], "focus": "signal"},
+    "root": {"type": "group", "id": "scene", "children": [
+      {"type": "image", "id": "lab", "asset_ref": "lab-background", "fit": "cover", "crop": {"x": 0.1, "y": 0.05, "width": 0.8, "height": 0.9}},
+      {"type": "rounded_rect", "id": "controller", "transform": {"x": 0.5, "y": 0.48, "scale_x": 0.29, "scale_y": 0.18}, "style": {"fill": "#182D45", "stroke": "#42C6D8", "stroke_width": 0.01}},
+      {"type": "text", "id": "controller-label", "text": "CONTROLLER", "transform": {"x": 0.5, "y": 0.48}, "layout": {"max_width": 0.25, "align": "center", "font_token": "bundled-sans-rounded", "size": 0.025, "weight": 700}, "style": {"fill": "#FFFFFF"}},
+      {"type": "path", "id": "signal", "geometry": {"d": "M 0.28 0.48 L 0.35 0.48 L 0.39 0.42 L 0.43 0.54 L 0.47 0.48"}, "style": {"fill": "none", "stroke": "#F3B65E", "stroke_width": 0.012, "cap": "round", "join": "round"}},
+      {"type": "character_instance", "id": "host-instance", "character_ref": "host", "transform": {"x": 0.73, "y": 0.68, "scale": 0.62, "origin": "bottom_center"}, "z": 20}
+    ]},
+    "tracks": [{"target": "signal", "property": "draw_progress", "keyframes": [{"at": 1, "value": 0}, {"at": 3, "value": 1, "easing": "ease_in_out"}]}, {"target": "host-instance", "property": "character_action", "action": "point", "keyframes": [{"at": 3, "value": true}, {"at": 5, "value": false}]}]
+  }]
+}

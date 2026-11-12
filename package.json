@@ -4,12 +4,12 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=20"
+    "node": ">=22.13.0"
   },
   "scripts": {
     "start": "node server.mjs",
-    "test": "node tests/visual-dsl-v2-stage1.test.js",
-    "test:focused": "node tests/visual-dsl-focused.test.js"
+    "test": "node tests/visual-dsl-v2-stage1.test.js && node tests/visual-dsl-v3-foundation.test.js && node tests/visual-dsl-v3-images.test.js && node tests/visual-dsl-v3-timeline.test.js && node tests/visual-dsl-v3-project.test.js && node tests/visual-dsl-v3-prompt.test.js && node tests/visual-asset-registry.test.js && node tests/visual-asset-catalog.test.js && node tests/visual-asset-taxonomy.test.js && node tests/visual-asset-creator.test.js && node tests/batch-script-routing.test.js && node tests/human-rig.test.js && node tests/character-art-integration-contract.test.js && node tests/character-assets.test.js && node tests/character-image-renderer.test.js && node tests/character-prompt-builder.test.js && node tests/character-library-contract.test.js && node tests/character-library-storage.test.js && node tests/character-artwork-import.test.js && node tests/character-rig-editor.test.js && node tests/character-auto-assembly.test.js && node tests/character-rig-ready-metadata.test.js && node tests/character-studio.test.js && node tests/character-sprite.test.js && node tests/character-sprite-workflow.test.js && node tests/sprite-animation.test.js && node tests/sprite-animation-harness-model.test.js && node tests/sprite-clips.test.js && node tests/script-prompt-builder.test.js && node tests/script-character-import.test.js",
+    "test:focused": "node tests/visual-asset-registry.test.js && node tests/visual-asset-catalog.test.js && node tests/visual-asset-taxonomy.test.js && node tests/visual-asset-creator.test.js && node tests/visual-dsl-v3-images.test.js"
   },
   "dependencies": {
     "mediabunny": "^1.65.2"

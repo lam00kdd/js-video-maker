@@ -1,0 +1,1311 @@
+{
+  "visual_dsl_version": 3,
+  "title": "Robot nhận biết vật cản · minh họa giáo dục",
+  "language": "vi-VN",
+  "topic": "Cảm biến và phản hồi",
+  "audience": "Học sinh tiểu học",
+  "aspect_ratio": "both",
+  "art_direction": {
+    "preset": "educational_cartoon_premium",
+    "style_name": "Sắc màu vui tươi · hình khối mềm",
+    "description": "Màu sắc tươi sáng, tương phản rõ, bo tròn thân thiện và bóng đổ tiết chế."
+  },
+  "tokens": {
+    "accent": "#26B9AD",
+    "coral": "#F07858"
+  },
+  "symbols": {},
+  "variants": {
+    "landscape": {
+      "scenes": [
+        {
+          "id": "robot-landscape",
+          "title": "Robot phát hiện vật cản",
+          "duration_seconds": 12,
+          "narration": "Cảm biến phát tín hiệu về phía trước. Khi gặp vật cản, tín hiệu phản hồi giúp bộ điều khiển ra lệnh cho robot dừng lại.",
+          "stage": {
+            "width": 1600,
+            "height": 900,
+            "background": "#F2F6FC"
+          },
+          "layout": {
+            "minimum_text_px": 12,
+            "safe_regions": [
+              {
+                "name": "subtitle",
+                "x": 0,
+                "y": 801,
+                "width": 1600,
+                "height": 99
+              }
+            ]
+          },
+          "root": {
+            "id": "root-landscape",
+            "type": "group",
+            "clip": {
+              "type": "rounded_rect",
+              "geometry": {
+                "x": 16,
+                "y": 16,
+                "width": 1568,
+                "height": 868,
+                "radius": 44
+              }
+            },
+            "children": [
+              {
+                "id": "background-card",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": 70,
+                  "y": 48,
+                  "width": 1460,
+                  "height": 804,
+                  "radius": 48
+                },
+                "style": {
+                  "fill": {
+                    "type": "linear",
+                    "units": "scene",
+                    "x1": 0,
+                    "y1": 0,
+                    "x2": 1600,
+                    "y2": 900,
+                    "stops": [
+                      {
+                        "offset": 0,
+                        "color": "#FFF9E8"
+                      },
+                      {
+                        "offset": 1,
+                        "color": "#EAF4FF"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": "eyebrow",
+                "type": "text",
+                "geometry": {
+                  "x": 120,
+                  "y": 85,
+                  "text": "KHÁM PHÁ CÔNG NGHỆ",
+                  "font_size": 20,
+                  "font_family": "Arial",
+                  "font_weight": "normal",
+                  "text_baseline": "top",
+                  "letter_spacing": 2
+                },
+                "style": {
+                  "fill": "#566C91"
+                }
+              },
+              {
+                "id": "title",
+                "type": "text",
+                "geometry": {
+                  "x": 120,
+                  "y": 132,
+                  "text": "ROBOT NHẬN BIẾT VẬT CẢN",
+                  "font_size": 48,
+                  "font_family": "Arial",
+                  "font_weight": "bold",
+                  "text_baseline": "top",
+                  "max_width": 760,
+                  "wrap": "word",
+                  "max_lines": 2
+                },
+                "style": {
+                  "fill": "#243456"
+                }
+              },
+              {
+                "id": "subtitle",
+                "type": "text",
+                "geometry": {
+                  "x": 120,
+                  "y": 205,
+                  "text": "Cảm biến phát hiện vật thể phía trước",
+                  "font_size": 26,
+                  "font_family": "Arial",
+                  "font_weight": "normal",
+                  "text_baseline": "top",
+                  "max_width": 800,
+                  "wrap": "word",
+                  "max_lines": 2
+                },
+                "style": {
+                  "fill": "#52627E"
+                }
+              },
+              {
+                "id": "robot-shadow",
+                "type": "circle",
+                "geometry": {
+                  "cx": 1080,
+                  "cy": 846.5,
+                  "radius": 183.75
+                },
+                "style": {
+                  "fill": {
+                    "type": "radial",
+                    "units": "local",
+                    "cx": 1080,
+                    "cy": 846.5,
+                    "radius": 183.75,
+                    "stops": [
+                      {
+                        "offset": 0,
+                        "color": "#8799BD",
+                        "opacity": 0.24
+                      },
+                      {
+                        "offset": 1,
+                        "color": "#8799BD",
+                        "opacity": 0
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": "robot-antenna",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": 1067.4,
+                  "y": 248,
+                  "width": 25.200000000000003,
+                  "height": 105,
+                  "radius": 12.600000000000001
+                },
+                "style": {
+                  "fill": "#7784D8"
+                }
+              },
+              {
+                "id": "antenna-light",
+                "type": "circle",
+                "geometry": {
+                  "cx": 1080,
+                  "cy": 239.6,
+                  "radius": 22.05
+                },
+                "style": {
+                  "fill": "#FA765D",
+                  "shadow": {
+                    "color": "#FA765D",
+                    "blur": 12,
+                    "offset_x": 0,
+                    "offset_y": 2,
+                    "opacity": 0.28
+                  }
+                }
+              },
+              {
+                "id": "robot-body",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": 938.25,
+                  "y": 489.5,
+                  "width": 283.5,
+                  "height": 304.5,
+                  "radius": 75.60000000000001
+                },
+                "style": {
+                  "fill": {
+                    "type": "linear",
+                    "units": "local",
+                    "x1": 938.25,
+                    "y1": 489.5,
+                    "x2": 1221.75,
+                    "y2": 794,
+                    "stops": [
+                      {
+                        "offset": 0,
+                        "color": "#8C9CF0"
+                      },
+                      {
+                        "offset": 0.48,
+                        "color": "#6879D1"
+                      },
+                      {
+                        "offset": 1,
+                        "color": "#5364B8"
+                      }
+                    ]
+                  },
+                  "stroke": "#46578F",
+                  "stroke_width": 5,
+                  "shadow": {
+                    "color": "#25345B",
+                    "blur": 18,
+                    "offset_x": 0,
+                    "offset_y": 14,
+                    "opacity": 0.22
+                  }
+                }
+              },
+              {
+                "id": "robot-head",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": 880.5,
+                  "y": 290,
+                  "width": 399,
+                  "height": 267.75,
+                  "radius": 88.2
+                },
+                "style": {
+                  "fill": {
+                    "type": "linear",
+                    "units": "local",
+                    "x1": 880.5,
+                    "y1": 290,
+                    "x2": 1279.5,
+                    "y2": 557.75,
+                    "stops": [
+                      {
+                        "offset": 0,
+                        "color": "#FFFFFF"
+                      },
+                      {
+                        "offset": 1,
+                        "color": "#DCE8FF"
+                      }
+                    ]
+                  },
+                  "stroke": "#516394",
+                  "stroke_width": 5,
+                  "shadow": {
+                    "color": "#273653",
+                    "blur": 14,
+                    "offset_x": 0,
+                    "offset_y": 10,
+                    "opacity": 0.18
+                  }
+                }
+              },
+              {
+                "id": "visor",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": 929.85,
+                  "y": 355.1,
+                  "width": 300.3,
+                  "height": 134.4,
+                  "radius": 58.800000000000004
+                },
+                "style": {
+                  "fill": "#243456"
+                }
+              },
+              {
+                "id": "eye-left",
+                "type": "circle",
+                "geometry": {
+                  "cx": 1011.75,
+                  "cy": 421.25,
+                  "radius": 18.900000000000002
+                },
+                "style": {
+                  "fill": "#6BE3D3"
+                }
+              },
+              {
+                "id": "eye-right",
+                "type": "circle",
+                "geometry": {
+                  "cx": 1148.25,
+                  "cy": 421.25,
+                  "radius": 18.900000000000002
+                },
+                "style": {
+                  "fill": "#6BE3D3"
+                }
+              },
+              {
+                "id": "sensor-ring",
+                "type": "ellipse",
+                "geometry": {
+                  "cx": 1080,
+                  "cy": 525.2,
+                  "rx": 75.60000000000001,
+                  "ry": 34.65
+                },
+                "style": {
+                  "fill": "#FFF3CB",
+                  "stroke": "#E3A94D",
+                  "stroke_width": 5
+                }
+              },
+              {
+                "id": "sensor-lens",
+                "type": "ellipse",
+                "geometry": {
+                  "cx": 1080,
+                  "cy": 525.2,
+                  "rx": 33.6,
+                  "ry": 17.85
+                },
+                "style": {
+                  "fill": {
+                    "type": "radial",
+                    "units": "local",
+                    "cx": 1080,
+                    "cy": 525.2,
+                    "radius": 35.7,
+                    "stops": [
+                      {
+                        "offset": 0,
+                        "color": "#9BF3E7"
+                      },
+                      {
+                        "offset": 1,
+                        "color": "#21B8B2"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": "sensor-wave-outer",
+                "type": "path",
+                "geometry": {
+                  "d": "M 1164 451.70000000000005 Q 1332 525.2 1164 598.7"
+                },
+                "style": {
+                  "fill": "none",
+                  "stroke": "#F7A65B",
+                  "stroke_width": 8,
+                  "line_cap": "round",
+                  "stroke_opacity": 0.55
+                }
+              },
+              {
+                "id": "sensor-wave-inner",
+                "type": "path",
+                "geometry": {
+                  "d": "M 1169.25 481.1 Q 1263.75 525.2 1169.25 569.3000000000001"
+                },
+                "style": {
+                  "fill": "none",
+                  "stroke": "#F07858",
+                  "stroke_width": 9,
+                  "line_cap": "round"
+                }
+              },
+              {
+                "id": "obstacle",
+                "type": "polygon",
+                "geometry": {
+                  "points": [
+                    [
+                      1316.25,
+                      699.5
+                    ],
+                    [
+                      1368.75,
+                      626
+                    ],
+                    [
+                      1427.55,
+                      699.5
+                    ],
+                    [
+                      1409.7,
+                      825.5
+                    ],
+                    [
+                      1327.8,
+                      825.5
+                    ]
+                  ]
+                },
+                "style": {
+                  "fill": {
+                    "type": "linear",
+                    "units": "local",
+                    "x1": 1316.25,
+                    "y1": 626,
+                    "x2": 1427.55,
+                    "y2": 825.5,
+                    "stops": [
+                      {
+                        "offset": 0,
+                        "color": "#FA8568"
+                      },
+                      {
+                        "offset": 1,
+                        "color": "#D94E54"
+                      }
+                    ]
+                  },
+                  "stroke": "#A83D4B",
+                  "stroke_width": 5,
+                  "shadow": {
+                    "color": "#672E4D",
+                    "blur": 12,
+                    "offset_x": 0,
+                    "offset_y": 9,
+                    "opacity": 0.2
+                  }
+                }
+              },
+              {
+                "id": "info-card",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": 130,
+                  "y": 690,
+                  "width": 1340,
+                  "height": 112,
+                  "radius": 32
+                },
+                "style": {
+                  "fill": "#FFFFFF",
+                  "shadow": {
+                    "color": "#455A7C",
+                    "blur": 12,
+                    "offset_x": 0,
+                    "offset_y": 6,
+                    "opacity": 0.12
+                  }
+                }
+              },
+              {
+                "id": "info-label",
+                "type": "text",
+                "geometry": {
+                  "x": 175,
+                  "y": 713,
+                  "text": "TÍN HIỆU PHẢN HỒI",
+                  "font_size": 19,
+                  "font_family": "Arial",
+                  "font_weight": "normal",
+                  "text_baseline": "top",
+                  "letter_spacing": 1
+                },
+                "style": {
+                  "fill": "#6879D1"
+                }
+              },
+              {
+                "id": "info-body",
+                "type": "text",
+                "geometry": {
+                  "x": 500,
+                  "y": 713,
+                  "text": "Cảm biến gửi dữ liệu về bộ điều khiển để robot dừng lại.",
+                  "font_size": 24,
+                  "font_family": "Arial",
+                  "font_weight": "normal",
+                  "text_baseline": "top",
+                  "max_width": 900,
+                  "wrap": "word",
+                  "max_lines": 2
+                },
+                "style": {
+                  "fill": "#243456"
+                }
+              },
+              {
+                "id": "footer",
+                "type": "text",
+                "geometry": {
+                  "x": 120,
+                  "y": 760,
+                  "text": "QUAN SÁT  ·  PHÂN TÍCH  ·  PHẢN ỨNG",
+                  "font_size": 16,
+                  "font_family": "Arial",
+                  "font_weight": "normal",
+                  "text_baseline": "top",
+                  "letter_spacing": 1.2
+                },
+                "style": {
+                  "fill": "#62708B"
+                }
+              }
+            ]
+          },
+          "timeline": {
+            "tracks": [
+              {
+                "target_id": "robot-body",
+                "property": "x",
+                "keyframes": [
+                  {
+                    "time_seconds": 0,
+                    "value": 0
+                  },
+                  {
+                    "time_seconds": 4,
+                    "value": 20,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 8,
+                    "value": 0,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 12,
+                    "value": -12,
+                    "easing": "ease_in_out"
+                  }
+                ]
+              },
+              {
+                "target_id": "sensor-wave-outer",
+                "property": "draw_progress",
+                "keyframes": [
+                  {
+                    "time_seconds": 0,
+                    "value": 0
+                  },
+                  {
+                    "time_seconds": 2,
+                    "value": 1,
+                    "easing": "ease_out"
+                  },
+                  {
+                    "time_seconds": 5,
+                    "value": 0
+                  },
+                  {
+                    "time_seconds": 7,
+                    "value": 1,
+                    "easing": "ease_out"
+                  },
+                  {
+                    "time_seconds": 12,
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "target_id": "sensor-wave-inner",
+                "property": "opacity",
+                "keyframes": [
+                  {
+                    "time_seconds": 0,
+                    "value": 0.35
+                  },
+                  {
+                    "time_seconds": 2,
+                    "value": 1,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 5,
+                    "value": 0.35
+                  },
+                  {
+                    "time_seconds": 7,
+                    "value": 1,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 12,
+                    "value": 0.35
+                  }
+                ]
+              },
+              {
+                "target_id": "camera",
+                "property": "camera.pan_x",
+                "keyframes": [
+                  {
+                    "time_seconds": 0,
+                    "value": 0
+                  },
+                  {
+                    "time_seconds": 6,
+                    "value": 80,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 12,
+                    "value": 0,
+                    "easing": "ease_in_out"
+                  }
+                ]
+              },
+              {
+                "target_id": "camera",
+                "property": "camera.zoom",
+                "keyframes": [
+                  {
+                    "time_seconds": 0,
+                    "value": 1
+                  },
+                  {
+                    "time_seconds": 4,
+                    "value": 1.15,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 8,
+                    "value": 1.3,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 12,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "portrait": {
+      "scenes": [
+        {
+          "id": "robot-portrait",
+          "title": "Robot phát hiện vật cản",
+          "duration_seconds": 12,
+          "narration": "Cảm biến phát tín hiệu về phía trước. Khi gặp vật cản, tín hiệu phản hồi giúp bộ điều khiển ra lệnh cho robot dừng lại.",
+          "stage": {
+            "width": 900,
+            "height": 1600,
+            "background": "#F4F7FC"
+          },
+          "layout": {
+            "minimum_text_px": 12,
+            "safe_regions": [
+              {
+                "name": "subtitle",
+                "x": 0,
+                "y": 1424,
+                "width": 900,
+                "height": 176
+              }
+            ]
+          },
+          "root": {
+            "id": "root-portrait",
+            "type": "group",
+            "clip": {
+              "type": "rounded_rect",
+              "geometry": {
+                "x": 16,
+                "y": 16,
+                "width": 868,
+                "height": 1568,
+                "radius": 44
+              }
+            },
+            "children": [
+              {
+                "id": "background-card",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": 48,
+                  "y": 58,
+                  "width": 804,
+                  "height": 1484,
+                  "radius": 48
+                },
+                "style": {
+                  "fill": {
+                    "type": "linear",
+                    "units": "scene",
+                    "x1": 0,
+                    "y1": 0,
+                    "x2": 900,
+                    "y2": 1600,
+                    "stops": [
+                      {
+                        "offset": 0,
+                        "color": "#FFF9E8"
+                      },
+                      {
+                        "offset": 1,
+                        "color": "#EAF4FF"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": "eyebrow",
+                "type": "text",
+                "geometry": {
+                  "x": 92,
+                  "y": 96,
+                  "text": "KHÁM PHÁ CÔNG NGHỆ",
+                  "font_size": 20,
+                  "font_family": "Arial",
+                  "font_weight": "normal",
+                  "text_baseline": "top",
+                  "letter_spacing": 2
+                },
+                "style": {
+                  "fill": "#566C91"
+                }
+              },
+              {
+                "id": "title",
+                "type": "text",
+                "geometry": {
+                  "x": 92,
+                  "y": 142,
+                  "text": "ROBOT NHẬN BIẾT VẬT CẢN",
+                  "font_size": 42,
+                  "font_family": "Arial",
+                  "font_weight": "bold",
+                  "text_baseline": "top",
+                  "max_width": 700,
+                  "wrap": "word",
+                  "max_lines": 2
+                },
+                "style": {
+                  "fill": "#243456"
+                }
+              },
+              {
+                "id": "subtitle",
+                "type": "text",
+                "geometry": {
+                  "x": 92,
+                  "y": 246,
+                  "text": "Cảm biến phát hiện vật thể phía trước",
+                  "font_size": 24,
+                  "font_family": "Arial",
+                  "font_weight": "normal",
+                  "text_baseline": "top",
+                  "max_width": 680,
+                  "wrap": "word",
+                  "max_lines": 2
+                },
+                "style": {
+                  "fill": "#52627E"
+                }
+              },
+              {
+                "id": "robot-shadow",
+                "type": "circle",
+                "geometry": {
+                  "cx": 450,
+                  "cy": 960,
+                  "radius": 175
+                },
+                "style": {
+                  "fill": {
+                    "type": "radial",
+                    "units": "local",
+                    "cx": 450,
+                    "cy": 960,
+                    "radius": 175,
+                    "stops": [
+                      {
+                        "offset": 0,
+                        "color": "#8799BD",
+                        "opacity": 0.24
+                      },
+                      {
+                        "offset": 1,
+                        "color": "#8799BD",
+                        "opacity": 0
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": "robot-antenna",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": 438,
+                  "y": 390,
+                  "width": 24,
+                  "height": 100,
+                  "radius": 12
+                },
+                "style": {
+                  "fill": "#7784D8"
+                }
+              },
+              {
+                "id": "antenna-light",
+                "type": "circle",
+                "geometry": {
+                  "cx": 450,
+                  "cy": 382,
+                  "radius": 21
+                },
+                "style": {
+                  "fill": "#FA765D",
+                  "shadow": {
+                    "color": "#FA765D",
+                    "blur": 12,
+                    "offset_x": 0,
+                    "offset_y": 2,
+                    "opacity": 0.28
+                  }
+                }
+              },
+              {
+                "id": "robot-body",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": 315,
+                  "y": 620,
+                  "width": 270,
+                  "height": 290,
+                  "radius": 72
+                },
+                "style": {
+                  "fill": {
+                    "type": "linear",
+                    "units": "local",
+                    "x1": 315,
+                    "y1": 620,
+                    "x2": 585,
+                    "y2": 910,
+                    "stops": [
+                      {
+                        "offset": 0,
+                        "color": "#8C9CF0"
+                      },
+                      {
+                        "offset": 0.48,
+                        "color": "#6879D1"
+                      },
+                      {
+                        "offset": 1,
+                        "color": "#5364B8"
+                      }
+                    ]
+                  },
+                  "stroke": "#46578F",
+                  "stroke_width": 5,
+                  "shadow": {
+                    "color": "#25345B",
+                    "blur": 18,
+                    "offset_x": 0,
+                    "offset_y": 14,
+                    "opacity": 0.22
+                  }
+                }
+              },
+              {
+                "id": "robot-head",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": 260,
+                  "y": 430,
+                  "width": 380,
+                  "height": 255,
+                  "radius": 84
+                },
+                "style": {
+                  "fill": {
+                    "type": "linear",
+                    "units": "local",
+                    "x1": 260,
+                    "y1": 430,
+                    "x2": 640,
+                    "y2": 685,
+                    "stops": [
+                      {
+                        "offset": 0,
+                        "color": "#FFFFFF"
+                      },
+                      {
+                        "offset": 1,
+                        "color": "#DCE8FF"
+                      }
+                    ]
+                  },
+                  "stroke": "#516394",
+                  "stroke_width": 5,
+                  "shadow": {
+                    "color": "#273653",
+                    "blur": 14,
+                    "offset_x": 0,
+                    "offset_y": 10,
+                    "opacity": 0.18
+                  }
+                }
+              },
+              {
+                "id": "visor",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": 307,
+                  "y": 492,
+                  "width": 286,
+                  "height": 128,
+                  "radius": 56
+                },
+                "style": {
+                  "fill": "#243456"
+                }
+              },
+              {
+                "id": "eye-left",
+                "type": "circle",
+                "geometry": {
+                  "cx": 385,
+                  "cy": 555,
+                  "radius": 18
+                },
+                "style": {
+                  "fill": "#6BE3D3"
+                }
+              },
+              {
+                "id": "eye-right",
+                "type": "circle",
+                "geometry": {
+                  "cx": 515,
+                  "cy": 555,
+                  "radius": 18
+                },
+                "style": {
+                  "fill": "#6BE3D3"
+                }
+              },
+              {
+                "id": "sensor-ring",
+                "type": "ellipse",
+                "geometry": {
+                  "cx": 450,
+                  "cy": 654,
+                  "rx": 72,
+                  "ry": 33
+                },
+                "style": {
+                  "fill": "#FFF3CB",
+                  "stroke": "#E3A94D",
+                  "stroke_width": 5
+                }
+              },
+              {
+                "id": "sensor-lens",
+                "type": "ellipse",
+                "geometry": {
+                  "cx": 450,
+                  "cy": 654,
+                  "rx": 32,
+                  "ry": 17
+                },
+                "style": {
+                  "fill": {
+                    "type": "radial",
+                    "units": "local",
+                    "cx": 450,
+                    "cy": 654,
+                    "radius": 34,
+                    "stops": [
+                      {
+                        "offset": 0,
+                        "color": "#9BF3E7"
+                      },
+                      {
+                        "offset": 1,
+                        "color": "#21B8B2"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": "sensor-wave-outer",
+                "type": "path",
+                "geometry": {
+                  "d": "M 530 584 Q 690 654 530 724"
+                },
+                "style": {
+                  "fill": "none",
+                  "stroke": "#F7A65B",
+                  "stroke_width": 8,
+                  "line_cap": "round",
+                  "stroke_opacity": 0.55
+                }
+              },
+              {
+                "id": "sensor-wave-inner",
+                "type": "path",
+                "geometry": {
+                  "d": "M 535 612 Q 625 654 535 696"
+                },
+                "style": {
+                  "fill": "none",
+                  "stroke": "#F07858",
+                  "stroke_width": 9,
+                  "line_cap": "round"
+                }
+              },
+              {
+                "id": "obstacle",
+                "type": "polygon",
+                "geometry": {
+                  "points": [
+                    [
+                      675,
+                      820
+                    ],
+                    [
+                      725,
+                      750
+                    ],
+                    [
+                      781,
+                      820
+                    ],
+                    [
+                      764,
+                      940
+                    ],
+                    [
+                      686,
+                      940
+                    ]
+                  ]
+                },
+                "style": {
+                  "fill": {
+                    "type": "linear",
+                    "units": "local",
+                    "x1": 675,
+                    "y1": 750,
+                    "x2": 781,
+                    "y2": 940,
+                    "stops": [
+                      {
+                        "offset": 0,
+                        "color": "#FA8568"
+                      },
+                      {
+                        "offset": 1,
+                        "color": "#D94E54"
+                      }
+                    ]
+                  },
+                  "stroke": "#A83D4B",
+                  "stroke_width": 5,
+                  "shadow": {
+                    "color": "#672E4D",
+                    "blur": 12,
+                    "offset_x": 0,
+                    "offset_y": 9,
+                    "opacity": 0.2
+                  }
+                }
+              },
+              {
+                "id": "info-card",
+                "type": "rounded_rect",
+                "geometry": {
+                  "x": 100,
+                  "y": 1130,
+                  "width": 700,
+                  "height": 210,
+                  "radius": 34
+                },
+                "style": {
+                  "fill": "#FFFFFF",
+                  "shadow": {
+                    "color": "#455A7C",
+                    "blur": 12,
+                    "offset_x": 0,
+                    "offset_y": 6,
+                    "opacity": 0.12
+                  }
+                }
+              },
+              {
+                "id": "info-label",
+                "type": "text",
+                "geometry": {
+                  "x": 140,
+                  "y": 1170,
+                  "text": "TÍN HIỆU PHẢN HỒI",
+                  "font_size": 20,
+                  "font_family": "Arial",
+                  "font_weight": "normal",
+                  "text_baseline": "top",
+                  "letter_spacing": 1
+                },
+                "style": {
+                  "fill": "#6879D1"
+                }
+              },
+              {
+                "id": "info-body",
+                "type": "text",
+                "geometry": {
+                  "x": 140,
+                  "y": 1215,
+                  "text": "Khi có vật cản, cảm biến gửi tín hiệu\nvề bộ điều khiển.",
+                  "font_size": 25,
+                  "font_family": "Arial",
+                  "font_weight": "normal",
+                  "text_baseline": "top",
+                  "max_width": 610,
+                  "wrap": "word",
+                  "line_height": 1.35,
+                  "max_lines": 3
+                },
+                "style": {
+                  "fill": "#243456"
+                }
+              },
+              {
+                "id": "footer",
+                "type": "text",
+                "geometry": {
+                  "x": 92,
+                  "y": 1380,
+                  "text": "QUAN SÁT  ·  PHÂN TÍCH  ·  PHẢN ỨNG",
+                  "font_size": 16,
+                  "font_family": "Arial",
+                  "font_weight": "normal",
+                  "text_baseline": "top",
+                  "letter_spacing": 1.2
+                },
+                "style": {
+                  "fill": "#62708B"
+                }
+              }
+            ]
+          },
+          "timeline": {
+            "tracks": [
+              {
+                "target_id": "robot-body",
+                "property": "x",
+                "keyframes": [
+                  {
+                    "time_seconds": 0,
+                    "value": 0
+                  },
+                  {
+                    "time_seconds": 4,
+                    "value": 20,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 8,
+                    "value": 0,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 12,
+                    "value": -12,
+                    "easing": "ease_in_out"
+                  }
+                ]
+              },
+              {
+                "target_id": "sensor-wave-outer",
+                "property": "draw_progress",
+                "keyframes": [
+                  {
+                    "time_seconds": 0,
+                    "value": 0
+                  },
+                  {
+                    "time_seconds": 2,
+                    "value": 1,
+                    "easing": "ease_out"
+                  },
+                  {
+                    "time_seconds": 5,
+                    "value": 0
+                  },
+                  {
+                    "time_seconds": 7,
+                    "value": 1,
+                    "easing": "ease_out"
+                  },
+                  {
+                    "time_seconds": 12,
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "target_id": "sensor-wave-inner",
+                "property": "opacity",
+                "keyframes": [
+                  {
+                    "time_seconds": 0,
+                    "value": 0.35
+                  },
+                  {
+                    "time_seconds": 2,
+                    "value": 1,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 5,
+                    "value": 0.35
+                  },
+                  {
+                    "time_seconds": 7,
+                    "value": 1,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 12,
+                    "value": 0.35
+                  }
+                ]
+              },
+              {
+                "target_id": "camera",
+                "property": "camera.pan_x",
+                "keyframes": [
+                  {
+                    "time_seconds": 0,
+                    "value": 0
+                  },
+                  {
+                    "time_seconds": 6,
+                    "value": 80,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 12,
+                    "value": 0,
+                    "easing": "ease_in_out"
+                  }
+                ]
+              },
+              {
+                "target_id": "camera",
+                "property": "camera.zoom",
+                "keyframes": [
+                  {
+                    "time_seconds": 0,
+                    "value": 1
+                  },
+                  {
+                    "time_seconds": 4,
+                    "value": 1.15,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 8,
+                    "value": 1.3,
+                    "easing": "ease_in_out"
+                  },
+                  {
+                    "time_seconds": 12,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1513 @@
+{
+  "visual_dsl_version": 2,
+  "title": "LAM AI LAB — Giáo viên chuyển động tự nhiên M2",
+  "aspect_ratio": "both",
+  "variants": {
+    "landscape": {
+      "scenes": [
+        {
+          "title": "Giáo viên · tư thế nghỉ tự nhiên",
+          "narration": "Một tư thế đứng tự nhiên có những chuyển động rất nhỏ. Thân người khẽ đổi góc, vai nâng lên theo nhịp thở, rồi hạ xuống khi thở ra. Đôi mắt chớp theo những khoảng nghỉ có thời điểm xác định. Các chuyển động này được tính theo thời gian của cảnh nên việc dừng hoặc tua đến một thời điểm bất kỳ vẫn cho cùng một tư thế.",
+          "estimated_seconds": 30,
+          "background": "#101a2a",
+          "scene_graph": {
+            "version": 2,
+            "coordinate_space": "normalized",
+            "objects": [
+              {
+                "id": "background",
+                "type": "rectangle",
+                "z_index": -10,
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "style": {
+                  "fill": "#101a2a",
+                  "stroke": "none"
+                },
+                "geometry": {
+                  "width": 2,
+                  "height": 2
+                },
+                "actions": []
+              },
+              {
+                "id": "floor",
+                "type": "line",
+                "z_index": -1,
+                "transform": {},
+                "style": {
+                  "stroke": "#40546a",
+                  "stroke_width": 0.003
+                },
+                "geometry": {
+                  "start": {
+                    "x": 0.08,
+                    "y": 0.68
+                  },
+                  "end": {
+                    "x": 0.92,
+                    "y": 0.68
+                  }
+                },
+                "actions": []
+              },
+              {
+                "id": "lesson-title",
+                "type": "label",
+                "z_index": 0,
+                "transform": {
+                  "x": 0.72,
+                  "y": 0.18
+                },
+                "style": {
+                  "fill": "#e7eef5",
+                  "stroke": "#e7eef5",
+                  "font_size": 0.038,
+                  "text_align": "center"
+                },
+                "properties": {
+                  "content": "CHUYỂN ĐỘNG TỰ NHIÊN",
+                  "max_width": 0.42
+                },
+                "actions": []
+              }
+            ],
+            "character_rigs": [
+              {
+                "id": "teacher-natural-v1",
+                "joints": [
+                  {
+                    "id": "root",
+                    "parent_id": null,
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.2,
+                      "max": 0.2
+                    },
+                    "length": 0
+                  },
+                  {
+                    "id": "pelvis",
+                    "parent_id": "root",
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.2,
+                      "max": 0.2
+                    },
+                    "length": 0.12
+                  },
+                  {
+                    "id": "torso",
+                    "parent_id": "pelvis",
+                    "position": {
+                      "x": 0,
+                      "y": -0.05
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.12,
+                      "max": 0.12
+                    },
+                    "length": 0.25
+                  },
+                  {
+                    "id": "neck",
+                    "parent_id": "torso",
+                    "position": {
+                      "x": 0,
+                      "y": -0.19
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.25,
+                      "max": 0.25
+                    },
+                    "length": 0.07
+                  },
+                  {
+                    "id": "head",
+                    "parent_id": "neck",
+                    "position": {
+                      "x": 0,
+                      "y": -0.07
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.3,
+                      "max": 0.3
+                    },
+                    "length": 0.14
+                  },
+                  {
+                    "id": "left_upper_arm",
+                    "parent_id": "torso",
+                    "position": {
+                      "x": -0.105,
+                      "y": -0.16
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": -0.12
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1.5,
+                      "max": 1.5
+                    },
+                    "length": 0.17
+                  },
+                  {
+                    "id": "left_forearm",
+                    "parent_id": "left_upper_arm",
+                    "position": {
+                      "x": -0.035,
+                      "y": 0.14
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0.18
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1.5,
+                      "max": 1.5
+                    },
+                    "length": 0.15
+                  },
+                  {
+                    "id": "left_hand",
+                    "parent_id": "left_forearm",
+                    "position": {
+                      "x": -0.005,
+                      "y": 0.13
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1,
+                      "max": 1
+                    },
+                    "length": 0.07
+                  },
+                  {
+                    "id": "right_upper_arm",
+                    "parent_id": "torso",
+                    "position": {
+                      "x": 0.105,
+                      "y": -0.16
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0.12
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1.5,
+                      "max": 1.5
+                    },
+                    "length": 0.17
+                  },
+                  {
+                    "id": "right_forearm",
+                    "parent_id": "right_upper_arm",
+                    "position": {
+                      "x": 0.035,
+                      "y": 0.14
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": -0.18
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1.5,
+                      "max": 1.5
+                    },
+                    "length": 0.15
+                  },
+                  {
+                    "id": "right_hand",
+                    "parent_id": "right_forearm",
+                    "position": {
+                      "x": 0.005,
+                      "y": 0.13
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1,
+                      "max": 1
+                    },
+                    "length": 0.07
+                  },
+                  {
+                    "id": "left_thigh",
+                    "parent_id": "pelvis",
+                    "position": {
+                      "x": -0.045,
+                      "y": 0.04
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1,
+                      "max": 1
+                    },
+                    "length": 0.19
+                  },
+                  {
+                    "id": "left_shin",
+                    "parent_id": "left_thigh",
+                    "position": {
+                      "x": 0,
+                      "y": 0.18
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1,
+                      "max": 1
+                    },
+                    "length": 0.19
+                  },
+                  {
+                    "id": "left_foot",
+                    "parent_id": "left_shin",
+                    "position": {
+                      "x": -0.025,
+                      "y": 0.17
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.4,
+                      "max": 0.4
+                    },
+                    "length": 0.07
+                  },
+                  {
+                    "id": "right_thigh",
+                    "parent_id": "pelvis",
+                    "position": {
+                      "x": 0.045,
+                      "y": 0.04
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1,
+                      "max": 1
+                    },
+                    "length": 0.19
+                  },
+                  {
+                    "id": "right_shin",
+                    "parent_id": "right_thigh",
+                    "position": {
+                      "x": 0,
+                      "y": 0.18
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1,
+                      "max": 1
+                    },
+                    "length": 0.19
+                  },
+                  {
+                    "id": "right_foot",
+                    "parent_id": "right_shin",
+                    "position": {
+                      "x": 0.025,
+                      "y": 0.17
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.4,
+                      "max": 0.4
+                    },
+                    "length": 0.07
+                  }
+                ],
+                "parts": [
+                  {
+                    "id": "pelvis-art",
+                    "joint_id": "pelvis",
+                    "type": "rounded_rect",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.015
+                    },
+                    "width": 0.16,
+                    "height": 0.09,
+                    "fill": "#315d85",
+                    "z_index": 20
+                  },
+                  {
+                    "id": "torso-art",
+                    "joint_id": "torso",
+                    "type": "rounded_rect",
+                    "offset": {
+                      "x": 0,
+                      "y": -0.08
+                    },
+                    "width": 0.22,
+                    "height": 0.26,
+                    "fill": "#347eaa",
+                    "z_index": 30
+                  },
+                  {
+                    "id": "neck-art",
+                    "joint_id": "neck",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "width": 0.07,
+                    "height": 0.09,
+                    "fill": "#d99b78",
+                    "z_index": 35
+                  },
+                  {
+                    "id": "head-art",
+                    "joint_id": "head",
+                    "type": "ellipse",
+                    "offset": {
+                      "x": 0,
+                      "y": -0.01
+                    },
+                    "width": 0.22,
+                    "height": 0.25,
+                    "fill": "#e9b18c",
+                    "z_index": 40
+                  },
+                  {
+                    "id": "hair-art",
+                    "joint_id": "head",
+                    "type": "ellipse",
+                    "offset": {
+                      "x": 0,
+                      "y": -0.09
+                    },
+                    "width": 0.23,
+                    "height": 0.11,
+                    "fill": "#49352f",
+                    "z_index": 41
+                  },
+                  {
+                    "id": "eye-left",
+                    "joint_id": "head",
+                    "type": "ellipse",
+                    "facial_channel": "eye_left",
+                    "offset": {
+                      "x": -0.045,
+                      "y": -0.01
+                    },
+                    "width": 0.018,
+                    "height": 0.035,
+                    "fill": "#263342",
+                    "z_index": 42
+                  },
+                  {
+                    "id": "eye-right",
+                    "joint_id": "head",
+                    "type": "ellipse",
+                    "facial_channel": "eye_right",
+                    "offset": {
+                      "x": 0.045,
+                      "y": -0.01
+                    },
+                    "width": 0.018,
+                    "height": 0.035,
+                    "fill": "#263342",
+                    "z_index": 42
+                  },
+                  {
+                    "id": "mouth-art",
+                    "joint_id": "head",
+                    "type": "rounded_rect",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.055
+                    },
+                    "width": 0.045,
+                    "height": 0.009,
+                    "fill": "#9e504f",
+                    "z_index": 42
+                  },
+                  {
+                    "id": "arm-left-upper",
+                    "joint_id": "left_upper_arm",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.075
+                    },
+                    "width": 0.075,
+                    "height": 0.19,
+                    "fill": "#347eaa",
+                    "z_index": 10
+                  },
+                  {
+                    "id": "arm-left-lower",
+                    "joint_id": "left_forearm",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.065
+                    },
+                    "width": 0.06,
+                    "height": 0.16,
+                    "fill": "#d99b78",
+                    "z_index": 11
+                  },
+                  {
+                    "id": "hand-left-art",
+                    "joint_id": "left_hand",
+                    "type": "ellipse",
+                    "offset": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "width": 0.065,
+                    "height": 0.07,
+                    "fill": "#e9b18c",
+                    "z_index": 12
+                  },
+                  {
+                    "id": "arm-right-upper",
+                    "joint_id": "right_upper_arm",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.075
+                    },
+                    "width": 0.075,
+                    "height": 0.19,
+                    "fill": "#347eaa",
+                    "z_index": 10
+                  },
+                  {
+                    "id": "arm-right-lower",
+                    "joint_id": "right_forearm",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.065
+                    },
+                    "width": 0.06,
+                    "height": 0.16,
+                    "fill": "#d99b78",
+                    "z_index": 11
+                  },
+                  {
+                    "id": "hand-right-art",
+                    "joint_id": "right_hand",
+                    "type": "ellipse",
+                    "offset": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "width": 0.065,
+                    "height": 0.07,
+                    "fill": "#e9b18c",
+                    "z_index": 12
+                  },
+                  {
+                    "id": "leg-left-upper",
+                    "joint_id": "left_thigh",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.085
+                    },
+                    "width": 0.085,
+                    "height": 0.2,
+                    "fill": "#263d5c",
+                    "z_index": 5
+                  },
+                  {
+                    "id": "leg-left-lower",
+                    "joint_id": "left_shin",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.085
+                    },
+                    "width": 0.07,
+                    "height": 0.19,
+                    "fill": "#263d5c",
+                    "z_index": 5
+                  },
+                  {
+                    "id": "shoe-left",
+                    "joint_id": "left_foot",
+                    "type": "rounded_rect",
+                    "offset": {
+                      "x": 0.025,
+                      "y": 0.025
+                    },
+                    "width": 0.12,
+                    "height": 0.06,
+                    "fill": "#f0f2ed",
+                    "z_index": 6
+                  },
+                  {
+                    "id": "leg-right-upper",
+                    "joint_id": "right_thigh",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.085
+                    },
+                    "width": 0.085,
+                    "height": 0.2,
+                    "fill": "#304968",
+                    "z_index": 5
+                  },
+                  {
+                    "id": "leg-right-lower",
+                    "joint_id": "right_shin",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.085
+                    },
+                    "width": 0.07,
+                    "height": 0.19,
+                    "fill": "#304968",
+                    "z_index": 5
+                  },
+                  {
+                    "id": "shoe-right",
+                    "joint_id": "right_foot",
+                    "type": "rounded_rect",
+                    "offset": {
+                      "x": 0.025,
+                      "y": 0.025
+                    },
+                    "width": 0.12,
+                    "height": 0.06,
+                    "fill": "#f0f2ed",
+                    "z_index": 6
+                  }
+                ]
+              }
+            ],
+            "characters": [
+              {
+                "id": "teacher",
+                "rig_id": "teacher-natural-v1",
+                "appearance_id": "teacher-simple-demo",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.38,
+                  "scale": 0.68,
+                  "rotation": 0
+                },
+                "actions": [
+                  {
+                    "id": "teacher-idle",
+                    "motion": "idle",
+                    "start_seconds": 0,
+                    "duration_seconds": 30,
+                    "loop_mode": "repeat",
+                    "parameters": {
+                      "intensity": 0.8,
+                      "cycle_seconds": 4.2
+                    }
+                  },
+                  {
+                    "id": "teacher-breathe",
+                    "motion": "breathe",
+                    "start_seconds": 0,
+                    "duration_seconds": 30,
+                    "loop_mode": "repeat",
+                    "parameters": {
+                      "intensity": 0.75,
+                      "cycle_seconds": 3.6
+                    }
+                  },
+                  {
+                    "id": "teacher-blink",
+                    "motion": "blink",
+                    "start_seconds": 0,
+                    "duration_seconds": 30,
+                    "loop_mode": "repeat",
+                    "parameters": {
+                      "seed": 2808,
+                      "interval_min_seconds": 3.1,
+                      "interval_max_seconds": 5.2,
+                      "blink_duration_seconds": 0.17
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "portrait": {
+      "scenes": [
+        {
+          "title": "Giáo viên · tư thế nghỉ tự nhiên",
+          "narration": "Một tư thế đứng tự nhiên có những chuyển động rất nhỏ. Thân người khẽ đổi góc, vai nâng lên theo nhịp thở, rồi hạ xuống khi thở ra. Đôi mắt chớp theo những khoảng nghỉ có thời điểm xác định. Các chuyển động này được tính theo thời gian của cảnh nên việc dừng hoặc tua đến một thời điểm bất kỳ vẫn cho cùng một tư thế.",
+          "estimated_seconds": 30,
+          "background": "#101a2a",
+          "scene_graph": {
+            "version": 2,
+            "coordinate_space": "normalized",
+            "objects": [
+              {
+                "id": "background",
+                "type": "rectangle",
+                "z_index": -10,
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "style": {
+                  "fill": "#101a2a",
+                  "stroke": "none"
+                },
+                "geometry": {
+                  "width": 2,
+                  "height": 2
+                },
+                "actions": []
+              },
+              {
+                "id": "floor",
+                "type": "line",
+                "z_index": -1,
+                "transform": {},
+                "style": {
+                  "stroke": "#40546a",
+                  "stroke_width": 0.003
+                },
+                "geometry": {
+                  "start": {
+                    "x": 0.08,
+                    "y": 0.68
+                  },
+                  "end": {
+                    "x": 0.92,
+                    "y": 0.68
+                  }
+                },
+                "actions": []
+              },
+              {
+                "id": "lesson-title",
+                "type": "label",
+                "z_index": 0,
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.16
+                },
+                "style": {
+                  "fill": "#e7eef5",
+                  "stroke": "#e7eef5",
+                  "font_size": 0.03,
+                  "text_align": "center"
+                },
+                "properties": {
+                  "content": "CHUYỂN ĐỘNG TỰ NHIÊN",
+                  "max_width": 0.8
+                },
+                "actions": []
+              }
+            ],
+            "character_rigs": [
+              {
+                "id": "teacher-natural-v1",
+                "joints": [
+                  {
+                    "id": "root",
+                    "parent_id": null,
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.2,
+                      "max": 0.2
+                    },
+                    "length": 0
+                  },
+                  {
+                    "id": "pelvis",
+                    "parent_id": "root",
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.2,
+                      "max": 0.2
+                    },
+                    "length": 0.12
+                  },
+                  {
+                    "id": "torso",
+                    "parent_id": "pelvis",
+                    "position": {
+                      "x": 0,
+                      "y": -0.05
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.12,
+                      "max": 0.12
+                    },
+                    "length": 0.25
+                  },
+                  {
+                    "id": "neck",
+                    "parent_id": "torso",
+                    "position": {
+                      "x": 0,
+                      "y": -0.19
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.25,
+                      "max": 0.25
+                    },
+                    "length": 0.07
+                  },
+                  {
+                    "id": "head",
+                    "parent_id": "neck",
+                    "position": {
+                      "x": 0,
+                      "y": -0.07
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.3,
+                      "max": 0.3
+                    },
+                    "length": 0.14
+                  },
+                  {
+                    "id": "left_upper_arm",
+                    "parent_id": "torso",
+                    "position": {
+                      "x": -0.105,
+                      "y": -0.16
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": -0.12
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1.5,
+                      "max": 1.5
+                    },
+                    "length": 0.17
+                  },
+                  {
+                    "id": "left_forearm",
+                    "parent_id": "left_upper_arm",
+                    "position": {
+                      "x": -0.035,
+                      "y": 0.14
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0.18
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1.5,
+                      "max": 1.5
+                    },
+                    "length": 0.15
+                  },
+                  {
+                    "id": "left_hand",
+                    "parent_id": "left_forearm",
+                    "position": {
+                      "x": -0.005,
+                      "y": 0.13
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1,
+                      "max": 1
+                    },
+                    "length": 0.07
+                  },
+                  {
+                    "id": "right_upper_arm",
+                    "parent_id": "torso",
+                    "position": {
+                      "x": 0.105,
+                      "y": -0.16
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0.12
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1.5,
+                      "max": 1.5
+                    },
+                    "length": 0.17
+                  },
+                  {
+                    "id": "right_forearm",
+                    "parent_id": "right_upper_arm",
+                    "position": {
+                      "x": 0.035,
+                      "y": 0.14
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": -0.18
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1.5,
+                      "max": 1.5
+                    },
+                    "length": 0.15
+                  },
+                  {
+                    "id": "right_hand",
+                    "parent_id": "right_forearm",
+                    "position": {
+                      "x": 0.005,
+                      "y": 0.13
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1,
+                      "max": 1
+                    },
+                    "length": 0.07
+                  },
+                  {
+                    "id": "left_thigh",
+                    "parent_id": "pelvis",
+                    "position": {
+                      "x": -0.045,
+                      "y": 0.04
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1,
+                      "max": 1
+                    },
+                    "length": 0.19
+                  },
+                  {
+                    "id": "left_shin",
+                    "parent_id": "left_thigh",
+                    "position": {
+                      "x": 0,
+                      "y": 0.18
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1,
+                      "max": 1
+                    },
+                    "length": 0.19
+                  },
+                  {
+                    "id": "left_foot",
+                    "parent_id": "left_shin",
+                    "position": {
+                      "x": -0.025,
+                      "y": 0.17
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.4,
+                      "max": 0.4
+                    },
+                    "length": 0.07
+                  },
+                  {
+                    "id": "right_thigh",
+                    "parent_id": "pelvis",
+                    "position": {
+                      "x": 0.045,
+                      "y": 0.04
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1,
+                      "max": 1
+                    },
+                    "length": 0.19
+                  },
+                  {
+                    "id": "right_shin",
+                    "parent_id": "right_thigh",
+                    "position": {
+                      "x": 0,
+                      "y": 0.18
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -1,
+                      "max": 1
+                    },
+                    "length": 0.19
+                  },
+                  {
+                    "id": "right_foot",
+                    "parent_id": "right_shin",
+                    "position": {
+                      "x": 0.025,
+                      "y": 0.17
+                    },
+                    "rotation": 0,
+                    "rest_pose": {
+                      "rotation": 0
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "limits": {
+                      "min": -0.4,
+                      "max": 0.4
+                    },
+                    "length": 0.07
+                  }
+                ],
+                "parts": [
+                  {
+                    "id": "pelvis-art",
+                    "joint_id": "pelvis",
+                    "type": "rounded_rect",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.015
+                    },
+                    "width": 0.16,
+                    "height": 0.09,
+                    "fill": "#315d85",
+                    "z_index": 20
+                  },
+                  {
+                    "id": "torso-art",
+                    "joint_id": "torso",
+                    "type": "rounded_rect",
+                    "offset": {
+                      "x": 0,
+                      "y": -0.08
+                    },
+                    "width": 0.22,
+                    "height": 0.26,
+                    "fill": "#347eaa",
+                    "z_index": 30
+                  },
+                  {
+                    "id": "neck-art",
+                    "joint_id": "neck",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "width": 0.07,
+                    "height": 0.09,
+                    "fill": "#d99b78",
+                    "z_index": 35
+                  },
+                  {
+                    "id": "head-art",
+                    "joint_id": "head",
+                    "type": "ellipse",
+                    "offset": {
+                      "x": 0,
+                      "y": -0.01
+                    },
+                    "width": 0.22,
+                    "height": 0.25,
+                    "fill": "#e9b18c",
+                    "z_index": 40
+                  },
+                  {
+                    "id": "hair-art",
+                    "joint_id": "head",
+                    "type": "ellipse",
+                    "offset": {
+                      "x": 0,
+                      "y": -0.09
+                    },
+                    "width": 0.23,
+                    "height": 0.11,
+                    "fill": "#49352f",
+                    "z_index": 41
+                  },
+                  {
+                    "id": "eye-left",
+                    "joint_id": "head",
+                    "type": "ellipse",
+                    "facial_channel": "eye_left",
+                    "offset": {
+                      "x": -0.045,
+                      "y": -0.01
+                    },
+                    "width": 0.018,
+                    "height": 0.035,
+                    "fill": "#263342",
+                    "z_index": 42
+                  },
+                  {
+                    "id": "eye-right",
+                    "joint_id": "head",
+                    "type": "ellipse",
+                    "facial_channel": "eye_right",
+                    "offset": {
+                      "x": 0.045,
+                      "y": -0.01
+                    },
+                    "width": 0.018,
+                    "height": 0.035,
+                    "fill": "#263342",
+                    "z_index": 42
+                  },
+                  {
+                    "id": "mouth-art",
+                    "joint_id": "head",
+                    "type": "rounded_rect",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.055
+                    },
+                    "width": 0.045,
+                    "height": 0.009,
+                    "fill": "#9e504f",
+                    "z_index": 42
+                  },
+                  {
+                    "id": "arm-left-upper",
+                    "joint_id": "left_upper_arm",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.075
+                    },
+                    "width": 0.075,
+                    "height": 0.19,
+                    "fill": "#347eaa",
+                    "z_index": 10
+                  },
+                  {
+                    "id": "arm-left-lower",
+                    "joint_id": "left_forearm",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.065
+                    },
+                    "width": 0.06,
+                    "height": 0.16,
+                    "fill": "#d99b78",
+                    "z_index": 11
+                  },
+                  {
+                    "id": "hand-left-art",
+                    "joint_id": "left_hand",
+                    "type": "ellipse",
+                    "offset": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "width": 0.065,
+                    "height": 0.07,
+                    "fill": "#e9b18c",
+                    "z_index": 12
+                  },
+                  {
+                    "id": "arm-right-upper",
+                    "joint_id": "right_upper_arm",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.075
+                    },
+                    "width": 0.075,
+                    "height": 0.19,
+                    "fill": "#347eaa",
+                    "z_index": 10
+                  },
+                  {
+                    "id": "arm-right-lower",
+                    "joint_id": "right_forearm",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.065
+                    },
+                    "width": 0.06,
+                    "height": 0.16,
+                    "fill": "#d99b78",
+                    "z_index": 11
+                  },
+                  {
+                    "id": "hand-right-art",
+                    "joint_id": "right_hand",
+                    "type": "ellipse",
+                    "offset": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "width": 0.065,
+                    "height": 0.07,
+                    "fill": "#e9b18c",
+                    "z_index": 12
+                  },
+                  {
+                    "id": "leg-left-upper",
+                    "joint_id": "left_thigh",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.085
+                    },
+                    "width": 0.085,
+                    "height": 0.2,
+                    "fill": "#263d5c",
+                    "z_index": 5
+                  },
+                  {
+                    "id": "leg-left-lower",
+                    "joint_id": "left_shin",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.085
+                    },
+                    "width": 0.07,
+                    "height": 0.19,
+                    "fill": "#263d5c",
+                    "z_index": 5
+                  },
+                  {
+                    "id": "shoe-left",
+                    "joint_id": "left_foot",
+                    "type": "rounded_rect",
+                    "offset": {
+                      "x": 0.025,
+                      "y": 0.025
+                    },
+                    "width": 0.12,
+                    "height": 0.06,
+                    "fill": "#f0f2ed",
+                    "z_index": 6
+                  },
+                  {
+                    "id": "leg-right-upper",
+                    "joint_id": "right_thigh",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.085
+                    },
+                    "width": 0.085,
+                    "height": 0.2,
+                    "fill": "#304968",
+                    "z_index": 5
+                  },
+                  {
+                    "id": "leg-right-lower",
+                    "joint_id": "right_shin",
+                    "type": "capsule",
+                    "offset": {
+                      "x": 0,
+                      "y": 0.085
+                    },
+                    "width": 0.07,
+                    "height": 0.19,
+                    "fill": "#304968",
+                    "z_index": 5
+                  },
+                  {
+                    "id": "shoe-right",
+                    "joint_id": "right_foot",
+                    "type": "rounded_rect",
+                    "offset": {
+                      "x": 0.025,
+                      "y": 0.025
+                    },
+                    "width": 0.12,
+                    "height": 0.06,
+                    "fill": "#f0f2ed",
+                    "z_index": 6
+                  }
+                ]
+              }
+            ],
+            "characters": [
+              {
+                "id": "teacher",
+                "rig_id": "teacher-natural-v1",
+                "appearance_id": "teacher-simple-demo",
+                "transform": {
+                  "x": 0.5,
+                  "y": 0.46,
+                  "scale": 0.9,
+                  "rotation": 0
+                },
+                "actions": [
+                  {
+                    "id": "teacher-idle",
+                    "motion": "idle",
+                    "start_seconds": 0,
+                    "duration_seconds": 30,
+                    "loop_mode": "repeat",
+                    "parameters": {
+                      "intensity": 0.8,
+                      "cycle_seconds": 4.2
+                    }
+                  },
+                  {
+                    "id": "teacher-breathe",
+                    "motion": "breathe",
+                    "start_seconds": 0,
+                    "duration_seconds": 30,
+                    "loop_mode": "repeat",
+                    "parameters": {
+                      "intensity": 0.75,
+                      "cycle_seconds": 3.6
+                    }
+                  },
+                  {
+                    "id": "teacher-blink",
+                    "motion": "blink",
+                    "start_seconds": 0,
+                    "duration_seconds": 30,
+                    "loop_mode": "repeat",
+                    "parameters": {
+                      "seed": 2808,
+                      "interval_min_seconds": 3.1,
+                      "interval_max_seconds": 5.2,
+                      "blink_duration_seconds": 0.17
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
