@@ -62,7 +62,7 @@ export function normalizeVisualAssetSearchText(value=''){
   return String(value??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[đĐ]/g,'d').toLocaleLowerCase('vi').replace(/[^\p{L}\p{N}]+/gu,' ').trim().replace(/\s+/g,' ');
 }
 
-const SEARCH_STOPWORDS=new Set(['co','khong','la','va','con','cua','the','mot','nhung','trong','duoc','ve','cho','den','tu','o','voi','and','the','of','a','an','is','for','with','from','to','in','on']);
+const SEARCH_STOPWORDS=new Set(['co','khong','la','va','con','cua','the','mot','nhung','trong','duoc','ve','cho','den','tu','o','voi','gioi','thieu','huong','dan','and','the','of','a','an','is','for','with','from','to','in','on']);
 const words=value=>new Set(normalizeVisualAssetSearchText(value).split(' ').filter(token=>token.length>1&&!SEARCH_STOPWORDS.has(token)));
 function metadataOf(asset){return createVisualAssetSemanticMetadata(asset.semantic_metadata||{}, {fallbackTitle:asset.display_name});}
 function fieldMatches(query,field){const normalized=normalizeVisualAssetSearchText(field);return normalized&&query.includes(normalized);}
