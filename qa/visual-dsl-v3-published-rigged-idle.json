@@ -1,0 +1,28 @@
+{
+  "visual_dsl_version": 3,
+  "title": "Published Rigged Teacher · Idle Smoke",
+  "language": "vi-VN",
+  "aspect_ratio": "both",
+  "variants": {
+    "landscape": { "scenes": [{
+      "id": "teacher-idle", "title": "Giáo viên ở tư thế nghỉ", "duration_seconds": 4,
+      "narration": "Giáo viên xuất hiện ở tư thế nghỉ tự nhiên.",
+      "stage": { "width": 1600, "height": 900, "background": "#F1F7F8" },
+      "timeline": { "tracks": [] },
+      "root": { "id": "root", "type": "group", "children": [{
+        "id": "teacher", "type": "published_character",
+        "geometry": { "character_id": "char_cp2_demo_teacher", "character_version": "1.0.1", "character_version_checksum": "23b848d44f86c0b9a6eb49e3d0d7df03855c7a1077741e9eaab64cd749dc8d73", "motion_id": "idle", "x": 0.5, "y": 0.62, "scale": 1 }
+      }] }
+    }] },
+    "portrait": { "scenes": [{
+      "id": "teacher-idle", "title": "Giáo viên ở tư thế nghỉ", "duration_seconds": 4,
+      "narration": "Giáo viên xuất hiện ở tư thế nghỉ tự nhiên.",
+      "stage": { "width": 900, "height": 1600, "background": "#F1F7F8" },
+      "timeline": { "tracks": [] },
+      "root": { "id": "root", "type": "group", "children": [{
+        "id": "teacher", "type": "published_character",
+        "geometry": { "character_id": "char_cp2_demo_teacher", "character_version": "1.0.1", "character_version_checksum": "23b848d44f86c0b9a6eb49e3d0d7df03855c7a1077741e9eaab64cd749dc8d73", "motion_id": "idle", "x": 0.5, "y": 0.59, "scale": 1.15 }
+      }] }
+    }] }
+  }
+}

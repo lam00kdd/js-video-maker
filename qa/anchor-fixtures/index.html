@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CP5.4C-2 · Anchor QA fixture generator</title>
+  <style>
+    :root{color-scheme:dark;font:16px/1.5 system-ui,Segoe UI,sans-serif;background:#101318;color:#e8edf2}body{margin:0;padding:32px;max-width:900px}main{border:1px solid #39414d;border-radius:12px;background:#191d24;padding:24px}h1{font-size:1.35rem}p,li{color:#c5ccd6}.field{margin:18px 0}label{display:block;font-weight:650;margin-bottom:7px}select,button{font:inherit;color:inherit;background:#242a33;border:1px solid #48515e;border-radius:7px;padding:9px 12px}select{width:min(100%,700px)}button{cursor:pointer}button:disabled{opacity:.5;cursor:wait}code{overflow-wrap:anywhere;color:#9ce7dc}.status{white-space:pre-wrap;border:1px solid #353d48;border-radius:8px;padding:12px;background:#14181e;min-height:3rem}.danger{color:#ffb8b8}.pass{color:#9ce7a6}small{color:#aab3bf}
+  </style>
+</head>
+<body>
+<main>
+  <h1>CP5.4C-2 · Tạo bộ QA Visual Anchor</h1>
+  <p>Công cụ QA tách biệt này chỉ đọc Visual Asset Registry hiện tại. Chọn asset cảm biến đã có anchor <code>mat_cam_bien</code>; công cụ sẽ tự lấy asset ID và fingerprint thật, xác thực JSON rồi ghi một bộ fixture vào thư mục QA bạn chọn.</p>
+  <div class="field"><label for="sensor">Asset cảm biến đã đăng ký</label><select id="sensor"><option>Đang đọc Visual Asset Registry…</option></select></div>
+  <p id="identity"><small>Không có ID mẫu hoặc placeholder nào được dùng.</small></p>
+  <button id="generate" disabled>Tạo và xác thực bộ QA</button>
+  <h2>Kết quả</h2><pre class="status" id="status" role="status">Đang kết nối registry…</pre>
+  <p><small>Fixture E là ca âm tính có chủ ý. Khi chạy batch, các JSON hợp lệ và không hợp lệ nằm riêng trong thư mục <code>Batch_Kit</code>.</small></p>
+</main>
+<script type="module" src="./generator.js"></script>
+</body>
+</html>

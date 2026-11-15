@@ -1,0 +1,227 @@
+{
+  "taxonomy_version": 1,
+  "categories": [
+    {
+      "category_id": "people_professions",
+      "subcategory_ids": [
+        "teachers",
+        "students",
+        "engineers",
+        "factory_workers",
+        "doctors",
+        "lab_technicians",
+        "office_workers",
+        "other_professions"
+      ]
+    },
+    {
+      "category_id": "animals",
+      "subcategory_ids": [
+        "mammals",
+        "birds",
+        "fish",
+        "reptiles",
+        "amphibians",
+        "insects",
+        "marine_invertebrates",
+        "other_animals"
+      ]
+    },
+    {
+      "category_id": "plants_fungi",
+      "subcategory_ids": [
+        "trees",
+        "flowers",
+        "leaves",
+        "roots",
+        "fruits_seeds",
+        "crops",
+        "fungi"
+      ]
+    },
+    {
+      "category_id": "food_nutrition",
+      "subcategory_ids": [
+        "grains",
+        "vegetables",
+        "fruits",
+        "meat",
+        "fish_seafood",
+        "eggs_dairy",
+        "prepared_meals",
+        "drinks"
+      ]
+    },
+    {
+      "category_id": "human_body_medicine",
+      "subcategory_ids": [
+        "organs",
+        "body_systems",
+        "bones_muscles",
+        "cells_tissues",
+        "medical_instruments",
+        "anatomy_models"
+      ]
+    },
+    {
+      "category_id": "physics_phenomena",
+      "subcategory_ids": [
+        "mechanics",
+        "light_optics",
+        "sound_waves",
+        "heat",
+        "pressure_fluids",
+        "electricity_magnetism",
+        "measurement_apparatus"
+      ]
+    },
+    {
+      "category_id": "chemistry_laboratory",
+      "subcategory_ids": [
+        "glassware",
+        "lab_instruments",
+        "molecular_models",
+        "chemical_processes",
+        "protective_equipment",
+        "analysis_equipment"
+      ]
+    },
+    {
+      "category_id": "earth_environment",
+      "subcategory_ids": [
+        "weather",
+        "climate",
+        "water_systems",
+        "rocks_soil",
+        "ecosystems",
+        "pollution",
+        "natural_hazards"
+      ]
+    },
+    {
+      "category_id": "astronomy_space",
+      "subcategory_ids": [
+        "stars",
+        "planets",
+        "moons",
+        "solar_systems",
+        "galaxies",
+        "spacecraft",
+        "astronomy_instruments"
+      ]
+    },
+    {
+      "category_id": "mechanical_engineering",
+      "subcategory_ids": [
+        "pumps",
+        "valves",
+        "pistons_cylinders",
+        "gears",
+        "bearings",
+        "transmissions",
+        "mechanical_motors",
+        "cnc_machines"
+      ]
+    },
+    {
+      "category_id": "electrical_electronics",
+      "subcategory_ids": [
+        "passive_components",
+        "semiconductors",
+        "circuit_boards",
+        "power_supplies",
+        "electrical_machines",
+        "wiring_connectors",
+        "electrical_measurement"
+      ]
+    },
+    {
+      "category_id": "industrial_automation",
+      "subcategory_ids": [
+        "plc",
+        "hmi",
+        "sensors",
+        "servo_systems",
+        "inverters",
+        "pneumatics",
+        "control_cabinets",
+        "industrial_networks"
+      ]
+    },
+    {
+      "category_id": "robotics_ai",
+      "subcategory_ids": [
+        "industrial_robots",
+        "educational_robots",
+        "mobile_robots",
+        "service_robots",
+        "robot_grippers",
+        "robot_joints",
+        "machine_vision"
+      ]
+    },
+    {
+      "category_id": "factory_manufacturing",
+      "subcategory_ids": [
+        "production_lines",
+        "conveyors",
+        "assembly_equipment",
+        "packaging",
+        "warehouses",
+        "material_handling",
+        "workstations"
+      ]
+    },
+    {
+      "category_id": "quality_iso_iatf",
+      "subcategory_ids": [
+        "measurement_equipment",
+        "product_inspection",
+        "quality_labs",
+        "process_management",
+        "auditing",
+        "documents_records",
+        "nonconforming_products",
+        "corrective_actions"
+      ]
+    },
+    {
+      "category_id": "home_everyday",
+      "subcategory_ids": [
+        "household_appliances",
+        "kitchen_equipment",
+        "furniture",
+        "home_electrical",
+        "cleaning_equipment",
+        "everyday_objects"
+      ]
+    },
+    {
+      "category_id": "transportation",
+      "subcategory_ids": [
+        "bicycles",
+        "motorcycles",
+        "cars",
+        "trucks",
+        "trains",
+        "ships",
+        "aircraft",
+        "special_vehicles"
+      ]
+    },
+    {
+      "category_id": "environments_graphics",
+      "subcategory_ids": [
+        "classrooms",
+        "laboratories",
+        "factories",
+        "workshops",
+        "houses",
+        "natural_environments",
+        "infographic_elements",
+        "technical_symbols",
+        "decorative_backgrounds"
+      ]
+    }
+  ]
+}

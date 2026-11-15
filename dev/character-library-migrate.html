@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Character Library · SQLite</title>
+  <style>
+    :root{color-scheme:dark;font:15px/1.5 system-ui,sans-serif;background:#0c1119;color:#e7edf8}body{margin:0;padding:32px;max-width:880px}main{padding:24px;border:1px solid #293648;border-radius:14px;background:#111925}h1{font-size:23px;margin:0 0 8px}p{color:#aab8cc}button{padding:10px 14px;margin:8px 8px 8px 0;border:1px solid #53687f;border-radius:8px;background:#1a2a3c;color:#fff;cursor:pointer}button:disabled{opacity:.5;cursor:wait}pre{min-height:72px;white-space:pre-wrap;overflow-wrap:anywhere;padding:14px;border-radius:8px;background:#080d14;color:#b7f7cc}code{color:#8ee8ff}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Character Library · Local SQLite</h1>
+    <p>SQLite dùng chung lưu các nhân vật và version đã publish. Draft, project và thông tin session vẫn ở trình duyệt này. Import chỉ sao chép dữ liệu Published; không xóa hoặc sửa IndexedDB hiện tại.</p>
+    <p>Hãy mở trang này trong đúng Chrome profile đang có Character Library cũ. CSDL đích nằm tại <code>data/character-library.sqlite</code> trong thư mục app.</p>
+    <button id="status">Kiểm tra SQLite</button>
+    <button id="export">Tải backup Published JSON</button>
+    <button id="import">Import Published từ IndexedDB này vào SQLite</button>
+    <pre id="result" role="status">Đang kiểm tra backend…</pre>
+  </main>
+  <script type="module" src="./character-library-migrate.js"></script>
+</body>
+</html>

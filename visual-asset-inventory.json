@@ -1,0 +1,68 @@
+{
+  "format": "lam-visual-asset-inventory",
+  "version": 1,
+  "created_at": "2026-11-14",
+  "purpose": "Source-controlled asset inventory for ChatGPT/project context. This is not a Visual Asset Registry package and does not contain image bytes.",
+  "scope": {
+    "source_directory_scanned": "assets/",
+    "source_asset_count": 4,
+    "registered_visual_asset_registry": {
+      "included": false,
+      "reason": "The app stores registered Visual Assets in browser IndexedDB (lam-motion-studio.visual-assets); that browser profile is not accessible from this workspace scan.",
+      "how_to_export": "Open the app's Visual Assets manager and use Export Package to export manifest.json and the associated assets/ files."
+    },
+    "published_character_library": {
+      "included": false,
+      "reason": "Published character records are stored in the local server SQLite database under data/character-library.sqlite; they are a separate library from files in assets/.",
+      "how_to_export": "Use the Character Library migration/export flow in the app to create a Published JSON backup."
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "lam-educator.explain",
+      "path": "assets/character-sprites/lam-educator/explain.svg",
+      "format": "image/svg+xml",
+      "asset_type": "character_sprite_pose",
+      "character_id": "lam-educator",
+      "pose": "explain",
+      "description": "SVG sprite pose of Lam Educator explaining.",
+      "usage": "Use as a character pose in scenes that need an educator explaining a topic."
+    },
+    {
+      "asset_id": "lam-educator.greet",
+      "path": "assets/character-sprites/lam-educator/greet.svg",
+      "format": "image/svg+xml",
+      "asset_type": "character_sprite_pose",
+      "character_id": "lam-educator",
+      "pose": "greet",
+      "description": "SVG sprite pose of Lam Educator greeting.",
+      "usage": "Use as a character pose for an introduction or greeting."
+    },
+    {
+      "asset_id": "lam-educator.idle",
+      "path": "assets/character-sprites/lam-educator/idle.svg",
+      "format": "image/svg+xml",
+      "asset_type": "character_sprite_pose",
+      "character_id": "lam-educator",
+      "pose": "idle",
+      "description": "SVG sprite pose of Lam Educator standing in a neutral idle pose.",
+      "usage": "Use as the default standing pose when no specific gesture is required."
+    },
+    {
+      "asset_id": "lam-educator.point",
+      "path": "assets/character-sprites/lam-educator/point.svg",
+      "format": "image/svg+xml",
+      "character_id": "lam-educator",
+      "asset_type": "character_sprite_pose",
+      "pose": "point",
+      "description": "SVG sprite pose of Lam Educator pointing.",
+      "usage": "Use when the character should point to a diagram, label, or on-screen object."
+    }
+  ],
+  "chatgpt_instructions": [
+    "Treat each path as an asset available in the project source.",
+    "Use the exact path/asset_id when referring to one of these poses.",
+    "Do not assume other registered Visual Assets are present based on this inventory; the browser registry must be exported separately.",
+    "Do not substitute a generated image when a requested pose is explicitly available, unless the project policy permits substitution."
+  ]
+}

@@ -1,0 +1,20 @@
+import { buildCharacterAppearance, normalizeProceduralStyle } from './character-appearances.js';
+import { createCanonicalM1EditorRig } from './character-rig-editor.js';
+import { normalizeHumanActions, resolveHumanPose } from './human-rig.js';
+
+const REST_TRANSFORM=Object.freeze({x:.5,y:.5,scale:1.1,rotation:0,opacity:1});
+const MOTIONS=new Set(['rest','idle','breathe','blink']);
+
+/** Builds a deterministic, asset-free adult appearance on the app's existing M1 skeleton. */
+export function createProceduralAdultCharacter({rig=createCanonicalM1EditorRig('procedural_adult_m1'),style={},motion='rest',time=0,testJointId=null,testRotation=0,transform=REST_TRANSFORM}={}){
+  if(!MOTIONS.has(motion))throw new Error(`Unsupported procedural preview motion "${motion}".`);
+  const normalizedStyle=normalizeProceduralStyle(style),appearance=buildCharacterAppearance('cartoon_teacher',rig,{style:normalizedStyle}),actions=motion==='rest'?[]:normalizeHumanActions([{id:'procedural_preview',motion,start_seconds:0,duration_seconds:8,loop_mode:'repeat',parameters:motion==='blink'?{seed:1357,interval_min_seconds:2,interval_max_seconds:3,blink_duration_seconds:.16}:{intensity:.7,cycle_seconds:motion==='idle'?4:3}}],8),joint=testJointId?rig.joints.find(item=>item.id===testJointId):null;if(testJointId&&!joint)throw new Error(`Joint test references unknown M1 joint "${testJointId}".`);const initialPose=joint?{joints:{[testJointId]:{rotation:(joint.rest_pose?.rotation??joint.rotation)+Number(testRotation)}}}:null,pose=resolveHumanPose(rig,actions,Math.max(0,Math.min(8,Number(time)||0)),{width:640,height:720,transform,initialPose,appearanceParts:appearance.parts,appearanceFeatures:appearance.features,motionStyle:'natural',characterId:'procedural-preview'});
+  const jointIds=new Set(rig.joints.map(joint=>joint.id)),geometry=appearance.parts.filter(part=>part.type!=='bone'&&part.type!=='joint_marker'&&jointIds.has(part.joint_id)).map(part=>({primitive_id:part.id,part_id:part.joint_id,joint_id:part.joint_id,local:{x:part.offset?.x||0,y:part.offset?.y||0,rotation:part.rotation||0},pivot:{joint_id:part.limb_contract?.pivot?.joint_id||part.joint_id,x:part.limb_contract?.pivot?.local?.x||0,y:part.limb_contract?.pivot?.local?.y||0},attachment:{joint_id:part.joint_id,x:0,y:0},shape:{type:part.type,width:part.width,height:part.height,fill:part.fill,stroke:part.stroke||'none',stroke_width:part.stroke_width||0},render_bounds:part.limb_contract?.local_bounds||{x:-(part.width||0)/2,y:-(part.height||0)/2,width:part.width||0,height:part.height||0},limb_contract:part.limb_contract||null,joint_connector:part.joint_connector||null,z_index:part.z_index||0}));
+  return{character_id:'procedural-preview-adult',profile:'adult',rig,appearance,pose,transform:{...transform},style:normalizedStyle,geometry,asset_refs:[],diagnostics:{joint_ids:[...jointIds],part_ids:[...new Set(geometry.map(part=>part.part_id))],primitive_count:geometry.length,missing_required_joints:appearance.missing_joint_ids,limb_contract_count:geometry.filter(part=>part.limb_contract).length,joint_connector_count:geometry.filter(part=>part.joint_connector).length,asset_free:true}};
+}
+
+/** Pose-space bounds used by the harness; geometry stays in isotropic M1 rig units. */
+export function resolveProceduralGeometryBounds(character){
+  const unit=Math.min(640,720),byJoint=character.pose.joints;
+  return character.geometry.map(item=>{const joint=byJoint[item.joint_id];if(!joint)return{...item,status:'missing_joint'};const ox=item.local.x*unit*joint.scale,oy=item.local.y*unit*joint.scale,c=Math.cos(joint.rotation),s=Math.sin(joint.rotation),x=joint.x+ox*c-oy*s,y=joint.y+ox*s+oy*c,width=item.shape.width*unit*joint.scale,height=item.shape.height*unit*joint.scale,rotation=joint.rotation+item.local.rotation,rotatedWidth=Math.abs(width*Math.cos(rotation))+Math.abs(height*Math.sin(rotation)),rotatedHeight=Math.abs(width*Math.sin(rotation))+Math.abs(height*Math.cos(rotation));return{...item,status:'ready',center:{x,y},rotation,bounds:{x:x-rotatedWidth/2,y:y-rotatedHeight/2,width:rotatedWidth,height:rotatedHeight}};});
+}

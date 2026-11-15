@@ -1,0 +1,15 @@
+.runtime/
+logs/
+data/*.sqlite
+data/*.sqlite-*
+node_modules/
+social-function.tmp
+.env
+.env.*
+!.env.example
+.npmrc
+credentials.json
+secrets.*
+*.pem
+*.key
+*.log

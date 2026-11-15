@@ -1,0 +1,3169 @@
+{
+  "schema_version": 1,
+  "note": "OCR titles are search hints, not verified textbook text. Page mapping is estimated.",
+  "books": [
+    {
+      "book_id": "KHTN6",
+      "lesson_count_detected": 55,
+      "series": "Kết nối tri thức với cuộc sống",
+      "text_verified": false,
+      "subject": "Khoa học tự nhiên",
+      "grade": 6,
+      "pdf_page_count": 198
+    },
+    {
+      "book_id": "KHTN7",
+      "lesson_count_detected": 42,
+      "series": "Kết nối tri thức với cuộc sống",
+      "text_verified": false,
+      "subject": "Khoa học tự nhiên",
+      "grade": 7,
+      "pdf_page_count": 182
+    },
+    {
+      "book_id": "KHTN8",
+      "lesson_count_detected": 47,
+      "series": "Kết nối tri thức với cuộc sống",
+      "text_verified": false,
+      "subject": "Khoa học tự nhiên",
+      "grade": 8,
+      "pdf_page_count": 200
+    },
+    {
+      "book_id": "KHTN9",
+      "lesson_count_detected": 51,
+      "series": "Kết nối tri thức với cuộc sống",
+      "text_verified": false,
+      "subject": "Khoa học tự nhiên",
+      "grade": 9,
+      "pdf_page_count": 231
+    },
+    {
+      "book_id": "LSDL6",
+      "lesson_count_detected": 50,
+      "series": "Kết nối tri thức với cuộc sống",
+      "text_verified": false,
+      "subject": "Lịch sử và Địa lí",
+      "grade": 6,
+      "pdf_page_count": 203
+    },
+    {
+      "book_id": "LSDL7",
+      "lesson_count_detected": 28,
+      "series": "Kết nối tri thức với cuộc sống",
+      "text_verified": false,
+      "subject": "Lịch sử và Địa lí",
+      "grade": 7,
+      "pdf_page_count": 187
+    },
+    {
+      "book_id": "LSDL8",
+      "lesson_count_detected": 30,
+      "series": "Kết nối tri thức với cuộc sống",
+      "text_verified": false,
+      "subject": "Lịch sử và Địa lí",
+      "grade": 8,
+      "pdf_page_count": 179
+    },
+    {
+      "book_id": "LSDL9",
+      "lesson_count_detected": 40,
+      "series": "Kết nối tri thức với cuộc sống",
+      "text_verified": false,
+      "subject": "Lịch sử và Địa lí",
+      "grade": 9,
+      "pdf_page_count": 243
+    }
+  ],
+  "source": "SGK_AI_LIBRARY_Project_Upload",
+  "series": "Kết nối tri thức với cuộc sống",
+  "lessons": [
+    {
+      "printed_page_end": 10,
+      "book_id": "KHTN6",
+      "printed_page_start": 7,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B01",
+      "title": "CHƯƠNG 1 - MỞ ĐẦU VỀ KHOA HỌC TỰ NHIÊN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 12,
+      "book_id": "KHTN6",
+      "printed_page_start": 11,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B02",
+      "title": "AN TOÀN TRONG PHÒNG THỰC HÀNH",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 14,
+      "book_id": "KHTN6",
+      "printed_page_start": 13,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B03",
+      "title": "SỬ DỤNG KÍNH LÚP",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 16,
+      "book_id": "KHTN6",
+      "printed_page_start": 15,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B04",
+      "title": "SỬ DỤNG KÍNH HIỀN VI QUANG HỌC",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 19,
+      "book_id": "KHTN6",
+      "printed_page_start": 17,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B05",
+      "title": "ĐO CHIỀU DÀI MỤC TIÊU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 21,
+      "book_id": "KHTN6",
+      "printed_page_start": 20,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B06",
+      "title": "ĐO KHỐI LƯỢNG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 24,
+      "book_id": "KHTN6",
+      "printed_page_start": 22,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B07",
+      "title": "ĐO THỜI GIAN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 28,
+      "book_id": "KHTN6",
+      "printed_page_start": 25,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B08",
+      "title": "ĐO NHIỆT ĐỘ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 29,
+      "book_id": "KHTN6",
+      "printed_page_start": 29,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B09",
+      "title": "CHƯƠNG II - CHẤT QUANH TA SỰ ĐA DẠNG CỦA CHẤT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 35,
+      "book_id": "KHTN6",
+      "printed_page_start": 30,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B10",
+      "title": "D CÁC THỂ CỦA CHẤT VÀ SỰ CHUYỂN THỂ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 41,
+      "book_id": "KHTN6",
+      "printed_page_start": 36,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B11",
+      "title": "D OXYGEN KHÔNG KHÍ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 45,
+      "book_id": "KHTN6",
+      "printed_page_start": 42,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B12",
+      "title": "MỘT SỐ VẬT LIỆU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 49,
+      "book_id": "KHTN6",
+      "printed_page_start": 46,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B13",
+      "title": "D MỘT SỐ NGUYÊN LIỆU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 51,
+      "book_id": "KHTN6",
+      "printed_page_start": 50,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B14",
+      "title": "D MỘT SỐ NHIÊN LIỆU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 55,
+      "book_id": "KHTN6",
+      "printed_page_start": 52,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B15",
+      "title": "D MỘT SỐ LƯƠNG THỰC, THỰC PHẨM",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 60,
+      "book_id": "KHTN6",
+      "printed_page_start": 56,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B16",
+      "title": "CHƯƠNG IV - HỒN HỢP TÁCH CHẤT RA KHÔI HỒỐN HỢP",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 63,
+      "book_id": "KHTN6",
+      "printed_page_start": 61,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B17",
+      "title": "TÁCH CHẤT KHỎI HỒN HỢP",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 66,
+      "book_id": "KHTN6",
+      "printed_page_start": 64,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B18",
+      "title": "CHƯƠNG V - TẾ BÀO TẾ BÀO -",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 69,
+      "book_id": "KHTN6",
+      "printed_page_start": 67,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B19",
+      "title": "CẤU TẠO VÀ CHỨC NĂNG CÁC THÀNH PHẦN CỦA TẾ BÀO",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 72,
+      "book_id": "KHTN6",
+      "printed_page_start": 70,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B20",
+      "title": "SỰ LỚN LÊN VÀ SINH SẢN CỦA TẾ BÀO",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 74,
+      "book_id": "KHTN6",
+      "printed_page_start": 73,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B21",
+      "title": "Chuẩn bị THỰC HÀNH: QUAN SÁT VÀ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 78,
+      "book_id": "KHTN6",
+      "printed_page_start": 75,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B22",
+      "title": "CHƯƠNG VI - TỪ TẾ BÀO ĐẾN CƠ THỂ CƠ THỂ SINH VẬT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 82,
+      "book_id": "KHTN6",
+      "printed_page_start": 79,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B23",
+      "title": "TỔ CHỨC CƠ THỂ ĐA BÀO",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 85,
+      "book_id": "KHTN6",
+      "printed_page_start": 83,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B24",
+      "title": "Chuẩn bị THỰC HÀNH: QUAN SÁT VÀ MÔ TẢ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 89,
+      "book_id": "KHTN6",
+      "printed_page_start": 86,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B25",
+      "title": "CHƯƠNG VII - ĐA DẠNG THẾ GIỚI SỐNG HỆ THỐNG PHÂN LOẠI SINH VẬT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 92,
+      "book_id": "KHTN6",
+      "printed_page_start": 90,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B26",
+      "title": "KHOÁ LƯỠNG PHÂN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 95,
+      "book_id": "KHTN6",
+      "printed_page_start": 93,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B27",
+      "title": "D VI KHUẨN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 97,
+      "book_id": "KHTN6",
+      "printed_page_start": 96,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B28",
+      "title": "THỰC HÀNH: LÀM SỮA CHUA VÀ QUAN SÁT VI KHUẨN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 101,
+      "book_id": "KHTN6",
+      "printed_page_start": 98,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B29",
+      "title": "VIRUS",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 105,
+      "book_id": "KHTN6",
+      "printed_page_start": 102,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B30",
+      "title": "NGUYÊN SINH VẬT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 107,
+      "book_id": "KHTN6",
+      "printed_page_start": 106,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B31",
+      "title": "Chuẩn bị THỰC HÀNH: QUAN SÁT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 111,
+      "book_id": "KHTN6",
+      "printed_page_start": 108,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B32",
+      "title": "NẤM",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 114,
+      "book_id": "KHTN6",
+      "printed_page_start": 112,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B33",
+      "title": "Chuẩn bị THỰC HÀNH: QUAN SÁT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 122,
+      "book_id": "KHTN6",
+      "printed_page_start": 115,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B34",
+      "title": "THỰC VẬT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 124,
+      "book_id": "KHTN6",
+      "printed_page_start": 123,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B35",
+      "title": "Chuẩn bị THỰC HÀNH: QUAN SÁT VÀ PHÂN BIỆT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 132,
+      "book_id": "KHTN6",
+      "printed_page_start": 125,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B36",
+      "title": "ĐỘNG VẬT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 134,
+      "book_id": "KHTN6",
+      "printed_page_start": 133,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B37",
+      "title": "Chuẩn bị 1. Địa điểm",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 138,
+      "book_id": "KHTN6",
+      "printed_page_start": 135,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B38",
+      "title": "ĐA DẠNG SINH HỌC",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 143,
+      "book_id": "KHTN6",
+      "printed_page_start": 139,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B39",
+      "title": "D TÌM HIỂU SINH VẬT NGOÀI THIÊN NHIÊN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 146,
+      "book_id": "KHTN6",
+      "printed_page_start": 144,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B40",
+      "title": "LỰC LÀ GÌ?",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 150,
+      "book_id": "KHTN6",
+      "printed_page_start": 147,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B41",
+      "title": "BIỂU DIỄN LỰC",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 153,
+      "book_id": "KHTN6",
+      "printed_page_start": 151,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B42",
+      "title": "BIẾN DẠNG CỦA LÒ XO",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 156,
+      "book_id": "KHTN6",
+      "printed_page_start": 154,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B43",
+      "title": "TRỌNG LƯỢNG, LỰC HẤP DẪN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 159,
+      "book_id": "KHTN6",
+      "printed_page_start": 157,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B44",
+      "title": "LỰC MA SÁT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 161,
+      "book_id": "KHTN6",
+      "printed_page_start": 160,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B45",
+      "title": "D LỰC CẢN CỦA NƯỚC",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 164,
+      "book_id": "KHTN6",
+      "printed_page_start": 162,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B46",
+      "title": "CHƯƠNG IX - NĂNG LƯỢNG NẶNG LƯỢNG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 167,
+      "book_id": "KHTN6",
+      "printed_page_start": 165,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B47",
+      "title": "MỘT SỐ DẠNG NĂNG LƯỢNG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 170,
+      "book_id": "KHTN6",
+      "printed_page_start": 168,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B48",
+      "title": "SỰ CHUYỂN HOÁ NĂNG LƯỢNG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 172,
+      "book_id": "KHTN6",
+      "printed_page_start": 171,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B49",
+      "title": "? NĂNG LƯỢNG HAO PHÍ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 175,
+      "book_id": "KHTN6",
+      "printed_page_start": 173,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B50",
+      "title": "NĂNG LƯỢNG TÁI TẠO",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 178,
+      "book_id": "KHTN6",
+      "printed_page_start": 176,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B51",
+      "title": "TIẾT KIỆM NĂNG LƯỢNG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 182,
+      "book_id": "KHTN6",
+      "printed_page_start": 179,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B52",
+      "title": "CHUYỂN ĐỘNG NHÌN THẤY CỦA MẶT TRỜI. THIÊN THỂ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 186,
+      "book_id": "KHTN6",
+      "printed_page_start": 183,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B53",
+      "title": "MẶT TRĂNG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 189,
+      "book_id": "KHTN6",
+      "printed_page_start": 187,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B54",
+      "title": "HỆ MẶT TRỜI",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 196,
+      "book_id": "KHTN6",
+      "printed_page_start": 190,
+      "page_alignment": "heuristic",
+      "lesson_id": "KHTN6_B55",
+      "title": "NGÂN HÀ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 13,
+      "book_id": "KHTN7",
+      "printed_page_start": 6,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B01",
+      "title": "Phương pháp và kĩ năng học tập môn Khoa học tự nhiên",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 18,
+      "book_id": "KHTN7",
+      "printed_page_start": 14,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B02",
+      "title": "Nguyền tử",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 22,
+      "book_id": "KHTN7",
+      "printed_page_start": 19,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B03",
+      "title": "Nguyên tố hoá học",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 31,
+      "book_id": "KHTN7",
+      "printed_page_start": 23,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B04",
+      "title": "Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 35,
+      "book_id": "KHTN7",
+      "printed_page_start": 32,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B05",
+      "title": "Phân tử – Đơn chất – Hợp chất",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 39,
+      "book_id": "KHTN7",
+      "printed_page_start": 36,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B06",
+      "title": "Giới thiệu về liên kết hoá học",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 44,
+      "book_id": "KHTN7",
+      "printed_page_start": 40,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B07",
+      "title": "Hoá trị và công thức hoá học",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 48,
+      "book_id": "KHTN7",
+      "printed_page_start": 45,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B08",
+      "title": "Tốc độ chuyến động",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 52,
+      "book_id": "KHTN7",
+      "printed_page_start": 49,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B09",
+      "title": "Đo tốc độ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 55,
+      "book_id": "KHTN7",
+      "printed_page_start": 53,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B10",
+      "title": "Đồ thị quãng đường - thời gian",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 59,
+      "book_id": "KHTN7",
+      "printed_page_start": 56,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B11",
+      "title": "Thảo luận về ảnh hưởng của tốc dộ trong an toàn giao thông",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 63,
+      "book_id": "KHTN7",
+      "printed_page_start": 60,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B12",
+      "title": "Sóng âm",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 67,
+      "book_id": "KHTN7",
+      "printed_page_start": 64,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B13",
+      "title": "Độ to và độ cao của âm",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 71,
+      "book_id": "KHTN7",
+      "printed_page_start": 68,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B14",
+      "title": "Phản xạ âm, chống ô nhiễm tiếng ồn",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 77,
+      "book_id": "KHTN7",
+      "printed_page_start": 72,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B15",
+      "title": "Năng lượng ánh sáng. Tia sáng, vùng tối",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 81,
+      "book_id": "KHTN7",
+      "printed_page_start": 78,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B16",
+      "title": "Sự phản xạ ánh sáng",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 85,
+      "book_id": "KHTN7",
+      "printed_page_start": 82,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B17",
+      "title": "Ảnh của vật qua gương phẳng",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 89,
+      "book_id": "KHTN7",
+      "printed_page_start": 86,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B18",
+      "title": "Nam châm",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 95,
+      "book_id": "KHTN7",
+      "printed_page_start": 90,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B19",
+      "title": "Từ trường",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 98,
+      "book_id": "KHTN7",
+      "printed_page_start": 96,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B20",
+      "title": "Chế tạo nam châm điện đơn giản",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 100,
+      "book_id": "KHTN7",
+      "printed_page_start": 99,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B21",
+      "title": "Khái quát về trao đổi chất và chuyển hoá năng lượng",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 103,
+      "book_id": "KHTN7",
+      "printed_page_start": 101,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B22",
+      "title": "Quang hợp ở thực vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 107,
+      "book_id": "KHTN7",
+      "printed_page_start": 104,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B23",
+      "title": "Một số yếu tố ảnh hưởng dến quang hợp",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 110,
+      "book_id": "KHTN7",
+      "printed_page_start": 108,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B24",
+      "title": "Thực hành: Chứng minh quang hợp ở cây xanh",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 112,
+      "book_id": "KHTN7",
+      "printed_page_start": 111,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B25",
+      "title": "Hô hấp tế bào",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 115,
+      "book_id": "KHTN7",
+      "printed_page_start": 113,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B26",
+      "title": "Một số yếu tố ảnh hưởng đến hô hấp tế bào",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 117,
+      "book_id": "KHTN7",
+      "printed_page_start": 116,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B27",
+      "title": "Thực hành: 1Hô hấp ở thực vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 121,
+      "book_id": "KHTN7",
+      "printed_page_start": 118,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B28",
+      "title": "Trao đổi khí ở sinh vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 126,
+      "book_id": "KHTN7",
+      "printed_page_start": 122,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B29",
+      "title": "Vai trò của nước và chất dinh đưỡng dối với sinh vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 130,
+      "book_id": "KHTN7",
+      "printed_page_start": 127,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B30",
+      "title": "Trao đối nước và chất dinh dưỡng ở thực vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 135,
+      "book_id": "KHTN7",
+      "printed_page_start": 131,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B31",
+      "title": "Trao đối nước và chất dinh dưỡng ở động vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 137,
+      "book_id": "KHTN7",
+      "printed_page_start": 136,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B32",
+      "title": "Thực hành: Chứng minh thân vận chuyển nước và lá thoát hơi nước",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 140,
+      "book_id": "KHTN7",
+      "printed_page_start": 138,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B33",
+      "title": "Cảm ứng ở sinh vật và tập tính ở dộng vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 144,
+      "book_id": "KHTN7",
+      "printed_page_start": 141,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B34",
+      "title": "Vận dụng hiện tượng cảm ứng ở sinh vật vào thực tiễn",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 147,
+      "book_id": "KHTN7",
+      "printed_page_start": 145,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B35",
+      "title": "Thực hành: Cảm ứng ở sinh vật OC SONG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 150,
+      "book_id": "KHTN7",
+      "printed_page_start": 148,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B36",
+      "title": "Khái quát về sinh trưởng và phát triển ở sinh vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 155,
+      "book_id": "KHTN7",
+      "printed_page_start": 151,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B37",
+      "title": "Ứng dụng sinh trưởng và phát triển ở sinh vật vào thực tiễn",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 157,
+      "book_id": "KHTN7",
+      "printed_page_start": 156,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B38",
+      "title": "Thực hành: Quan sát, mô tả sự sinh trưởng và phát triển ở một số",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 163,
+      "book_id": "KHTN7",
+      "printed_page_start": 158,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B39",
+      "title": "Sinh sản vô tính ở sinh vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 168,
+      "book_id": "KHTN7",
+      "printed_page_start": 164,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B40",
+      "title": "Sinh sản hữu tính ở sinh vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 172,
+      "book_id": "KHTN7",
+      "printed_page_start": 169,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B41",
+      "title": "Một số yếu tố ảnh hưởng và điều hoà, điều khiến sinh sản ở sinh vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 181,
+      "book_id": "KHTN7",
+      "printed_page_start": 173,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN7_B42",
+      "title": "Cơ thể sinh vật là một thể thống nhất",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 10,
+      "book_id": "KHTN8",
+      "printed_page_start": 6,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B01",
+      "title": "Sử dụng một số hoá chất, thiết bị cơ bản trong phòng thí nghiệm",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 15,
+      "book_id": "KHTN8",
+      "printed_page_start": 11,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B02",
+      "title": "Phản ứng hoá học",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 19,
+      "book_id": "KHTN8",
+      "printed_page_start": 16,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B03",
+      "title": "Mol và tỉ khối chất khí",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 23,
+      "book_id": "KHTN8",
+      "printed_page_start": 20,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B04",
+      "title": "Dung dịch và nồng độ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 27,
+      "book_id": "KHTN8",
+      "printed_page_start": 24,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B05",
+      "title": "Định luật bảo toàn khối lượng và phương trình hoá học",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 30,
+      "book_id": "KHTN8",
+      "printed_page_start": 28,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B06",
+      "title": "Tính theo phương trình hoá học",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 34,
+      "book_id": "KHTN8",
+      "printed_page_start": 31,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B07",
+      "title": "Tốc độ phản ứng và chất xúc tác",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 38,
+      "book_id": "KHTN8",
+      "printed_page_start": 35,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B08",
+      "title": "Acid",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 43,
+      "book_id": "KHTN8",
+      "printed_page_start": 39,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B09",
+      "title": "Base. Thang pH",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 47,
+      "book_id": "KHTN8",
+      "printed_page_start": 44,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B10",
+      "title": "Oxide",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 52,
+      "book_id": "KHTN8",
+      "printed_page_start": 48,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B11",
+      "title": "Muối",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 55,
+      "book_id": "KHTN8",
+      "printed_page_start": 53,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B12",
+      "title": "Phân bón hoá học",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 58,
+      "book_id": "KHTN8",
+      "printed_page_start": 56,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B13",
+      "title": "Khối lượng riêng CUOC SONG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 63,
+      "book_id": "KHTN8",
+      "printed_page_start": 59,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B14",
+      "title": "Thực hành xác định khối lượng riêng",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 66,
+      "book_id": "KHTN8",
+      "printed_page_start": 64,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B15",
+      "title": "Áp suất trên một bề mặt",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 72,
+      "book_id": "KHTN8",
+      "printed_page_start": 67,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B16",
+      "title": "Áp suất chất lỏng. Áp suất khí quyển",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 75,
+      "book_id": "KHTN8",
+      "printed_page_start": 73,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B17",
+      "title": "Lực đẩy Archimedes",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 78,
+      "book_id": "KHTN8",
+      "printed_page_start": 76,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B18",
+      "title": "Tác dụng làm quay của lực. Moment lực",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 83,
+      "book_id": "KHTN8",
+      "printed_page_start": 79,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B19",
+      "title": "Đòn bẩy và ứng dụng",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 87,
+      "book_id": "KHTN8",
+      "printed_page_start": 84,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B20",
+      "title": "Hiện tượng nhiễm điện do cọ xát",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 90,
+      "book_id": "KHTN8",
+      "printed_page_start": 88,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B21",
+      "title": "Dòng điện, nguồn điện",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 94,
+      "book_id": "KHTN8",
+      "printed_page_start": 91,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B22",
+      "title": "Mạch điện đơn giản",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 98,
+      "book_id": "KHTN8",
+      "printed_page_start": 95,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B23",
+      "title": "Tác dụng của dòng điện",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 101,
+      "book_id": "KHTN8",
+      "printed_page_start": 99,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B24",
+      "title": "Cường độ dòng điện và hiệu điện thế",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 104,
+      "book_id": "KHTN8",
+      "printed_page_start": 102,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B25",
+      "title": "Thực hành đo cường độ dòng điện và hiệu điện thế",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 108,
+      "book_id": "KHTN8",
+      "printed_page_start": 105,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B26",
+      "title": "Năng lượng nhiệt và nội năng",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 111,
+      "book_id": "KHTN8",
+      "printed_page_start": 109,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B27",
+      "title": "Thực hành đo năng lượng nhiệt bằng joulemeter",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 117,
+      "book_id": "KHTN8",
+      "printed_page_start": 112,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B28",
+      "title": "Sự truyễn nhiệt",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 122,
+      "book_id": "KHTN8",
+      "printed_page_start": 118,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B29",
+      "title": "Sự nở vì nhiệt",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 124,
+      "book_id": "KHTN8",
+      "printed_page_start": 123,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B30",
+      "title": "Khái quát về cơ thể người",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 127,
+      "book_id": "KHTN8",
+      "printed_page_start": 125,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B31",
+      "title": "Hệ vận động ở người",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 134,
+      "book_id": "KHTN8",
+      "printed_page_start": 128,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B32",
+      "title": "Dinh dưỡng và tiêu hoá ở người",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 141,
+      "book_id": "KHTN8",
+      "printed_page_start": 135,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B33",
+      "title": "Máu và hệ tuần hoàn của cơ thể người",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 145,
+      "book_id": "KHTN8",
+      "printed_page_start": 142,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B34",
+      "title": "Hệ hồ hấp ở người",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 149,
+      "book_id": "KHTN8",
+      "printed_page_start": 146,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B35",
+      "title": "Hệ bài tiết ở người",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 151,
+      "book_id": "KHTN8",
+      "printed_page_start": 150,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B36",
+      "title": "Điều hoà môi trường trong của cơ thể người",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 156,
+      "book_id": "KHTN8",
+      "printed_page_start": 152,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B37",
+      "title": "Hệ thần kinh và các giác quan ở người",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 157,
+      "book_id": "KHTN8",
+      "printed_page_start": 157,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B38",
+      "title": "Hệ nội tiết ở người",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 164,
+      "book_id": "KHTN8",
+      "printed_page_start": 157,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B39",
+      "title": "Da và điều hoà thần nhiệt NOL ở người TRI THỨC",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 169,
+      "book_id": "KHTN8",
+      "printed_page_start": 165,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B40",
+      "title": "Sinh sản ở người CUOC SONG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 173,
+      "book_id": "KHTN8",
+      "printed_page_start": 170,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B41",
+      "title": "Môi trường và các nhân tố sinh thái",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 176,
+      "book_id": "KHTN8",
+      "printed_page_start": 174,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B42",
+      "title": "Quần thể sinh vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 179,
+      "book_id": "KHTN8",
+      "printed_page_start": 177,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B43",
+      "title": "Quần xã sinh vật",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 184,
+      "book_id": "KHTN8",
+      "printed_page_start": 180,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B44",
+      "title": "Hệ sinh thái",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 187,
+      "book_id": "KHTN8",
+      "printed_page_start": 185,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B45",
+      "title": "Sinh quyển",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 190,
+      "book_id": "KHTN8",
+      "printed_page_start": 188,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B46",
+      "title": "Cân bằng tự nhiên",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 198,
+      "book_id": "KHTN8",
+      "printed_page_start": 191,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN8_B47",
+      "title": "Bảo vệ môi trường",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 14,
+      "book_id": "KHTN9",
+      "printed_page_start": 6,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B01",
+      "title": "Nhận biết một số dụng cụ, hoá chất. Thuyết trình một vấn đề khoa học",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 17,
+      "book_id": "KHTN9",
+      "printed_page_start": 15,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B02",
+      "title": "Động năng. Thế năng",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 20,
+      "book_id": "KHTN9",
+      "printed_page_start": 18,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B03",
+      "title": "Cơ năng",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 24,
+      "book_id": "KHTN9",
+      "printed_page_start": 21,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B04",
+      "title": "Công và công suất",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 29,
+      "book_id": "KHTN9",
+      "printed_page_start": 25,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B05",
+      "title": "Khúc xạ ánh sáng",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 33,
+      "book_id": "KHTN9",
+      "printed_page_start": 30,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B06",
+      "title": "Phản xạ toàn phần",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 39,
+      "book_id": "KHTN9",
+      "printed_page_start": 34,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B07",
+      "title": "Lăng kính",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 46,
+      "book_id": "KHTN9",
+      "printed_page_start": 40,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B08",
+      "title": "Thấu kính",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 49,
+      "book_id": "KHTN9",
+      "printed_page_start": 47,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B09",
+      "title": "Thực hành do tiêu cự của thấu kính hội tụ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 52,
+      "book_id": "KHTN9",
+      "printed_page_start": 50,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B10",
+      "title": "Kính lúp. Bài tập thấu kính",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 59,
+      "book_id": "KHTN9",
+      "printed_page_start": 53,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B11",
+      "title": "Điên trở. Đinh luật Ohm",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 63,
+      "book_id": "KHTN9",
+      "printed_page_start": 60,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B12",
+      "title": "Đoạn mạch nối tiếp, song song",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 66,
+      "book_id": "KHTN9",
+      "printed_page_start": 64,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B13",
+      "title": "Năng lượng của dòng diện và công suất diện",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 71,
+      "book_id": "KHTN9",
+      "printed_page_start": 67,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B14",
+      "title": "Cảm ứng diện từ. Nguyên tắc tạo ra dòng diện xoay chiều",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 74,
+      "book_id": "KHTN9",
+      "printed_page_start": 72,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B15",
+      "title": "Tác dụng của dòng điện xoay chiều",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 79,
+      "book_id": "KHTN9",
+      "printed_page_start": 75,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B16",
+      "title": "Vòng năng lượng trên Trái Đất. Năng lượng hoá thạch",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 86,
+      "book_id": "KHTN9",
+      "printed_page_start": 80,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B17",
+      "title": "Một số dạng năng lượng tái tạo",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 91,
+      "book_id": "KHTN9",
+      "printed_page_start": 87,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B18",
+      "title": "Tính chất chung của kim loại",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 94,
+      "book_id": "KHTN9",
+      "printed_page_start": 92,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B19",
+      "title": "Dãy hoạt dộng hoá học",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 99,
+      "book_id": "KHTN9",
+      "printed_page_start": 95,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B20",
+      "title": "Tách kim loại và việc sử dụng hợp kim",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 102,
+      "book_id": "KHTN9",
+      "printed_page_start": 100,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B21",
+      "title": "Sự khác nhau cơ bản giữa phi kim và kim loại",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 106,
+      "book_id": "KHTN9",
+      "printed_page_start": 103,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B22",
+      "title": "Giới thiệu về hợp chất hữu cơ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 110,
+      "book_id": "KHTN9",
+      "printed_page_start": 107,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B23",
+      "title": "Alkane",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 113,
+      "book_id": "KHTN9",
+      "printed_page_start": 111,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B24",
+      "title": "Alkene",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 117,
+      "book_id": "KHTN9",
+      "printed_page_start": 114,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B25",
+      "title": "Nguồn nhiên liệu",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 122,
+      "book_id": "KHTN9",
+      "printed_page_start": 118,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B26",
+      "title": "Ethylic alcohol",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 127,
+      "book_id": "KHTN9",
+      "printed_page_start": 123,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B27",
+      "title": "Acetic acid",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 130,
+      "book_id": "KHTN9",
+      "printed_page_start": 128,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B28",
+      "title": "Lipid",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 134,
+      "book_id": "KHTN9",
+      "printed_page_start": 131,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B29",
+      "title": "Carbohydrate. Glucose và saccharose",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 137,
+      "book_id": "KHTN9",
+      "printed_page_start": 135,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B30",
+      "title": "Tinh bột và cellulose",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 140,
+      "book_id": "KHTN9",
+      "printed_page_start": 138,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B31",
+      "title": "Protein",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 145,
+      "book_id": "KHTN9",
+      "printed_page_start": 141,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B32",
+      "title": "Polymer",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 148,
+      "book_id": "KHTN9",
+      "printed_page_start": 146,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B33",
+      "title": "Sơ lược về hoá học vỏ Trái Đất và khai thác tài nguyên từ vỏ Trái Đất",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 152,
+      "book_id": "KHTN9",
+      "printed_page_start": 149,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B34",
+      "title": "Khai thác đá với. Công nghiệp silicate",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 158,
+      "book_id": "KHTN9",
+      "printed_page_start": 153,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B35",
+      "title": "Khai thác nhiên liệu hoá thạch. Nguồn carbon.",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 161,
+      "book_id": "KHTN9",
+      "printed_page_start": 159,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B36",
+      "title": "Khái quát về di truyền học",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 165,
+      "book_id": "KHTN9",
+      "printed_page_start": 162,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B37",
+      "title": "Các quy luật di truyền của Mendel",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 168,
+      "book_id": "KHTN9",
+      "printed_page_start": 166,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B38",
+      "title": "Nucleic acid và gene",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 172,
+      "book_id": "KHTN9",
+      "printed_page_start": 169,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B39",
+      "title": "Tái bản DNA và phiên mã tạo RNA",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 177,
+      "book_id": "KHTN9",
+      "printed_page_start": 173,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B40",
+      "title": "Dịch mã và mối quan hệ từ gene dến tính trạng",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 180,
+      "book_id": "KHTN9",
+      "printed_page_start": 178,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B41",
+      "title": "Dột biến gene",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 185,
+      "book_id": "KHTN9",
+      "printed_page_start": 181,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B42",
+      "title": "Nhiễm sắc thế và bộ nhiễm sắc thế",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 190,
+      "book_id": "KHTN9",
+      "printed_page_start": 186,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B43",
+      "title": "Nguyên phân và giảm phân",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 193,
+      "book_id": "KHTN9",
+      "printed_page_start": 191,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B44",
+      "title": "Nhiểm sắc thể giới tính và cơ chế xác dịnh giới tính",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 196,
+      "book_id": "KHTN9",
+      "printed_page_start": 194,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B45",
+      "title": "Di truyền liên kết",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 200,
+      "book_id": "KHTN9",
+      "printed_page_start": 197,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B46",
+      "title": "Đột biến nhiễm sắc thể",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 206,
+      "book_id": "KHTN9",
+      "printed_page_start": 201,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B47",
+      "title": "Di truyền học với con người",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 210,
+      "book_id": "KHTN9",
+      "printed_page_start": 207,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B48",
+      "title": "Ứng dụng công nghệ di truyền vào đời sống",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 213,
+      "book_id": "KHTN9",
+      "printed_page_start": 211,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B49",
+      "title": "Khái niệm tiến hoá và các hình thức chọn lọc",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 218,
+      "book_id": "KHTN9",
+      "printed_page_start": 214,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B50",
+      "title": "Cơ chế tiến hoá",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 229,
+      "book_id": "KHTN9",
+      "printed_page_start": 219,
+      "page_alignment": "toc_page_starts_confirmed_from_ocr_and_pdf_TOC_page_end_inferred",
+      "lesson_id": "KHTN9_B51",
+      "title": "Sự phát sinh và phát triển sự sống trên Trái Đất",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 10,
+      "book_id": "LSDL6",
+      "printed_page_start": 9,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B01",
+      "title": "LỊCH SỬ VÀ CUỘC SỐNG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 13,
+      "book_id": "LSDL6",
+      "printed_page_start": 11,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B02",
+      "title": "Học xong bài này, em sẽ: DỰA VÀO ĐÂU ĐỂ BIẾT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 16,
+      "book_id": "LSDL6",
+      "printed_page_start": 14,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B03",
+      "title": "THỜI GIAN TRONG LỊCH SỬ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 19,
+      "book_id": "LSDL6",
+      "printed_page_start": 17,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B04",
+      "title": "NGUỒN GỐC LOÀI NGƯỜI Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 23,
+      "book_id": "LSDL6",
+      "printed_page_start": 20,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B05",
+      "title": "XÃ HỘI NGUYÊN THUY Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 28,
+      "book_id": "LSDL6",
+      "printed_page_start": 24,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B06",
+      "title": "Học xong bài này, em sẽ: SỰ CHUYỂN BIẾN VÀ PHÂN HOÁ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 33,
+      "book_id": "LSDL6",
+      "printed_page_start": 29,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B07",
+      "title": "AI CẬP VÀ LƯỠNG HÀ CỔ ĐẠI Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 38,
+      "book_id": "LSDL6",
+      "printed_page_start": 34,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B08",
+      "title": "ẤN ĐỘ CỔ ĐẠI",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 43,
+      "book_id": "LSDL6",
+      "printed_page_start": 39,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B09",
+      "title": "TRUNG QUỐC CỔ ĐẠI Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 50,
+      "book_id": "LSDL6",
+      "printed_page_start": 44,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B10",
+      "title": "HY LẠP VÀ LA MÃ CỔ ĐẠI",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 53,
+      "book_id": "LSDL6",
+      "printed_page_start": 51,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B11",
+      "title": "CÁC QUỐC GIA SƠ KÌ Ở ĐÔNG NAMÁ Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 55,
+      "book_id": "LSDL6",
+      "printed_page_start": 54,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B12",
+      "title": "SỰ HÌNH THÀNH VÀ BƯỚC ĐẦU PHÁT TRIỂN CỦA CÁC VƯƠNG QUỐC PHONG KIẾN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 59,
+      "book_id": "LSDL6",
+      "printed_page_start": 56,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B13",
+      "title": "GIAO LƯU VĂN HOÁ Ở ĐÔNG NAM Á TỪ ĐẦU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 64,
+      "book_id": "LSDL6",
+      "printed_page_start": 60,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B14",
+      "title": "NHÀ NƯỚC VĂN LANG, ÂU LẠC",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 69,
+      "book_id": "LSDL6",
+      "printed_page_start": 65,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B15",
+      "title": "CHÍNH SÁCH CAI TRỊ CỦA CÁC TRIỀU ĐẠI PHONG KIẾN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 77,
+      "book_id": "LSDL6",
+      "printed_page_start": 70,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B16",
+      "title": "CÁC CUỘC KHỞI NGHĨA TIÊU BIỂU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 79,
+      "book_id": "LSDL6",
+      "printed_page_start": 78,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B17",
+      "title": "Học xong bài này, em sẽ: CUỘC ĐẤU TRANH BẢO TỒN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 85,
+      "book_id": "LSDL6",
+      "printed_page_start": 80,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B18",
+      "title": "Học xong bài này, em sẽ: BƯỚC NGOẶT LỊCH SỬ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 90,
+      "book_id": "LSDL6",
+      "printed_page_start": 86,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B19",
+      "title": "",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 101,
+      "book_id": "LSDL6",
+      "printed_page_start": 91,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_LS_B20",
+      "title": "VƯƠNG QUỐC PHÙ NAM Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 103,
+      "book_id": "LSDL6",
+      "printed_page_start": 102,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B01",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 105,
+      "book_id": "LSDL6",
+      "printed_page_start": 104,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B02",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 107,
+      "book_id": "LSDL6",
+      "printed_page_start": 106,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B03",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 112,
+      "book_id": "LSDL6",
+      "printed_page_start": 108,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B04",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 115,
+      "book_id": "LSDL6",
+      "printed_page_start": 113,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B05",
+      "title": "Học xong bài này, em sẽ: Nh",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 117,
+      "book_id": "LSDL6",
+      "printed_page_start": 116,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B06",
+      "title": "Học xong bài này, em sẽ: • Xác định được vị trí của",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 121,
+      "book_id": "LSDL6",
+      "printed_page_start": 118,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B07",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 124,
+      "book_id": "LSDL6",
+      "printed_page_start": 122,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B08",
+      "title": "Học xong bài này, em sẽ: Biết sử dụng sơ đồ để",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 128,
+      "book_id": "LSDL6",
+      "printed_page_start": 125,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B09",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 130,
+      "book_id": "LSDL6",
+      "printed_page_start": 129,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B10",
+      "title": "Học xong bài này, em sẽ: Trình bày được cấu tạo",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 132,
+      "book_id": "LSDL6",
+      "printed_page_start": 131,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B11",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 134,
+      "book_id": "LSDL6",
+      "printed_page_start": 133,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B12",
+      "title": "Học xong bài này, em sẽ: Trình bày được hiện tượng",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 138,
+      "book_id": "LSDL6",
+      "printed_page_start": 135,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B13",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 141,
+      "book_id": "LSDL6",
+      "printed_page_start": 139,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B14",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 145,
+      "book_id": "LSDL6",
+      "printed_page_start": 142,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B15",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 149,
+      "book_id": "LSDL6",
+      "printed_page_start": 146,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B16",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 152,
+      "book_id": "LSDL6",
+      "printed_page_start": 150,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B17",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 155,
+      "book_id": "LSDL6",
+      "printed_page_start": 153,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B18",
+      "title": "Học xong bài này, em sẽ: Phân tích được biểu đồ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 157,
+      "book_id": "LSDL6",
+      "printed_page_start": 156,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B19",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 162,
+      "book_id": "LSDL6",
+      "printed_page_start": 158,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B20",
+      "title": "Học xong bài này, em sẽ: Mô tả được các bộ phận của",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 167,
+      "book_id": "LSDL6",
+      "printed_page_start": 163,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B21",
+      "title": "BIỂN VÀ ĐẠI DƯƠNG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 170,
+      "book_id": "LSDL6",
+      "printed_page_start": 168,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B22",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 172,
+      "book_id": "LSDL6",
+      "printed_page_start": 171,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B23",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 174,
+      "book_id": "LSDL6",
+      "printed_page_start": 173,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B24",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 176,
+      "book_id": "LSDL6",
+      "printed_page_start": 175,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B25",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 179,
+      "book_id": "LSDL6",
+      "printed_page_start": 177,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B26",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 183,
+      "book_id": "LSDL6",
+      "printed_page_start": 180,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B27",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 186,
+      "book_id": "LSDL6",
+      "printed_page_start": 184,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B28",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 188,
+      "book_id": "LSDL6",
+      "printed_page_start": 187,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B29",
+      "title": "Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 200,
+      "book_id": "LSDL6",
+      "printed_page_start": 189,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL6_DL_B30",
+      "title": "Học xong bài này, em sẽ: •",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 13,
+      "book_id": "LSDL7",
+      "printed_page_start": 9,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B01",
+      "title": "QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIẾN CỦA CHẾ ĐỘ PHONG KIẾN Ở TÂY ÂU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 17,
+      "book_id": "LSDL7",
+      "printed_page_start": 14,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B02",
+      "title": "CÁC CUỘC PHÁT KIẾN ĐỊA LÍ VÀ SỰ HÌNH THÀNH QUAN HỆ SẢN XUẤT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 23,
+      "book_id": "LSDL7",
+      "printed_page_start": 18,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B03",
+      "title": "PHONG TRÀO VĂN HOÁ PHỤC HUNG VÀ CẢI CÁCH TÔN GIÁO",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 28,
+      "book_id": "LSDL7",
+      "printed_page_start": 24,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B04",
+      "title": "TRUNG QUỐC TỪ THẾ KỈ III TCN ĐẾN GIŨỦA THẾ KỈ XIX",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 34,
+      "book_id": "LSDL7",
+      "printed_page_start": 29,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B05",
+      "title": "ẤN ĐỘ TÙ THẾ KỈ IV ĐẾN GIỦA THẾ Kİ XIX .",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 38,
+      "book_id": "LSDL7",
+      "printed_page_start": 35,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B06",
+      "title": "CÁC VUƠNG QUỐC PHONG KIẾN ĐÔNG NAM Á TỪ NỬA SAU THẾ KỈ X☑",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 41,
+      "book_id": "LSDL7",
+      "printed_page_start": 39,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B07",
+      "title": "VƯƠNG QUỐC LÀO Học xong bài này, em së:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 44,
+      "book_id": "LSDL7",
+      "printed_page_start": 42,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B08",
+      "title": "VƯƠNG QUỐC CAM-PU-CHIA",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 47,
+      "book_id": "LSDL7",
+      "printed_page_start": 45,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B09",
+      "title": "ĐẤT NƯỚC BUỔI ĐẢU ĐỘC LẬP (939 – 967) ► Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 51,
+      "book_id": "LSDL7",
+      "printed_page_start": 48,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B10",
+      "title": "ĐẠI CỔ VIỆT THỜI ĐINH VÀ TIỂN LÊ (968 - 1009(",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 57,
+      "book_id": "LSDL7",
+      "printed_page_start": 52,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B11",
+      "title": "NHÀ LÝ XÂY DỤNG VÀ PHÁT TRIỂN ĐẤT NƯỚC (1009 - 1225)",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 61,
+      "book_id": "LSDL7",
+      "printed_page_start": 58,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B12",
+      "title": "CUỘC KHÁNG CHIẾN CHỐNG QUÂN XÂM LƯỢC TỐNG (1075 – 1077)",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 67,
+      "book_id": "LSDL7",
+      "printed_page_start": 62,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B13",
+      "title": "ĐẠI VIỆT THỜI TRẦN (1226 - 1400) •",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 73,
+      "book_id": "LSDL7",
+      "printed_page_start": 68,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B14",
+      "title": "BA LẦN KHÁNG CHIẾN CHỐNG QUÂN XÂM LƯỢC",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 77,
+      "book_id": "LSDL7",
+      "printed_page_start": 74,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B15",
+      "title": "NƯỚC ĐẠI NGU THỜI HỒ (1400 – 1407) Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 82,
+      "book_id": "LSDL7",
+      "printed_page_start": 78,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B16",
+      "title": "KHỞI NGHĨA LAM SON (1418-1427) Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 89,
+      "book_id": "LSDL7",
+      "printed_page_start": 83,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B17",
+      "title": "ĐẠI VIỆT THỜI LÊ SO (1428 - 1527) •",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 95,
+      "book_id": "LSDL7",
+      "printed_page_start": 90,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_LS_B18",
+      "title": "VƯƠNG QUỐC CHĂM-PA VÀ VÙNG ĐẤT NAM BỘ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 100,
+      "book_id": "LSDL7",
+      "printed_page_start": 96,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_DL_B01",
+      "title": "VỊ TRÍ ĐỊA LÍ, ĐẶC ĐIỂM TỤ NHIÊN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 103,
+      "book_id": "LSDL7",
+      "printed_page_start": 101,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_DL_B02",
+      "title": "ĐẶC ĐIỂM DÂN CU,",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 106,
+      "book_id": "LSDL7",
+      "printed_page_start": 104,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_DL_B03",
+      "title": "KHAI THÁC, SỬ DỤNG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 108,
+      "book_id": "LSDL7",
+      "printed_page_start": 107,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_DL_B04",
+      "title": "LIÊN MINH CHÂU ÂU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 114,
+      "book_id": "LSDL7",
+      "printed_page_start": 109,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_DL_B05",
+      "title": "VỊ TRÍ ĐỊA LÍ, ĐẶC ĐIỂM TỤ NHIÊN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 117,
+      "book_id": "LSDL7",
+      "printed_page_start": 115,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_DL_B06",
+      "title": "ĐẶC ĐIỂM DÂN CU,",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 125,
+      "book_id": "LSDL7",
+      "printed_page_start": 118,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_DL_B07",
+      "title": "BẢN ĐỔ CHÍNH TRỊ CHÂU Á.,",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 126,
+      "book_id": "LSDL7",
+      "printed_page_start": 126,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_DL_B08",
+      "title": "THỰC HÀNH:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 132,
+      "book_id": "LSDL7",
+      "printed_page_start": 127,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_DL_B09",
+      "title": "VỊ TRÍ ĐỊA LÍ, ĐẶC ĐIỂM TỰ NHIÊN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 184,
+      "book_id": "LSDL7",
+      "printed_page_start": 133,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL7_DL_B10",
+      "title": "ĐẶC ĐIỂM DÂN CU,",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 11,
+      "book_id": "LSDL8",
+      "printed_page_start": 8,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B01",
+      "title": "Học xong bài này, em sẽ: CÁCH MẠNG TƯ SẢN ANH",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 14,
+      "book_id": "LSDL8",
+      "printed_page_start": 12,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B02",
+      "title": "CÁCH MẠNG TƯ SẢN PHÁP",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 18,
+      "book_id": "LSDL8",
+      "printed_page_start": 15,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B03",
+      "title": "Học xong bài này, em sẽ: CÁCH MẠNG CÔNG NGHIỆP",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 22,
+      "book_id": "LSDL8",
+      "printed_page_start": 19,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B04",
+      "title": "TỪ NỬA SAU THẾ KỈ XVI ĐẾN GIỮA THẾ KỈ XIX",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 27,
+      "book_id": "LSDL8",
+      "printed_page_start": 23,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B05",
+      "title": "Học xong bài này, em sẽ: VIỆT NAM TỪ ĐẦU THẾ KỈ XVI",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 30,
+      "book_id": "LSDL8",
+      "printed_page_start": 28,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B06",
+      "title": "Học xong bài này, em sẽ: CÔNG CUỘC KHAI PHÁ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 34,
+      "book_id": "LSDL8",
+      "printed_page_start": 31,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B07",
+      "title": "1 Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 41,
+      "book_id": "LSDL8",
+      "printed_page_start": 35,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B08",
+      "title": "PHONG TRÀO TÂY SƠN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 45,
+      "book_id": "LSDL8",
+      "printed_page_start": 42,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B09",
+      "title": "Học xong bài này, em sẽ: TÌNH HÌNH KINH TẾ,",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 49,
+      "book_id": "LSDL8",
+      "printed_page_start": 46,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B10",
+      "title": "Học xong bài này, em sẽ: SỰ HÌNH THÀNH CHỦ NGHĨA",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 53,
+      "book_id": "LSDL8",
+      "printed_page_start": 50,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B11",
+      "title": "Học xong bài này, em sẽ: PHONG TRÀO CÔNG NHÂN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 57,
+      "book_id": "LSDL8",
+      "printed_page_start": 54,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B12",
+      "title": "Học xong bài này, em sẽ: CHIẾN TRANH THẾ GIỚI THỨ NHẤT",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 66,
+      "book_id": "LSDL8",
+      "printed_page_start": 58,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B13",
+      "title": "Học xong bài này, em sẽ: SỰ PHÁT TRIỂN CỦA KHOA HỌC,",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 70,
+      "book_id": "LSDL8",
+      "printed_page_start": 67,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B15",
+      "title": "Học xong bài này, em sẽ: ẤN ĐỘ VÀ ĐÔNG NAM Á",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 76,
+      "book_id": "LSDL8",
+      "printed_page_start": 71,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B16",
+      "title": "VIỆT NAM DƯỚI THỜI NGUYỄN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 83,
+      "book_id": "LSDL8",
+      "printed_page_start": 77,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B17",
+      "title": "Học xong bài này, em së: CUỘC KHÁNG CHIẾN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 87,
+      "book_id": "LSDL8",
+      "printed_page_start": 84,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B18",
+      "title": "PHONG TRÀO CHỐNG PHÁP",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 94,
+      "book_id": "LSDL8",
+      "printed_page_start": 88,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_LS_B19",
+      "title": "Học xong bài này, em sẽ: PHONG TRÀO YÊU NƯỚC",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 98,
+      "book_id": "LSDL8",
+      "printed_page_start": 95,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_DL_B01",
+      "title": "VỊ TRÍ ĐỊA LÍ VÀ PHẠM VI LÃNH THỔ VIỆT NAM",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 110,
+      "book_id": "LSDL8",
+      "printed_page_start": 99,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_DL_B02",
+      "title": "ĐỊA HÌNH VIỆT NAM Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 114,
+      "book_id": "LSDL8",
+      "printed_page_start": 111,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_DL_B03",
+      "title": "KHOÁNG SẢN VIỆT NAM",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 119,
+      "book_id": "LSDL8",
+      "printed_page_start": 115,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_DL_B04",
+      "title": "KHÍ HẬU VÀ THUỶ VĂN VIỆT NAM",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 120,
+      "book_id": "LSDL8",
+      "printed_page_start": 120,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_DL_B05",
+      "title": "THỰC HÀNH: ĐỌC BIỂU ĐỒ KHÍ HẬU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 127,
+      "book_id": "LSDL8",
+      "printed_page_start": 121,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_DL_B06",
+      "title": "THUỶ VĂN VIỆT NAM",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 131,
+      "book_id": "LSDL8",
+      "printed_page_start": 128,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_DL_B07",
+      "title": "VAI TRÒ CỦA TÀI NGUYÊN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 135,
+      "book_id": "LSDL8",
+      "printed_page_start": 132,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_DL_B08",
+      "title": "TÁC ĐỘNG CỦA BIẾN ĐỔI KHÍ HẬU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 142,
+      "book_id": "LSDL8",
+      "printed_page_start": 136,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_DL_B09",
+      "title": "THỔ NHƯỠNG VÀ SINH VẬT VIỆT NAM",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 146,
+      "book_id": "LSDL8",
+      "printed_page_start": 143,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_DL_B10",
+      "title": "SINH VẬT VIỆT NAM Học xong bài này, em sẽ:",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 151,
+      "book_id": "LSDL8",
+      "printed_page_start": 147,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_DL_B11",
+      "title": "Học xong bài này, em sẽ: PHẠM VI BIỂN ĐÔNG. VÙNG BIỂN ĐẢO",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 176,
+      "book_id": "LSDL8",
+      "printed_page_start": 152,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL8_DL_B12",
+      "title": "MÔI TRƯỜNG VÀ TÀI NGUYÊN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 9,
+      "book_id": "LSDL9",
+      "printed_page_start": 7,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B01",
+      "title": "Học xong bài này, em sẽ: THẾ GIỚI TỪ NĂM 1918",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 13,
+      "book_id": "LSDL9",
+      "printed_page_start": 10,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B02",
+      "title": "Học xong bài này, em sẽ: CHÂU ÂU VÀ NƯỚC MỸ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 17,
+      "book_id": "LSDL9",
+      "printed_page_start": 14,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B03",
+      "title": "CHÂU Á TỪ NĂM 1918 ĐẾN NĂM 1945",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 21,
+      "book_id": "LSDL9",
+      "printed_page_start": 18,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B04",
+      "title": "Học xong bài này, em sẽ: CHIẾN TRANH THẾ GIỚI THỨ HAI",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 25,
+      "book_id": "LSDL9",
+      "printed_page_start": 22,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B05",
+      "title": "VIỆT NAM TỪ NĂM 1918 ĐẾN NĂM 1945 PHONG TRÀO DÂN TỘC DÂN CHỦ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 29,
+      "book_id": "LSDL9",
+      "printed_page_start": 26,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B06",
+      "title": "Học xong bài này, em sẽ: HOẠT ĐỘNG CỦA NGUYỄN ÁI QUỐC",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 33,
+      "book_id": "LSDL9",
+      "printed_page_start": 30,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B07",
+      "title": "Học xong bài này, em sẽ: PHONG TRÀO CÁCH MẠNG VIỆT NAM",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 40,
+      "book_id": "LSDL9",
+      "printed_page_start": 34,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B08",
+      "title": "CÁCH MẠNG THÁNG TÁM NĂM 1945",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 43,
+      "book_id": "LSDL9",
+      "printed_page_start": 41,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B09",
+      "title": "CHIẾN TRANH LẠNH (1947-1989)",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 48,
+      "book_id": "LSDL9",
+      "printed_page_start": 44,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B10",
+      "title": "LIÊN XÔ VÀ ĐÔNG ÂU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 60,
+      "book_id": "LSDL9",
+      "printed_page_start": 49,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B11",
+      "title": "NƯỚC MỸ VÀ TÂY ÂU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 66,
+      "book_id": "LSDL9",
+      "printed_page_start": 61,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B13",
+      "title": "Học xong bài này, em sẽ: VIỆT NAM TỪ NĂM 1945 ĐẾN NĂM 1975",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 72,
+      "book_id": "LSDL9",
+      "printed_page_start": 67,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B14",
+      "title": "Học xong bài này, em sẽ: VIỆT NAM KHÁNG CHIẾN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 79,
+      "book_id": "LSDL9",
+      "printed_page_start": 73,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B15",
+      "title": "Học xong bài này, em sẽ: VIỆT NAM KHÁNG CHIẾN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 84,
+      "book_id": "LSDL9",
+      "printed_page_start": 80,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B16",
+      "title": "Học xong bài này, em sẽ: VIỆT NAM KHÁNG CHIẾN CHỐNG MỸ,",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 92,
+      "book_id": "LSDL9",
+      "printed_page_start": 85,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B17",
+      "title": "Học xong bài này, em sẽ: VIỆT NAM KHÁNG CHIẾN CHỐNG MỸ,",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 95,
+      "book_id": "LSDL9",
+      "printed_page_start": 93,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B18",
+      "title": "Học xong bài này, em sẽ: THẾ GIỚI TỪ NĂM 1991 ĐẾN NAY",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 100,
+      "book_id": "LSDL9",
+      "printed_page_start": 96,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B19",
+      "title": "CHÂU Á TỪ NĂM 1991 ĐẾN NAY",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 110,
+      "book_id": "LSDL9",
+      "printed_page_start": 101,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B20",
+      "title": "VIỆT NAM TỪ NĂM 1976 ĐẾN NAY",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 116,
+      "book_id": "LSDL9",
+      "printed_page_start": 111,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_LS_B21",
+      "title": "CÁCH MẠNG KHOA HỌC – KĨ THUẬT VÀ XU THẾ TOÀN CẦU HOÁ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 119,
+      "book_id": "LSDL9",
+      "printed_page_start": 117,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B01",
+      "title": "DÂN TỘC VÀ DÂN SỐ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 122,
+      "book_id": "LSDL9",
+      "printed_page_start": 120,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B02",
+      "title": "PHÂN BỐ DÂN CƯ VÀ CÁC LOẠI HÌNH QUẦN CƯ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 126,
+      "book_id": "LSDL9",
+      "printed_page_start": 123,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B03",
+      "title": "LAO ĐỘNG VÀ VIỆC LÀM",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 136,
+      "book_id": "LSDL9",
+      "printed_page_start": 127,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B04",
+      "title": "THỰC HÀNH: TÌM HIỂU VẤN ĐỂ VIỆC LÀM Ở ĐỊA PHƯƠNG VÀ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 140,
+      "book_id": "LSDL9",
+      "printed_page_start": 137,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B06",
+      "title": "LÂM NGHIỆP VÀ THUỶ SẢN",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 141,
+      "book_id": "LSDL9",
+      "printed_page_start": 141,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B07",
+      "title": "Học xong bài này, em sẽ: THỰC HÀNH: VIẾT BÁO CÁO",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 150,
+      "book_id": "LSDL9",
+      "printed_page_start": 142,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B08",
+      "title": "CÔNG NGHIỆP",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 151,
+      "book_id": "LSDL9",
+      "printed_page_start": 151,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B09",
+      "title": "THỰC HÀNH: XÁC ĐỊNH MỘT SỐ HÌNH THỨC TỔ CHỨC LÃNH THỔ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 156,
+      "book_id": "LSDL9",
+      "printed_page_start": 152,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B10",
+      "title": "DỊCH VỤ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 157,
+      "book_id": "LSDL9",
+      "printed_page_start": 157,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B11",
+      "title": "Học xong bài này, em sẽ: THỰC HÀNH: TÌM HIỂU XU HƯỚNG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 165,
+      "book_id": "LSDL9",
+      "printed_page_start": 158,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B12",
+      "title": "VÙNG TRUNG DU",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 175,
+      "book_id": "LSDL9",
+      "printed_page_start": 166,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B13",
+      "title": "VÙNG ĐỒNG BẰNG SÔNG HỒNG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 184,
+      "book_id": "LSDL9",
+      "printed_page_start": 176,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B14",
+      "title": "VÙNG BẮC TRUNG BỘ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 185,
+      "book_id": "LSDL9",
+      "printed_page_start": 185,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B15",
+      "title": "THỰC HÀNH: TÌM HIỀU VẤN ĐỀ PHÒNG,",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 194,
+      "book_id": "LSDL9",
+      "printed_page_start": 186,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B16",
+      "title": "Học xong bài này, em sẽ: VÙNG DUYÊN HẢI NAM TRUNG BỘ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 203,
+      "book_id": "LSDL9",
+      "printed_page_start": 195,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B17",
+      "title": "VÙNG ĐÔNG NAM BỘ",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 204,
+      "book_id": "LSDL9",
+      "printed_page_start": 204,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B18",
+      "title": "Học xong bài này, em sẽ: THỰC HÀNH: PHÂN TÍCH Ý NGHĨA",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 212,
+      "book_id": "LSDL9",
+      "printed_page_start": 205,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B19",
+      "title": "VÙNG ĐỒNG BẰNG SÔNG CỬU LONG",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 213,
+      "book_id": "LSDL9",
+      "printed_page_start": 213,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B20",
+      "title": "Học xong bài này, em sẽ: THỰC HÀNH: TÌM HIỂU VỀ TÁC",
+      "text_verified": false
+    },
+    {
+      "printed_page_end": 240,
+      "book_id": "LSDL9",
+      "printed_page_start": 214,
+      "page_alignment": "heuristic",
+      "lesson_id": "LSDL9_DL_B21",
+      "title": "Học xong bài này, em sẽ: PHÁT TRIỂN TỔNG HỢP KINH TẾ",
+      "text_verified": false
+    }
+  ]
+}

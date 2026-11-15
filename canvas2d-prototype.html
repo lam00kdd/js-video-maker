@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Canvas 2D Motion · Prototype</title>
+  <style>
+    :root{font-family:Segoe UI,Arial,sans-serif;color:#e9e9eb;background:#0b0d11}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:24px;background:radial-gradient(ellipse at 50% 0,#20232c,#0b0d11 65%)}main{width:min(1180px,100%);margin:0 auto}.heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:18px}.heading h1{font-size:20px;margin:4px 0}.heading p,.note{color:#9da1ab;font-size:12px;line-height:1.6;margin:0}.tag{color:#c7f38b;font:11px Consolas,monospace;letter-spacing:.08em}.preview{overflow:hidden;border:1px solid #343842;border-radius:10px;background:#111722;box-shadow:0 18px 65px #0008}.preview canvas{display:block;width:100%;height:auto;aspect-ratio:16/9}.controls{display:grid;grid-template-columns:auto minmax(180px,1fr) auto minmax(220px,1fr);align-items:center;gap:12px;padding:13px;border-top:1px solid #272b34}.controls button,.controls select{border:1px solid #343842;border-radius:6px;background:#1a1d25;color:#e9e9eb;padding:8px 10px}.controls input{width:100%;accent-color:#b6f36a}.time{color:#c5c8cf;font:11px Consolas,monospace;white-space:nowrap}.note{margin-top:16px;max-width:900px}.note b{color:#d5f2ad}@media(max-width:700px){body{padding:12px}.heading{display:block}.controls{grid-template-columns:auto 1fr}.controls select{grid-column:1/-1}}
+  </style>
+</head>
+<body>
+  <main>
+    <header class="heading"><div><span class="tag">RENDERER SPIKE · NO PROJECT CHANGES</span><h1>Canvas 2D Motion Prototype</h1><p>Thử chuyển động của từng đạo cụ theo thời gian; preview và tua dùng cùng một phép tính.</p></div><a href="./index.html" style="color:#b6f36a;font-size:12px">Quay lại Studio</a></header>
+    <section class="preview"><canvas id="stage" width="1280" height="720"></canvas><div class="controls"><button id="play">▶ Phát</button><input id="seek" type="range" min="0" max="8" step="0.01" value="0" aria-label="Tua thời gian"/><span class="time" id="time">00:00.00 / 00:08.00</span><select id="example" aria-label="Chọn ví dụ"><option value="entrance">Nhân vật bước vào cảnh</option><option value="chart">Biểu đồ bay vào và nhấn nhịp</option><option value="orbit">Đạo cụ đi theo đường cong</option></select></div></section>
+    <p class="note"><b>Phạm vi prototype:</b> dùng nền và đạo cụ hiện có của app, thêm easing, Bézier, scale, rotation, opacity và lặp ping-pong. Đây là trang thử renderer; chưa thay đổi project schema, mode mặc định hay export video.</p>
+  </main>
+  <script>
+    if(location.protocol==='file:'){
+      const notice=document.createElement('p');notice.className='note';notice.innerHTML='<b>Trang này cần chạy qua server cục bộ để nạp module.</b><br>Đóng tab file://, chạy <code>run.bat canvas2d</code> trong thư mục app. Nếu server đã chạy, mở <a style="color:#b6f36a" href="http://127.0.0.1:4173/canvas2d-prototype.html">Canvas 2D prototype</a>.';
+      document.querySelector('main').prepend(notice);
+      document.querySelector('.preview').hidden=true;
+    }else{
+      import('./src/render/canvas2d-prototype.js').catch(error=>{const notice=document.createElement('p');notice.className='note';notice.textContent='Không tải được prototype: '+error.message;document.querySelector('main').prepend(notice);});
+    }
+  </script>
+</body>
+</html>

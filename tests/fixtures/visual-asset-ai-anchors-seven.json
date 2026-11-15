@@ -1,0 +1,26 @@
+{
+  "title": "Cảm biến tiệm cận điện cảm",
+  "primary_subject": "inductive proximity sensor",
+  "category": "industrial_automation",
+  "category_id": "industrial_automation",
+  "subcategory_id": "sensors",
+  "subcategory_label": "Cảm biến",
+  "taxonomy_version": 1,
+  "description": "Cảm biến dạng trụ với mặt cảm biến, thân ren và dây nối nhìn thấy được.",
+  "keywords_vi": ["cảm biến tiệm cận", "cảm biến điện cảm"],
+  "aliases_en": ["inductive proximity sensor"],
+  "visual_type": "technical_diagram",
+  "viewpoint": "three_quarter",
+  "visible_components": ["Mặt cảm biến", "Thân cảm biến", "Dây nối"],
+  "scientific_domain": "industrial automation",
+  "review_status": "verified",
+  "anchors": {
+    "mat_cam_bien": {"label":"Mặt cảm biến","coordinate_space":"normalized_source_image","x":0.182,"y":0.689,"review_status":"ai_suggested"},
+    "than_tru": {"label":"Thân trụ","coordinate_space":"normalized_source_image","x":0.31,"y":0.60,"review_status":"ai_suggested"},
+    "dai_ren_truoc": {"label":"Dải ren phía trước","coordinate_space":"normalized_source_image","x":0.43,"y":0.53,"review_status":"ai_suggested"},
+    "dai_luc_giac": {"label":"Đai lục giác","coordinate_space":"normalized_source_image","x":0.55,"y":0.46,"review_status":"ai_suggested"},
+    "dai_ren_sau": {"label":"Dải ren phía sau","coordinate_space":"normalized_source_image","x":0.68,"y":0.39,"review_status":"ai_suggested"},
+    "nap_duoi_day": {"label":"Nắp nối dây","coordinate_space":"normalized_source_image","x":0.79,"y":0.32,"review_status":"ai_suggested"},
+    "day_cam_bien": {"label":"Dây cảm biến","coordinate_space":"normalized_source_image","x":0.90,"y":0.27,"review_status":"ai_suggested"}
+  }
+}

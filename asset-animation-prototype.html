@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asset Animation · Scene graph demo</title>
+  <style>
+    :root{font-family:Segoe UI,Arial,sans-serif;color:#e9e9eb;background:#0b0d11}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:24px;background:radial-gradient(ellipse at 50% 0,#20252b,#0b0d11 65%)}main{width:min(1240px,100%);margin:0 auto}.heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:18px}.heading h1{font-size:21px;margin:5px 0}.heading p,.note{color:#a8adb2;font-size:13px;line-height:1.6;margin:0}.tag{color:#c7f38b;font:11px Consolas,monospace;letter-spacing:.08em}.preview{overflow:hidden;border:1px solid #343842;border-radius:12px;background:#111722;box-shadow:0 18px 65px #0008}.preview canvas{display:block;width:100%;height:auto;aspect-ratio:16/9}.controls{display:grid;grid-template-columns:auto minmax(180px,1fr) auto;align-items:center;gap:13px;padding:14px;border-top:1px solid #272b34}.controls button{border:1px solid #424b47;border-radius:7px;background:#202821;color:#f1f3ed;padding:9px 14px;cursor:pointer}.controls button:hover{background:#2c392d}.controls input{width:100%;accent-color:#b6f36a}.time{color:#c5c8cf;font:12px Consolas,monospace;white-space:nowrap}.note{margin-top:16px;max-width:1000px}.note b{color:#d5f2ad}.links{display:flex;gap:14px}.links a{color:#b6f36a;font-size:12px}@media(max-width:700px){body{padding:12px}.heading{display:block}.links{margin-top:12px}.controls{grid-template-columns:auto 1fr}.time{grid-column:1/-1;text-align:right}}
+  </style>
+</head>
+<body>
+  <main>
+    <header class="heading">
+      <div><span class="tag">SELF-DRAWN ASSETS · NO AI · NO PURCHASED ART</span><h1>Asset Animation · Scene Graph Demo</h1><p>Học sinh tự vẽ theo bộ phận; thước và khối gỗ là các object riêng; timeline gọi action và sự kiện gắn/đặt vật.</p></div>
+      <nav class="links"><a href="./index.html">Quay lại Studio</a><a href="./canvas2d-prototype.html">Canvas 2D prototype</a></nav>
+    </header>
+    <section class="preview"><canvas id="stage" width="1280" height="720" aria-label="Học sinh dùng thước đo khối gỗ"></canvas><div class="controls"><button id="play" type="button">▶ Phát</button><input id="seek" type="range" min="0" max="8" step="0.01" value="0" aria-label="Tua thời gian"/><span class="time" id="time">00:00.00 / 00:08.00</span></div></section>
+    <p class="note"><b>MVP proof:</b> tất cả hình được tự vẽ bằng Canvas; không có ảnh ngoài hay API. Timeline dựng lại tư thế từ thời điểm hiện tại, gồm đi tới bàn, với tay, cầm khối gỗ, đặt vào vạch 0 và chỉ vạch 5 cm. Đây là vector minh họa bán chân thực ban đầu, chưa phải asset hoàn thiện hay mode tích hợp trong project.</p>
+  </main>
+  <script>
+    if(location.protocol==='file:'){
+      const notice=document.createElement('p');notice.className='note';notice.innerHTML='<b>Trang này cần chạy qua server cục bộ để nạp module.</b><br>Đóng tab file://, chạy <code>run.bat asset2d</code> trong thư mục app. Nếu server đã chạy, mở <a style="color:#b6f36a" href="http://127.0.0.1:4173/asset-animation-prototype.html">Asset Animation prototype</a>.';
+      document.querySelector('main').prepend(notice);
+      document.querySelector('.preview').hidden=true;
+    }else import('./src/render/asset-animation-demo.js').then(({measurementDemo,renderMeasurementDemo})=>{
+    const canvas=document.querySelector('#stage'),play=document.querySelector('#play'),seek=document.querySelector('#seek'),label=document.querySelector('#time');
+    let time=0,playing=false,last=0;
+    const format=value=>`00:${String(Math.floor(value)).padStart(2,'0')}.${String(Math.floor(value%1*100)).padStart(2,'0')}`;
+    function draw(){renderMeasurementDemo(canvas,time);seek.value=String(time);label.textContent=`${format(time)} / ${format(measurementDemo.duration)}`;}
+    function frame(now){if(playing){if(last)time=Math.min(measurementDemo.duration,time+(now-last)/1000);last=now;if(time>=measurementDemo.duration){time=measurementDemo.duration;playing=false;play.textContent='↻ Phát lại';last=0;}}else last=0;draw();requestAnimationFrame(frame);}
+    play.addEventListener('click',()=>{if(time>=measurementDemo.duration)time=0;playing=!playing;play.textContent=playing?'Ⅱ Dừng':'▶ Phát';last=0;});
+    seek.addEventListener('input',()=>{time=Number(seek.value);if(time>=measurementDemo.duration){playing=false;play.textContent='▶ Phát';}draw();});
+    draw();requestAnimationFrame(frame);
+    }).catch(error=>{const notice=document.createElement('p');notice.className='note';notice.textContent='Không tải được prototype: '+error.message;document.querySelector('main').prepend(notice);});
+  </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+{
+  "visual_dsl_version": 3,
+  "title": "CP5.5A R3A · Published Sprite smoke test",
+  "language": "vi-VN",
+  "topic": "Giới thiệu cảm biến công nghiệp",
+  "audience": "Học viên kỹ thuật",
+  "aspect_ratio": "16:9",
+  "voice": {
+    "voice_id": "phuong_linh",
+    "rate": 1,
+    "auto_generate": false
+  },
+  "subtitles": {
+    "enabled": false,
+    "karaoke": false
+  },
+  "art_direction": {
+    "preset": "scientific_premium",
+    "style_name": "Published Sprite runtime smoke test"
+  },
+  "scenes": [
+    {
+      "id": "sprite-wave-smoke",
+      "title": "Teacher waves",
+      "duration_seconds": 4,
+      "narration": "Đây là nhân vật giáo viên đã xuất bản trong Character Library.",
+      "stage": {
+        "width": 1600,
+        "height": 900,
+        "background": "#F1F7F8"
+      },
+      "timeline": {
+        "tracks": [
+          {
+            "target_id": "sprite-teacher",
+            "property": "x",
+            "keyframes": [
+              { "time_seconds": 0, "value": 0 },
+              { "time_seconds": 4, "value": 18 }
+            ]
+          }
+        ]
+      },
+      "root": {
+        "id": "sprite-root",
+        "type": "group",
+        "children": [
+          {
+            "id": "sprite-teacher",
+            "type": "published_character",
+            "geometry": {
+              "character_id": "char_female_teacher_1_beca662a_b7af_4a6d_9683_22d106eabd0a",
+              "character_version": "1.0.2",
+              "character_version_checksum": "d872aac5409c5099460677ed6c4a1ba44e6fb30d07bc4ce7ab741f44063bdb0a",
+              "clip_id": "wave",
+              "x": 0.5,
+              "y": 0.82,
+              "scale": 0.9,
+              "start_seconds": 0,
+              "loop": true,
+              "hold_last_frame": true
+            },
+            "z_index": 1
+          },
+          {
+            "id": "smoke-label",
+            "type": "text",
+            "geometry": {
+              "x": 360,
+              "y": 80,
+              "text": "Published Sprite · wave",
+              "font_size": 40,
+              "font_family": "Arial",
+              "font_weight": "bold",
+              "text_align": "center",
+              "text_baseline": "top"
+            },
+            "style": {
+              "fill": "#153746"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "title": "Cảm biến tiệm cận điện cảm",
+  "primary_subject": "Cảm biến tiệm cận điện cảm",
+  "category": "industrial_equipment",
+  "category_id": "industrial_automation",
+  "subcategory_id": "sensors",
+  "subcategory_label": "Cảm biến",
+  "taxonomy_version": 1,
+  "related_domains": [],
+  "classification_status": "classified",
+  "description": "Minh họa kỹ thuật một cảm biến tiệm cận điện cảm hình trụ, thân kim loại có ren, mặt cảm biến tròn màu xanh sẫm ở đầu, hai đai ốc lục giác và dây cáp màu đen đi ra từ phía sau.",
+  "keywords_vi": [
+    "cảm biến tiệm cận điện cảm",
+    "cảm biến hình trụ",
+    "thân ren kim loại",
+    "mặt cảm biến",
+    "đai ốc lục giác",
+    "dây cáp cảm biến",
+    "thiết bị tự động hóa"
+  ],
+  "aliases_en": [
+    "inductive proximity sensor",
+    "cylindrical inductive sensor",
+    "inductive proximity switch"
+  ],
+  "visual_type": "technical_diagram",
+  "viewpoint": "góc nhìn ba phần tư",
+  "educational_usage": "Giúp nhận diện hình dạng cảm biến",
+  "scientific_domain": "điện – điện tử và tự động hóa công nghiệp",
+  "visible_components": [
+    "thân cảm biến hình trụ có ren kim loại",
+    "mặt cảm biến tròn ở đầu",
+    "hai đai ốc lục giác",
+    "đầu nối bảo vệ dây phía sau",
+    "dây cáp màu đen"
+  ],
+  "source": "",
+  "license": "",
+  "review_status": "verified",
+  "updated_at": "2026-11-12T21:33:57.890Z",
+  "user_edited": true,
+  "metadata_origin": "user_edited",
+  "anchors": {},
+  "spatial_metadata": {
+    "schema_version": 1,
+    "coordinate_system": "normalized_source_image",
+    "anchors": [
+      {
+        "id": "anchor_1",
+        "label": "Dây dẫn",
+        "x": 0.7166889880952381,
+        "y": 0.38130580357142857,
+        "review_status": "human_edited"
+      },
+      {
+        "id": "mat_cam_bien",
+        "label": "Mặt cảm biến",
+        "x": 0.166,
+        "y": 0.65,
+        "review_status": "ai_suggested"
+      },
+      {
+        "id": "than_ren_phia_truoc",
+        "label": "Thân ren kim loại phía trước",
+        "x": 0.258,
+        "y": 0.595,
+        "review_status": "ai_suggested"
+      },
+      {
+        "id": "dai_oc_phia_truoc",
+        "label": "Đai ốc lục giác phía trước",
+        "x": 0.36,
+        "y": 0.541,
+        "review_status": "ai_suggested"
+      },
+      {
+        "id": "dai_oc_phia_sau",
+        "label": "Đai ốc lục giác phía sau",
+        "x": 0.467,
+        "y": 0.455,
+        "review_status": "ai_suggested"
+      },
+      {
+        "id": "than_ren_phia_sau",
+        "label": "Thân ren kim loại phía sau",
+        "x": 0.554,
+        "y": 0.391,
+        "review_status": "ai_suggested"
+      },
+      {
+        "id": "dau_bao_ve_day",
+        "label": "Đầu bảo vệ dây",
+        "x": 0.636,
+        "y": 0.364,
+        "review_status": "ai_suggested"
+      }
+    ]
+  }
+}
